@@ -1,2 +1,30 @@
 ﻿Projekt név: SFBot
 Projekt várható elkészülése: 2017.11.21
+
+Követelmény specifikáció
+
+Ajánlatkéréshez küldje: mfecske95@gmail.com címre a kitöltött sablont. Nem szükséges minden pontot kitölteni, csak amennyit biztosan tud az ajánlatkéréshez. Ha valamit nem értenénk, telefonon vagy emailben keresni fogjuk.
+
+Bot alkalmazás fejlesztés
+
+Név:		(ajánlatkérő neve)
+Telefon:	(telefonos elréhetőség)
+e-mail:		(e-mail )
+Account név:	(felhasználó név)
+Jelszó:		(felhasználóhoz való jelszó)
+
+I.	Választott mobil platform:	PC(Web)    Android 	Apple –iOS
+A választott platformot aláhúzással jelölje
+
+II.	Bot alkalmazás rövid leírása:
+(Az alkalmazás rövid 1-2 mondatos leírása, mit a lényege, mi célból)
+
+III.	Funkcionális követelmények:
+
+IV.	Felhasználói követelmények:
+(pl ha az alkalmazást letálcázzuk akkor az fusson a háttérben.)
+
+V. 	Rendszer követelmények:
+(pl ha pcn fut akkor legyen mobilis minden szoftverre)
+
+
