@@ -1,0 +1,79 @@
+package package_108
+{
+   import com.bigpoint.seafight.class_58;
+   import com.bigpoint.seafight.control.ceu.CentralEventUnit;
+   import com.bigpoint.seafight.model.vo.class_1023;
+   import com.bigpoint.seafight.model.vo.class_173;
+   import com.bigpoint.seafight.model.vo.class_332;
+   import com.bigpoint.seafight.tools.class_177;
+   import com.bigpoint.seafight.view.common.components.BriskImageDynaLib;
+   import com.bigpoint.seafight.view.common.components.LootWindow;
+   import com.bigpoint.seafight.view.common.components.SF_LocaLabel;
+   import com.bigpoint.seafight.view.common.skins.vscroller.VScrollDecoSkin;
+   import com.bigpoint.seafight.view.mainmenu.MainMenuButtonVo;
+   import com.bigpoint.seafight.view.popups.common.BorderType3;
+   import com.bigpoint.seafight.view.popups.common.ImageDisplay;
+   import com.bigpoint.seafight.view.popups.event.modules.minigame.MinigameMateysListItemRenderer;
+   import com.bigpoint.seafight.view.popups.lootpopup.LootPopupController;
+   import com.bigpoint.seafight.view.popups.lootpopup.component.LootPopup;
+   import com.bigpoint.seafight.view.popups.lootpopup.vo.LootPopupVo;
+   import com.bigpoint.seafight.view.popups.multipopup.MultiPopUpManager;
+   import com.bigpoint.seafight.view.userInterface.widgets.menus.skins.SimpleResizableWindowSkin;
+   import com.greensock.TweenMax;
+   import flash.display.DisplayObject;
+   import flash.events.Event;
+   import flash.events.MouseEvent;
+   import flash.text.TextField;
+   import flash.utils.Dictionary;
+   import flash.utils.IDataInput;
+   import flash.utils.IDataOutput;
+   import mx.binding.BindingManager;
+   import mx.collections.ArrayCollection;
+   import mx.core.DeferredInstanceFromFunction;
+   import mx.states.AddItems;
+   import mx.states.SetProperty;
+   import mx.states.State;
+   import package_104.class_628;
+   import package_111.class_741;
+   import package_111.class_774;
+   import package_14.class_200;
+   import package_14.class_47;
+   import package_14.class_49;
+   import package_14.class_51;
+   import package_16.class_28;
+   import package_20.class_33;
+   import package_26.class_1319;
+   import package_26.class_142;
+   import package_34.class_116;
+   import package_34.class_117;
+   import package_34.class_1526;
+   import package_41.class_84;
+   import package_41.class_93;
+   import package_42.class_1106;
+   import package_42.class_98;
+   import package_43.class_106;
+   import package_45.class_110;
+   import package_49.class_1513;
+   import package_5.class_22;
+   import package_5.class_41;
+   import package_5.class_43;
+   import package_51.class_974;
+   import package_57.class_171;
+   import package_6.class_14;
+   import package_7.class_15;
+   import package_72.class_1080;
+   import package_8.class_114;
+   import package_9.class_404;
+   import spark.components.Group;
+   import spark.components.HGroup;
+   import spark.components.Label;
+   import spark.components.TitleWindow;
+   import spark.components.VGroup;
+   import spark.components.VScrollBar;
+   import spark.components.gridClasses.GridLayer;
+   import spark.primitives.Rect;
+   
+   public final class class_596 implements class_14
+   {
+      
+      public static const name_3:class_596 = 
