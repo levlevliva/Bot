@@ -1,0 +1,9 @@
+C:\Users\Levente\Documents\Visual Studio 2017\Projects\BOT_RFT\BOT_RFT\bin\Debug\BOT_RFT.exe.config
+C:\Users\Levente\Documents\Visual Studio 2017\Projects\BOT_RFT\BOT_RFT\bin\Debug\BOT_RFT.exe
+C:\Users\Levente\Documents\Visual Studio 2017\Projects\BOT_RFT\BOT_RFT\bin\Debug\BOT_RFT.pdb
+C:\Users\Levente\Documents\Visual Studio 2017\Projects\BOT_RFT\BOT_RFT\obj\Debug\BOT_RFT.csprojResolveAssemblyReference.cache
+C:\Users\Levente\Documents\Visual Studio 2017\Projects\BOT_RFT\BOT_RFT\obj\Debug\BOT_RFT.Form1.resources
+C:\Users\Levente\Documents\Visual Studio 2017\Projects\BOT_RFT\BOT_RFT\obj\Debug\BOT_RFT.Properties.Resources.resources
+C:\Users\Levente\Documents\Visual Studio 2017\Projects\BOT_RFT\BOT_RFT\obj\Debug\BOT_RFT.csproj.GenerateResource.Cache
+C:\Users\Levente\Documents\Visual Studio 2017\Projects\BOT_RFT\BOT_RFT\obj\Debug\BOT_RFT.exe
+C:\Users\Levente\Documents\Visual Studio 2017\Projects\BOT_RFT\BOT_RFT\obj\Debug\BOT_RFT.pdb
