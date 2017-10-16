@@ -17,8 +17,7 @@ e-mail:		(e-mail )
 Account név:	(felhasználó név)
 Jelszó:		(felhasználóhoz való jelszó)
 
-I.	Választott mobil platform:	PC(Web)    Android 	Apple –iOS
-A választott platformot aláhúzással jelölje
+I.	Választott platform:	PC(Web)
 
 II.	Bot alkalmazás rövid leírása:
 (Az alkalmazás rövid 1-2 mondatos leírása, mit a lényege, mi célból)
@@ -27,9 +26,18 @@ III.	Funkcionális követelmények:
 
 IV.	Felhasználói követelmények:
 (pl ha az alkalmazást letálcázzuk akkor az fusson a háttérben.)
+    - Az alkalmazás képes futni a héttérben.
+    - Az alkalmazás felhasználó barát felülettel fog rendelkezni.(user-interface)
+    IV.I  Biztonság
+    - A felhasználók által támasztott minimális biztonsági követelmény, a felhasználók egyértelmű azonosíthatósága, a felhasználók fiókjának a relatív biztonsága.
+      Visszaélések esetén, a gyors reagáláson túl, a viszaélés során keletkezett illegális állapotok viszaállítása a legális állapotokba.
+      Ezen minimális elvárásokat felhasználónév + jelszó, illetve loggolás megoldásokkal valósítja meg a projekt.
 
 V. 	Rendszer követelmények:
-(pl ha pcn fut akkor legyen mobilis minden szoftverre)
+    - Működő internetkapcsolat
+    - Windows operációs rendszer WinXp/WinVista/win7/Win8-8.1/Win10
+    - Minimum 512 Mb-RAM
+    - Minimum Pentium 4
 
 VI.	Követelményi lista:
 (Milyen funkciókat tartalmazzon)
