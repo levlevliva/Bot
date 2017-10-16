@@ -3,7 +3,11 @@ Projekt várható elkészülése: 2017.11.21
 
 Követelmény specifikáció
 
-Ajánlatkéréshez küldje: mfecske95@gmail.com címre a kitöltött sablont. Nem szükséges minden pontot kitölteni, csak amennyit biztosan tud az ajánlatkéréshez. Ha valamit nem értenénk, telefonon vagy emailben keresni fogjuk.
+Ajánlatkéréshez küldje: mfecske95@gmail.com címre a kitöltött sablont. 
+Nem szükséges minden pontot kitölteni, csak amennyit biztosan tud az ajánlatkéréshez.
+Ha valamit nem értenénk, telefonon vagy emailben keresni fogjuk. 
+A program célja olyan Bot program létrehozása amely internetes játékban a tapasztalat (xp) gyűjtési.
+Az alkalmazás kivitelezésevárhatóan 2 hónap.
 
 Bot alkalmazás fejlesztés
 
