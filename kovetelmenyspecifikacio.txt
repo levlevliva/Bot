@@ -23,6 +23,10 @@ II.	Bot alkalmazás rövid leírása:
 (Az alkalmazás rövid 1-2 mondatos leírása, mit a lényege, mi célból)
 
 III.	Funkcionális követelmények:
+Automatizálja a felhasználói fiókot.Könnyítsen a felhasználó játék menetén.Összeomlás mentes szoftver műkődés.
+A játékban a autómatikusan végigjátssza a bónusz térképeket ezzel sok előnyhöz juttatja a felhasználót.
+Anormál térképeken automatikusan gyűjtögeti a zsákmányokat. A boos térképeken gyűjtöget.
+  
 
 IV.	Felhasználói követelmények:
 (pl ha az alkalmazást letálcázzuk akkor az fusson a háttérben.)
