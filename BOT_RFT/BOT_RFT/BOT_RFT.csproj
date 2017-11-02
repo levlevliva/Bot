@@ -52,9 +52,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Seafight\Messages\HttpClient.cs" />
     <Compile Include="HttpWeb\RequestBuilder.cs" />
     <Compile Include="HttpWeb\RequestMethod.cs" />
+    <Compile Include="Seafight\Constants\AmsTypes.cs" />
+    <Compile Include="Seafight\Constants\Items.cs" />
     <Compile Include="Seafight\Messages\AbortAttackMessage.cs" />
     <Compile Include="Seafight\Messages\ActionItemStub.cs" />
     <Compile Include="Seafight\Messages\Message.cs" />
