@@ -32,6 +32,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BasicFormatsForCore">
+      <HintPath>..\..\..\..\..\Desktop\BoxyB\BoxyBot\bin\Debug\BasicFormatsForCore.dll</HintPath>
+    </Reference>
+    <Reference Include="BCMakeCert">
+      <HintPath>..\..\..\..\..\Desktop\BoxyB\BoxyBot\bin\Debug\BCMakeCert.dll</HintPath>
+    </Reference>
+    <Reference Include="CertMaker">
+      <HintPath>..\..\..\..\..\Desktop\BoxyB\BoxyBot\bin\Debug\CertMaker.dll</HintPath>
+    </Reference>
+    <Reference Include="EQATEC.Analytics.Monitor">
+      <HintPath>..\..\..\..\..\Desktop\BoxyB\BoxyBot\bin\Debug\EQATEC.Analytics.Monitor.dll</HintPath>
+    </Reference>
+    <Reference Include="FiddlerCore">
+      <HintPath>..\..\..\..\..\Desktop\BoxyB\BoxyBot\bin\Debug\FiddlerCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\Desktop\BoxyB\BoxyBot\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="socks5">
+      <HintPath>..\..\..\..\..\Desktop\BoxyB\BoxyBot\bin\Debug\socks5.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
@@ -64,6 +85,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Seafight\Messages\UserInitMessage.cs" />
+    <Compile Include="Util\HelpTools.cs" />
+    <Compile Include="Util\StringCipher.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,6 +111,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Licensing\" />
+    <Folder Include="Proxy\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
