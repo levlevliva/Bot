@@ -1,0 +1,53 @@
+﻿<Properties StartupConfiguration="{D679FEEB-43DA-46C7-8A21-089E38CA64DA}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+    <Files>
+      <File FileName="Form1.cs" Line="32" Column="1" />
+      <File FileName="Seafight/SeafightMethods.cs" Line="54" Column="13" />
+      <File FileName="Seafight/Account.cs" Line="10" Column="18" />
+      <File FileName="Seafight/BotMethods.cs" Line="114" Column="1" />
+      <File FileName="Seafight/Client.cs" Line="23" Column="14" />
+      <File FileName="Seafight/Message.cs" Line="1" Column="1" />
+      <File FileName="Seafight/PositionCalculator.cs" Line="1" Column="1" />
+      <File FileName="BotLogic.cs" Line="111" Column="30" />
+      <File FileName="Seafight/Messages/AmsUpdateMessage.cs" Line="48" Column="49" />
+      <File FileName="Seafight/Messages/AmsUpdateValue.cs" Line="22" Column="24" />
+      <File FileName="Seafight/Messages/BoxInitMessage.cs" Line="55" Column="104" />
+      <File FileName="Seafight/Messages/BoxRemoveMessage.cs" Line="31" Column="106" />
+      <File FileName="Seafight/Messages/ClientInitMessage.cs" Line="52" Column="87" />
+      <File FileName="Seafight/Messages/DisplayResourceIDMessage.cs" Line="43" Column="48" />
+      <File FileName="Seafight/Messages/HeartbeatMessage.cs" Line="46" Column="57" />
+      <File FileName="Seafight/Messages/LoginMessage.cs" Line="38" Column="57" />
+      <File FileName="Seafight/Messages/MapChangeMessage.cs" Line="38" Column="104" />
+      <File FileName="Seafight/Messages/MapReturnToOldMapMessage.cs" Line="23" Column="26" />
+      <File FileName="Seafight/Messages/MapStub.cs" Line="57" Column="45" />
+      <File FileName="Seafight/Messages/MoveMessage.cs" Line="27" Column="97" />
+      <File FileName="Seafight/Messages/PositionStub.cs" Line="30" Column="98" />
+      <File FileName="Seafight/Messages/RepairMessage.cs" Line="30" Column="26" />
+      <File FileName="Seafight/Messages/RouteMessage.cs" Line="35" Column="49" />
+      <File FileName="Seafight/Messages/ShipPointsStub.cs" Line="41" Column="69" />
+      <File FileName="Seafight/Messages/UserInitMessage.cs" Line="92" Column="32" />
+      <File FileName="Seafight/WinInetInterop.cs" Line="274" Column="26" />
+      <File FileName="SFCollector.csproj" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="22" Column="61" />
+      <File FileName="Seafight/Messages/MonsterInitMessage.cs" Line="75" Column="100" />
+      <File FileName="Seafight/Messages/HarpoonAttackMessage.cs" Line="29" Column="54" />
+      <File FileName="Seafight/Messages/DisplayHitMessage.cs" Line="61" Column="48" />
+      <File FileName="Seafight/Messages/MonsterRemoveMessage.cs" Line="24" Column="114" />
+      <File FileName="BotSession.cs" Line="1" Column="1" />
+      <File FileName="Seafight/Messages/ActionItemUseMessage.cs" Line="24" Column="113" />
+      <File FileName="Seafight/Messages/CannonAttackMessage.cs" Line="34" Column="54" />
+      <File FileName="Seafight/Messages/ShipEntityInfoType.cs" Line="1" Column="1" />
+      <File FileName="Seafight/Messages/ShipInitMessage.cs" Line="124" Column="47" />
+      <File FileName="Seafight/Messages/ShipRemoveMessage.cs" Line="46" Column="51" />
+      <File FileName="Seafight/Messages/StopMessage.cs" Line="49" Column="49" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.SFCollector PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <AuthorInfo Name="delemojo" Email="delemojo@web.de" Copyright="2017-2019" Company="delemojo" Trademark="delemojo" />
+  <MultiItemStartupConfigurations />
+</Properties>

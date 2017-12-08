@@ -1,0 +1,13 @@
+D:\Anwendungen\Microsoft Visual Studio\Projects\Seafight\SFCollector\SFCollector\bin\Debug\SFCollector.exe.config
+D:\Anwendungen\Microsoft Visual Studio\Projects\Seafight\SFCollector\SFCollector\bin\Debug\SFCollector.exe
+D:\Anwendungen\Microsoft Visual Studio\Projects\Seafight\SFCollector\SFCollector\bin\Debug\SFCollector.pdb
+D:\Anwendungen\Microsoft Visual Studio\Projects\Seafight\SFCollector\SFCollector\obj\Debug\SFCollector.csprojResolveAssemblyReference.cache
+D:\Anwendungen\Microsoft Visual Studio\Projects\Seafight\SFCollector\SFCollector\obj\Debug\SFCollector.Form1.resources
+D:\Anwendungen\Microsoft Visual Studio\Projects\Seafight\SFCollector\SFCollector\obj\Debug\SFCollector.Properties.Resources.resources
+D:\Anwendungen\Microsoft Visual Studio\Projects\Seafight\SFCollector\SFCollector\obj\Debug\SFCollector.csproj.GenerateResource.Cache
+D:\Anwendungen\Microsoft Visual Studio\Projects\Seafight\SFCollector\SFCollector\obj\Debug\SFCollector.exe
+D:\Anwendungen\Microsoft Visual Studio\Projects\Seafight\SFCollector\SFCollector\obj\Debug\SFCollector.pdb
+D:\Anwendungen\Microsoft Visual Studio\Projects\Seafight\SFCollector\SFCollector\bin\Debug\FiddlerCore4.dll
+D:\Anwendungen\Microsoft Visual Studio\Projects\Seafight\SFCollector\SFCollector\bin\Debug\EQATEC.Analytics.Monitor.dll
+D:\Anwendungen\Microsoft Visual Studio\Projects\Seafight\SFCollector\SFCollector\bin\Debug\FiddlerCore4.pdb
+D:\Anwendungen\Microsoft Visual Studio\Projects\Seafight\SFCollector\SFCollector\bin\Debug\FiddlerCore4.xml
