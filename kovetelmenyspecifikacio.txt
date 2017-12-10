@@ -1,31 +1,25 @@
-﻿Projekt név: SFBot
+Projekt név: SFCollector
 Projekt várható elkészülése: 2017.11.21
 
 Követelmény specifikáció
 
-Ajánlatkéréshez küldje: mfecske95@gmail.com címre a kitöltött sablont. 
-Nem szükséges minden pontot kitölteni, csak amennyit biztosan tud az ajánlatkéréshez.
-Ha valamit nem értenénk, telefonon vagy emailben keresni fogjuk. 
-A program célja olyan Bot program létrehozása amely internetes játékban a tapasztalat(xp) gyűjtése.
+A program célja olyan Bot program létrehozása amely internetes játékban automatizált játékmenetet tesz lehetővé felhasználói beavatkozás nélkül.
 Az alkalmazás kivitelezése várhatóan 2 hónap.
 
 Bot alkalmazás fejlesztés
 
-Név:		(ajánlatkérő neve)
-Telefon:	(telefonos elréhetőség)
-e-mail:		(e-mail )
-Account név:	(felhasználó név)
-Jelszó:		(felhasználóhoz való jelszó)
-
 I.	Választott platform:	PC(Web)
 
 II.	Bot alkalmazás rövid leírása:
-(Az alkalmazás rövid 1-2 mondatos leírása, mit a lényege, mi célból)
+-Automatizált játékmenetet tesz lehetővé a szoftver, így a felhasználóját előnyökhöz juttatja.
+-Az alkalmazás rendelkezik standard illetve prémium funkciókkal, ezutóbbi csak a licensz megvásárlása után használható, vagy ameddig a felhasználónak aktív a 
+shareware licensze (48 óra).
+
 
 III.	Funkcionális követelmények:
 Automatizálja a felhasználói fiókot.Könnyítsen a felhasználó játék menetén.Összeomlás mentes szoftver műkődés.
 A játékban a autómatikusan végigjátssza a bónusz térképeket ezzel sok előnyhöz juttatja a felhasználót.
-Anormál térképeken automatikusan gyűjtögeti a zsákmányokat. A boos térképeken gyűjtöget.
+Anormál térképeken automatikusan gyűjtögeti a zsákmányokat. A boss térképeken gyűjtöget.
   
 
 IV.	Felhasználói követelmények:
@@ -44,8 +38,22 @@ V. 	Rendszer követelmények:
     - Minimum Pentium 4
 
 VI.	Követelményi lista:
-(Milyen funkciókat tartalmazzon)
+-Automatikus javítás
+-Beállítható automatikus start opció bejelentkezés után.
+-Multilanguage opció.
+-Beállítások mentése opció (számítógépen tárolt global resource fájl, később cloud alapú mentés).
+-Kódolt átjáró a licensz szerver valamint a kliens között(Reverse engineering, crack elleni védelem, valamint biztonságos fizetési csatorna).
+-A program nem használható Virtuális Számítógépeken(licensz rendszer kijátszását tenné lehetővé).
 
-VII.	Elvárása/igénye az alkalmazáshoz.
 
+VII. Árajánlat
 
+-A program rendelkezik saját licensz rendszerrel amely a számítógép hardwareeiből generál egy "HWID"-t ami minden számítógépnek egyedi, így nincs szükség felhasználói
+regisztrációra, illetve sokkal hatékonyabb módszer.
+-A szoftvert csak bérelni lehet, tényleges megvásárlására lehetőség nincs, pénzvisszatérítés nincs, illetve a szoftver sajátosságaiból adódóan a használó 
+megszegi a Bigpoint GmbH által megfogalmazott ÁÜSZ & ÁFSZ-t így az accountja esetleges zárolásáért felelősséget nem vállalunk.
+-A szoftver bérlésével a felhasználó beleegyezik abba, hogy adatokat továbbítsunk a szervereink felé, illetve ezeket meghatározatlan ideig tároljuk is (HWID, UserID, SessionID, Számítógép név, IP cím).
+-A megvásárolt licensz nem garantálja a program folyamatos működését (pl.: Amennyiben a játék algoritmusa megváltozik, így ellehetetlenítve a program működését, nem áll
+módunkban a licensz hátralévő időtartamát visszatéríteni).
+-A licensz ára 6,49€/1 hónap 14,99€/3 hónap.
+-A szoftver lebutított demo funkciókkal is rendelkezik így ingyenesen is elérhető.
