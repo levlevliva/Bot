@@ -39,3 +39,4 @@ C:\Users\Levente\Desktop\RFT_BOT_PROJECT\BOT_RFT\obj\Debug\SFCollector.Propertie
 C:\Users\Levente\Desktop\RFT_BOT_PROJECT\BOT_RFT\obj\Debug\SFCollector.csproj.GenerateResource.Cache
 C:\Users\Levente\Desktop\RFT_BOT_PROJECT\BOT_RFT\obj\Debug\SFCollector.exe
 C:\Users\Levente\Desktop\RFT_BOT_PROJECT\BOT_RFT\obj\Debug\SFCollector.pdb
+C:\Users\Levente\Desktop\RFT_BOT_PROJECT\BOT_RFT\obj\Debug\SFCollector.Resources.en.resources

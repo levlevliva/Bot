@@ -33,9 +33,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.stats_tab = new System.Windows.Forms.TabPage();
             this.positionLabel = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.stat_currentposition_text = new System.Windows.Forms.Label();
             this.sessionxplabel = new System.Windows.Forms.Label();
             this.sessiongoldlabel = new System.Windows.Forms.Label();
             this.sessionmojoslabel = new System.Windows.Forms.Label();
@@ -43,24 +43,24 @@
             this.sessionmonsterslabel = new System.Windows.Forms.Label();
             this.sessionnpcslabel = new System.Windows.Forms.Label();
             this.sessionboxeslabel = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.stat_collectedxp_text = new System.Windows.Forms.Label();
+            this.stat_collectedgolds_text = new System.Windows.Forms.Label();
+            this.stat_collectedmojos_text = new System.Windows.Forms.Label();
+            this.stat_collectedpearls_text = new System.Windows.Forms.Label();
+            this.stat_monster_text = new System.Windows.Forms.Label();
+            this.stat_npc_text = new System.Windows.Forms.Label();
+            this.stat_glitter_text = new System.Windows.Forms.Label();
+            this.settings_tab = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.login_tab = new System.Windows.Forms.TabPage();
             this.autoStartCheckbox = new System.Windows.Forms.CheckBox();
             this.reInstallCertbox = new System.Windows.Forms.CheckBox();
-            this.loginButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.login_text = new System.Windows.Forms.Button();
+            this.username_text = new System.Windows.Forms.Label();
             this.passwordBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.password_text = new System.Windows.Forms.Label();
             this.usernameBox = new System.Windows.Forms.TextBox();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.settings2_tab = new System.Windows.Forms.TabPage();
             this.innerSettingsTabControl = new System.Windows.Forms.TabControl();
             this.CollectorTabpage = new System.Windows.Forms.TabPage();
             this.collectCargoCheckbox = new System.Windows.Forms.CheckBox();
@@ -69,7 +69,7 @@
             this.collectMeatCheckbox = new System.Windows.Forms.CheckBox();
             this.collectGlittersCheckbox = new System.Windows.Forms.CheckBox();
             this.repAtHpNmrcud = new System.Windows.Forms.NumericUpDown();
-            this.label11 = new System.Windows.Forms.Label();
+            this.collector_rep_text = new System.Windows.Forms.Label();
             this.collectChestsCheckbox = new System.Windows.Forms.CheckBox();
             this.npcTabpage = new System.Windows.Forms.TabPage();
             this.showAllNPCsButton = new System.Windows.Forms.Button();
@@ -99,11 +99,11 @@
             this.MonsterHarpoon = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.shootMonstersCheckbox = new System.Windows.Forms.CheckBox();
             this.raidTabpage = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.raid_settings_group_text = new System.Windows.Forms.GroupBox();
             this.raidRepAtNumeric = new System.Windows.Forms.NumericUpDown();
-            this.label13 = new System.Windows.Forms.Label();
+            this.raid_repair_text = new System.Windows.Forms.Label();
             this.autoJoinRaidCheckbox = new System.Windows.Forms.CheckBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.raid_npc_ammo_text = new System.Windows.Forms.Label();
             this.shootBossCheckbox = new System.Windows.Forms.CheckBox();
             this.leaveRaidButton = new System.Windows.Forms.Button();
             this.joinRaidButton = new System.Windows.Forms.Button();
@@ -112,26 +112,31 @@
             this.bonusmapTabpage = new System.Windows.Forms.TabPage();
             this.leaveBonusmapButton = new System.Windows.Forms.Button();
             this.joinBonusmapButton = new System.Windows.Forms.Button();
-            this.label18 = new System.Windows.Forms.Label();
+            this.bonusmap_mapname_text = new System.Windows.Forms.Label();
             this.bonusmapCombobox = new System.Windows.Forms.ComboBox();
             this.autoJoinBonusmapCheckbox = new System.Windows.Forms.CheckBox();
             this.repAtBonusmapNumeric = new System.Windows.Forms.NumericUpDown();
-            this.label17 = new System.Windows.Forms.Label();
+            this.bonusmap_repair_text = new System.Windows.Forms.Label();
             this.bonusmapAmmoTextbox = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
+            this.bonusmap_ammo_text = new System.Windows.Forms.Label();
             this.saveSettingsButton = new System.Windows.Forms.Button();
             this.startButton = new System.Windows.Forms.Button();
             this.stopbutton = new System.Windows.Forms.Button();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.map_tab = new System.Windows.Forms.TabPage();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.logBox = new System.Windows.Forms.RichTextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.bgTimer = new System.Windows.Forms.Timer(this.components);
-            this.tabPage4.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.languagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.germanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hungarianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stats_tab.SuspendLayout();
+            this.settings_tab.SuspendLayout();
             this.tabControl2.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
+            this.login_tab.SuspendLayout();
+            this.settings2_tab.SuspendLayout();
             this.innerSettingsTabControl.SuspendLayout();
             this.CollectorTabpage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.repAtHpNmrcud)).BeginInit();
@@ -140,38 +145,39 @@
             this.monsterTabpage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.monsterGridView)).BeginInit();
             this.raidTabpage.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.raid_settings_group_text.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.raidRepAtNumeric)).BeginInit();
             this.bonusmapTabpage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.repAtBonusmapNumeric)).BeginInit();
-            this.tabPage1.SuspendLayout();
+            this.map_tab.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabPage4
+            // stats_tab
             // 
-            this.tabPage4.Controls.Add(this.positionLabel);
-            this.tabPage4.Controls.Add(this.label12);
-            this.tabPage4.Controls.Add(this.sessionxplabel);
-            this.tabPage4.Controls.Add(this.sessiongoldlabel);
-            this.tabPage4.Controls.Add(this.sessionmojoslabel);
-            this.tabPage4.Controls.Add(this.sessionpearlslabel);
-            this.tabPage4.Controls.Add(this.sessionmonsterslabel);
-            this.tabPage4.Controls.Add(this.sessionnpcslabel);
-            this.tabPage4.Controls.Add(this.sessionboxeslabel);
-            this.tabPage4.Controls.Add(this.label10);
-            this.tabPage4.Controls.Add(this.label9);
-            this.tabPage4.Controls.Add(this.label8);
-            this.tabPage4.Controls.Add(this.label7);
-            this.tabPage4.Controls.Add(this.label6);
-            this.tabPage4.Controls.Add(this.label5);
-            this.tabPage4.Controls.Add(this.label4);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(379, 336);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Statistics";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.stats_tab.Controls.Add(this.positionLabel);
+            this.stats_tab.Controls.Add(this.stat_currentposition_text);
+            this.stats_tab.Controls.Add(this.sessionxplabel);
+            this.stats_tab.Controls.Add(this.sessiongoldlabel);
+            this.stats_tab.Controls.Add(this.sessionmojoslabel);
+            this.stats_tab.Controls.Add(this.sessionpearlslabel);
+            this.stats_tab.Controls.Add(this.sessionmonsterslabel);
+            this.stats_tab.Controls.Add(this.sessionnpcslabel);
+            this.stats_tab.Controls.Add(this.sessionboxeslabel);
+            this.stats_tab.Controls.Add(this.stat_collectedxp_text);
+            this.stats_tab.Controls.Add(this.stat_collectedgolds_text);
+            this.stats_tab.Controls.Add(this.stat_collectedmojos_text);
+            this.stats_tab.Controls.Add(this.stat_collectedpearls_text);
+            this.stats_tab.Controls.Add(this.stat_monster_text);
+            this.stats_tab.Controls.Add(this.stat_npc_text);
+            this.stats_tab.Controls.Add(this.stat_glitter_text);
+            this.stats_tab.Location = new System.Drawing.Point(4, 22);
+            this.stats_tab.Name = "stats_tab";
+            this.stats_tab.Size = new System.Drawing.Size(379, 440);
+            this.stats_tab.TabIndex = 3;
+            this.stats_tab.Text = "Statistics";
+            this.stats_tab.UseVisualStyleBackColor = true;
             // 
             // positionLabel
             // 
@@ -183,15 +189,15 @@
             this.positionLabel.TabIndex = 15;
             this.positionLabel.Text = "/";
             // 
-            // label12
+            // stat_currentposition_text
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(8, 252);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(47, 13);
-            this.label12.TabIndex = 14;
-            this.label12.Text = "Position:";
+            this.stat_currentposition_text.AutoSize = true;
+            this.stat_currentposition_text.Location = new System.Drawing.Point(8, 252);
+            this.stat_currentposition_text.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.stat_currentposition_text.Name = "stat_currentposition_text";
+            this.stat_currentposition_text.Size = new System.Drawing.Size(47, 13);
+            this.stat_currentposition_text.TabIndex = 14;
+            this.stat_currentposition_text.Text = "Position:";
             // 
             // sessionxplabel
             // 
@@ -256,117 +262,117 @@
             this.sessionboxeslabel.TabIndex = 7;
             this.sessionboxeslabel.Text = "/";
             // 
-            // label10
+            // stat_collectedxp_text
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(8, 200);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(30, 13);
-            this.label10.TabIndex = 6;
-            this.label10.Text = "+XP:";
+            this.stat_collectedxp_text.AutoSize = true;
+            this.stat_collectedxp_text.Location = new System.Drawing.Point(8, 200);
+            this.stat_collectedxp_text.Name = "stat_collectedxp_text";
+            this.stat_collectedxp_text.Size = new System.Drawing.Size(30, 13);
+            this.stat_collectedxp_text.TabIndex = 6;
+            this.stat_collectedxp_text.Text = "+XP:";
             // 
-            // label9
+            // stat_collectedgolds_text
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(8, 173);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 13);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "+Gold:";
+            this.stat_collectedgolds_text.AutoSize = true;
+            this.stat_collectedgolds_text.Location = new System.Drawing.Point(8, 173);
+            this.stat_collectedgolds_text.Name = "stat_collectedgolds_text";
+            this.stat_collectedgolds_text.Size = new System.Drawing.Size(38, 13);
+            this.stat_collectedgolds_text.TabIndex = 5;
+            this.stat_collectedgolds_text.Text = "+Gold:";
             // 
-            // label8
+            // stat_collectedmojos_text
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(8, 148);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(44, 13);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "+Mojos:";
+            this.stat_collectedmojos_text.AutoSize = true;
+            this.stat_collectedmojos_text.Location = new System.Drawing.Point(8, 148);
+            this.stat_collectedmojos_text.Name = "stat_collectedmojos_text";
+            this.stat_collectedmojos_text.Size = new System.Drawing.Size(44, 13);
+            this.stat_collectedmojos_text.TabIndex = 4;
+            this.stat_collectedmojos_text.Text = "+Mojos:";
             // 
-            // label7
+            // stat_collectedpearls_text
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(8, 125);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 13);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "+Pearls:";
+            this.stat_collectedpearls_text.AutoSize = true;
+            this.stat_collectedpearls_text.Location = new System.Drawing.Point(8, 125);
+            this.stat_collectedpearls_text.Name = "stat_collectedpearls_text";
+            this.stat_collectedpearls_text.Size = new System.Drawing.Size(45, 13);
+            this.stat_collectedpearls_text.TabIndex = 3;
+            this.stat_collectedpearls_text.Text = "+Pearls:";
             // 
-            // label6
+            // stat_monster_text
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(8, 77);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 13);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Monsters:";
+            this.stat_monster_text.AutoSize = true;
+            this.stat_monster_text.Location = new System.Drawing.Point(8, 77);
+            this.stat_monster_text.Name = "stat_monster_text";
+            this.stat_monster_text.Size = new System.Drawing.Size(53, 13);
+            this.stat_monster_text.TabIndex = 2;
+            this.stat_monster_text.Text = "Monsters:";
             // 
-            // label5
+            // stat_npc_text
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(8, 53);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 13);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "NPCs:";
+            this.stat_npc_text.AutoSize = true;
+            this.stat_npc_text.Location = new System.Drawing.Point(8, 53);
+            this.stat_npc_text.Name = "stat_npc_text";
+            this.stat_npc_text.Size = new System.Drawing.Size(37, 13);
+            this.stat_npc_text.TabIndex = 1;
+            this.stat_npc_text.Text = "NPCs:";
             // 
-            // label4
+            // stat_glitter_text
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 28);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 13);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Glitters:";
+            this.stat_glitter_text.AutoSize = true;
+            this.stat_glitter_text.Location = new System.Drawing.Point(8, 28);
+            this.stat_glitter_text.Name = "stat_glitter_text";
+            this.stat_glitter_text.Size = new System.Drawing.Size(42, 13);
+            this.stat_glitter_text.TabIndex = 0;
+            this.stat_glitter_text.Text = "Glitters:";
             // 
-            // tabPage2
+            // settings_tab
             // 
-            this.tabPage2.Controls.Add(this.tabControl2);
-            this.tabPage2.Controls.Add(this.saveSettingsButton);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage2.Size = new System.Drawing.Size(379, 336);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Settings";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.settings_tab.Controls.Add(this.tabControl2);
+            this.settings_tab.Controls.Add(this.saveSettingsButton);
+            this.settings_tab.Location = new System.Drawing.Point(4, 22);
+            this.settings_tab.Name = "settings_tab";
+            this.settings_tab.Padding = new System.Windows.Forms.Padding(3);
+            this.settings_tab.Size = new System.Drawing.Size(379, 453);
+            this.settings_tab.TabIndex = 1;
+            this.settings_tab.Text = "Settings";
+            this.settings_tab.UseVisualStyleBackColor = true;
             // 
             // tabControl2
             // 
-            this.tabControl2.Controls.Add(this.tabPage5);
-            this.tabControl2.Controls.Add(this.tabPage6);
+            this.tabControl2.Controls.Add(this.login_tab);
+            this.tabControl2.Controls.Add(this.settings2_tab);
             this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl2.Location = new System.Drawing.Point(3, 3);
-            this.tabControl2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl2.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(373, 305);
+            this.tabControl2.Size = new System.Drawing.Size(373, 422);
             this.tabControl2.TabIndex = 12;
             // 
-            // tabPage5
+            // login_tab
             // 
-            this.tabPage5.Controls.Add(this.autoStartCheckbox);
-            this.tabPage5.Controls.Add(this.reInstallCertbox);
-            this.tabPage5.Controls.Add(this.loginButton);
-            this.tabPage5.Controls.Add(this.label1);
-            this.tabPage5.Controls.Add(this.passwordBox);
-            this.tabPage5.Controls.Add(this.label2);
-            this.tabPage5.Controls.Add(this.usernameBox);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage5.Size = new System.Drawing.Size(365, 279);
-            this.tabPage5.TabIndex = 0;
-            this.tabPage5.Text = "Login";
-            this.tabPage5.UseVisualStyleBackColor = true;
+            this.login_tab.Controls.Add(this.autoStartCheckbox);
+            this.login_tab.Controls.Add(this.reInstallCertbox);
+            this.login_tab.Controls.Add(this.login_text);
+            this.login_tab.Controls.Add(this.username_text);
+            this.login_tab.Controls.Add(this.passwordBox);
+            this.login_tab.Controls.Add(this.password_text);
+            this.login_tab.Controls.Add(this.usernameBox);
+            this.login_tab.Location = new System.Drawing.Point(4, 22);
+            this.login_tab.Margin = new System.Windows.Forms.Padding(2);
+            this.login_tab.Name = "login_tab";
+            this.login_tab.Padding = new System.Windows.Forms.Padding(2);
+            this.login_tab.Size = new System.Drawing.Size(365, 396);
+            this.login_tab.TabIndex = 0;
+            this.login_tab.Text = "Login";
+            this.login_tab.UseVisualStyleBackColor = true;
             // 
             // autoStartCheckbox
             // 
             this.autoStartCheckbox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.autoStartCheckbox.AutoSize = true;
-            this.autoStartCheckbox.Location = new System.Drawing.Point(48, 215);
-            this.autoStartCheckbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.autoStartCheckbox.Location = new System.Drawing.Point(48, 274);
+            this.autoStartCheckbox.Margin = new System.Windows.Forms.Padding(2);
             this.autoStartCheckbox.Name = "autoStartCheckbox";
             this.autoStartCheckbox.Size = new System.Drawing.Size(73, 17);
             this.autoStartCheckbox.TabIndex = 7;
@@ -377,8 +383,8 @@
             // 
             this.reInstallCertbox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.reInstallCertbox.AutoSize = true;
-            this.reInstallCertbox.Location = new System.Drawing.Point(48, 189);
-            this.reInstallCertbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.reInstallCertbox.Location = new System.Drawing.Point(48, 248);
+            this.reInstallCertbox.Margin = new System.Windows.Forms.Padding(2);
             this.reInstallCertbox.Name = "reInstallCertbox";
             this.reInstallCertbox.Size = new System.Drawing.Size(119, 17);
             this.reInstallCertbox.TabIndex = 6;
@@ -386,65 +392,65 @@
             this.reInstallCertbox.UseVisualStyleBackColor = true;
             this.reInstallCertbox.CheckedChanged += new System.EventHandler(this.reInstallCertbox_CheckedChanged);
             // 
-            // loginButton
+            // login_text
             // 
-            this.loginButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.loginButton.Location = new System.Drawing.Point(48, 150);
-            this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(254, 22);
-            this.loginButton.TabIndex = 3;
-            this.loginButton.Text = "Login";
-            this.loginButton.UseVisualStyleBackColor = true;
-            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
+            this.login_text.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.login_text.Location = new System.Drawing.Point(48, 209);
+            this.login_text.Name = "login_text";
+            this.login_text.Size = new System.Drawing.Size(254, 22);
+            this.login_text.TabIndex = 3;
+            this.login_text.Text = "Login";
+            this.login_text.UseVisualStyleBackColor = true;
+            this.login_text.Click += new System.EventHandler(this.loginButton_Click);
             // 
-            // label1
+            // username_text
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 89);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Username:";
+            this.username_text.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.username_text.AutoSize = true;
+            this.username_text.Location = new System.Drawing.Point(46, 148);
+            this.username_text.Name = "username_text";
+            this.username_text.Size = new System.Drawing.Size(58, 13);
+            this.username_text.TabIndex = 4;
+            this.username_text.Text = "Username:";
             // 
             // passwordBox
             // 
             this.passwordBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.passwordBox.Location = new System.Drawing.Point(110, 118);
+            this.passwordBox.Location = new System.Drawing.Point(110, 177);
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.Size = new System.Drawing.Size(195, 20);
             this.passwordBox.TabIndex = 1;
             this.passwordBox.UseSystemPasswordChar = true;
             // 
-            // label2
+            // password_text
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(47, 119);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Password:";
+            this.password_text.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.password_text.AutoSize = true;
+            this.password_text.Location = new System.Drawing.Point(47, 178);
+            this.password_text.Name = "password_text";
+            this.password_text.Size = new System.Drawing.Size(56, 13);
+            this.password_text.TabIndex = 5;
+            this.password_text.Text = "Password:";
             // 
             // usernameBox
             // 
             this.usernameBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.usernameBox.Location = new System.Drawing.Point(110, 87);
+            this.usernameBox.Location = new System.Drawing.Point(110, 146);
             this.usernameBox.Name = "usernameBox";
             this.usernameBox.Size = new System.Drawing.Size(195, 20);
             this.usernameBox.TabIndex = 0;
             // 
-            // tabPage6
+            // settings2_tab
             // 
-            this.tabPage6.Controls.Add(this.innerSettingsTabControl);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage6.Size = new System.Drawing.Size(365, 279);
-            this.tabPage6.TabIndex = 1;
-            this.tabPage6.Text = "Settings";
-            this.tabPage6.UseVisualStyleBackColor = true;
+            this.settings2_tab.Controls.Add(this.innerSettingsTabControl);
+            this.settings2_tab.Location = new System.Drawing.Point(4, 22);
+            this.settings2_tab.Margin = new System.Windows.Forms.Padding(2);
+            this.settings2_tab.Name = "settings2_tab";
+            this.settings2_tab.Padding = new System.Windows.Forms.Padding(2);
+            this.settings2_tab.Size = new System.Drawing.Size(365, 396);
+            this.settings2_tab.TabIndex = 1;
+            this.settings2_tab.Text = "Settings";
+            this.settings2_tab.UseVisualStyleBackColor = true;
             // 
             // innerSettingsTabControl
             // 
@@ -455,10 +461,10 @@
             this.innerSettingsTabControl.Controls.Add(this.bonusmapTabpage);
             this.innerSettingsTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.innerSettingsTabControl.Location = new System.Drawing.Point(2, 2);
-            this.innerSettingsTabControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.innerSettingsTabControl.Margin = new System.Windows.Forms.Padding(2);
             this.innerSettingsTabControl.Name = "innerSettingsTabControl";
             this.innerSettingsTabControl.SelectedIndex = 0;
-            this.innerSettingsTabControl.Size = new System.Drawing.Size(361, 275);
+            this.innerSettingsTabControl.Size = new System.Drawing.Size(361, 392);
             this.innerSettingsTabControl.TabIndex = 12;
             // 
             // CollectorTabpage
@@ -469,15 +475,15 @@
             this.CollectorTabpage.Controls.Add(this.collectMeatCheckbox);
             this.CollectorTabpage.Controls.Add(this.collectGlittersCheckbox);
             this.CollectorTabpage.Controls.Add(this.repAtHpNmrcud);
-            this.CollectorTabpage.Controls.Add(this.label11);
+            this.CollectorTabpage.Controls.Add(this.collector_rep_text);
             this.CollectorTabpage.Controls.Add(this.collectChestsCheckbox);
             this.CollectorTabpage.Location = new System.Drawing.Point(4, 22);
-            this.CollectorTabpage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CollectorTabpage.Margin = new System.Windows.Forms.Padding(2);
             this.CollectorTabpage.Name = "CollectorTabpage";
-            this.CollectorTabpage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.CollectorTabpage.Size = new System.Drawing.Size(353, 249);
+            this.CollectorTabpage.Padding = new System.Windows.Forms.Padding(2);
+            this.CollectorTabpage.Size = new System.Drawing.Size(353, 366);
             this.CollectorTabpage.TabIndex = 0;
-            this.CollectorTabpage.Text = "Collector";
+            this.CollectorTabpage.Text = " ";
             this.CollectorTabpage.UseVisualStyleBackColor = true;
             // 
             // collectCargoCheckbox
@@ -494,7 +500,7 @@
             // 
             this.collectLionChestsCheckbox.AutoSize = true;
             this.collectLionChestsCheckbox.Location = new System.Drawing.Point(4, 102);
-            this.collectLionChestsCheckbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.collectLionChestsCheckbox.Margin = new System.Windows.Forms.Padding(2);
             this.collectLionChestsCheckbox.Name = "collectLionChestsCheckbox";
             this.collectLionChestsCheckbox.Size = new System.Drawing.Size(116, 17);
             this.collectLionChestsCheckbox.TabIndex = 6;
@@ -505,7 +511,7 @@
             // 
             this.collectEventChestsCheckbox.AutoSize = true;
             this.collectEventChestsCheckbox.Location = new System.Drawing.Point(4, 75);
-            this.collectEventChestsCheckbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.collectEventChestsCheckbox.Margin = new System.Windows.Forms.Padding(2);
             this.collectEventChestsCheckbox.Name = "collectEventChestsCheckbox";
             this.collectEventChestsCheckbox.Size = new System.Drawing.Size(124, 17);
             this.collectEventChestsCheckbox.TabIndex = 5;
@@ -534,7 +540,7 @@
             // 
             // repAtHpNmrcud
             // 
-            this.repAtHpNmrcud.Location = new System.Drawing.Point(62, 190);
+            this.repAtHpNmrcud.Location = new System.Drawing.Point(64, 189);
             this.repAtHpNmrcud.Maximum = new decimal(new int[] {
             99,
             0,
@@ -554,14 +560,14 @@
             0,
             0});
             // 
-            // label11
+            // collector_rep_text
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(4, 191);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(54, 13);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Rep HP <";
+            this.collector_rep_text.AutoSize = true;
+            this.collector_rep_text.Location = new System.Drawing.Point(4, 191);
+            this.collector_rep_text.Name = "collector_rep_text";
+            this.collector_rep_text.Size = new System.Drawing.Size(54, 13);
+            this.collector_rep_text.TabIndex = 1;
+            this.collector_rep_text.Text = "Rep HP <";
             // 
             // collectChestsCheckbox
             // 
@@ -585,10 +591,10 @@
             this.npcTabpage.Controls.Add(this.onlyFullHPNPCsCheckBox);
             this.npcTabpage.Controls.Add(this.npcGridView);
             this.npcTabpage.Location = new System.Drawing.Point(4, 22);
-            this.npcTabpage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.npcTabpage.Margin = new System.Windows.Forms.Padding(2);
             this.npcTabpage.Name = "npcTabpage";
-            this.npcTabpage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.npcTabpage.Size = new System.Drawing.Size(353, 249);
+            this.npcTabpage.Padding = new System.Windows.Forms.Padding(2);
+            this.npcTabpage.Size = new System.Drawing.Size(353, 353);
             this.npcTabpage.TabIndex = 3;
             this.npcTabpage.Text = "NPCs";
             this.npcTabpage.UseVisualStyleBackColor = true;
@@ -597,8 +603,8 @@
             // 
             this.showAllNPCsButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.showAllNPCsButton.Location = new System.Drawing.Point(7, 227);
-            this.showAllNPCsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.showAllNPCsButton.Location = new System.Drawing.Point(7, 331);
+            this.showAllNPCsButton.Margin = new System.Windows.Forms.Padding(2);
             this.showAllNPCsButton.Name = "showAllNPCsButton";
             this.showAllNPCsButton.Size = new System.Drawing.Size(342, 19);
             this.showAllNPCsButton.TabIndex = 40;
@@ -609,8 +615,8 @@
             // addNpcButton
             // 
             this.addNpcButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.addNpcButton.Location = new System.Drawing.Point(310, 202);
-            this.addNpcButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addNpcButton.Location = new System.Drawing.Point(310, 306);
+            this.addNpcButton.Margin = new System.Windows.Forms.Padding(2);
             this.addNpcButton.Name = "addNpcButton";
             this.addNpcButton.Size = new System.Drawing.Size(38, 19);
             this.addNpcButton.TabIndex = 39;
@@ -622,8 +628,8 @@
             // 
             this.addNPCTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.addNPCTextbox.Location = new System.Drawing.Point(61, 202);
-            this.addNPCTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addNPCTextbox.Location = new System.Drawing.Point(61, 306);
+            this.addNPCTextbox.Margin = new System.Windows.Forms.Padding(2);
             this.addNPCTextbox.Name = "addNPCTextbox";
             this.addNPCTextbox.Size = new System.Drawing.Size(246, 20);
             this.addNPCTextbox.TabIndex = 38;
@@ -632,7 +638,7 @@
             // 
             this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(4, 206);
+            this.label14.Location = new System.Drawing.Point(4, 310);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(54, 13);
@@ -643,7 +649,7 @@
             // 
             this.shootNpcsCheckbox.AutoSize = true;
             this.shootNpcsCheckbox.Location = new System.Drawing.Point(3, 5);
-            this.shootNpcsCheckbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.shootNpcsCheckbox.Margin = new System.Windows.Forms.Padding(2);
             this.shootNpcsCheckbox.Name = "shootNpcsCheckbox";
             this.shootNpcsCheckbox.Size = new System.Drawing.Size(84, 17);
             this.shootNpcsCheckbox.TabIndex = 36;
@@ -654,7 +660,7 @@
             // 
             this.collectWhileAttackCheckbox.AutoSize = true;
             this.collectWhileAttackCheckbox.Location = new System.Drawing.Point(214, 23);
-            this.collectWhileAttackCheckbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.collectWhileAttackCheckbox.Margin = new System.Windows.Forms.Padding(2);
             this.collectWhileAttackCheckbox.Name = "collectWhileAttackCheckbox";
             this.collectWhileAttackCheckbox.Size = new System.Drawing.Size(164, 17);
             this.collectWhileAttackCheckbox.TabIndex = 35;
@@ -665,7 +671,7 @@
             // 
             this.prioNPCsCheckbox.AutoSize = true;
             this.prioNPCsCheckbox.Location = new System.Drawing.Point(117, 23);
-            this.prioNPCsCheckbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.prioNPCsCheckbox.Margin = new System.Windows.Forms.Padding(2);
             this.prioNPCsCheckbox.Name = "prioNPCsCheckbox";
             this.prioNPCsCheckbox.Size = new System.Drawing.Size(95, 17);
             this.prioNPCsCheckbox.TabIndex = 34;
@@ -676,7 +682,7 @@
             // 
             this.onlyFullHPNPCsCheckBox.AutoSize = true;
             this.onlyFullHPNPCsCheckBox.Location = new System.Drawing.Point(3, 23);
-            this.onlyFullHPNPCsCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.onlyFullHPNPCsCheckBox.Margin = new System.Windows.Forms.Padding(2);
             this.onlyFullHPNPCsCheckBox.Name = "onlyFullHPNPCsCheckBox";
             this.onlyFullHPNPCsCheckBox.Size = new System.Drawing.Size(113, 17);
             this.onlyFullHPNPCsCheckBox.TabIndex = 33;
@@ -702,12 +708,12 @@
             this.boardNPCColumn});
             this.npcGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.npcGridView.Location = new System.Drawing.Point(3, 41);
-            this.npcGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.npcGridView.Margin = new System.Windows.Forms.Padding(2);
             this.npcGridView.Name = "npcGridView";
             this.npcGridView.RowHeadersVisible = false;
             this.npcGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.npcGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.npcGridView.Size = new System.Drawing.Size(346, 158);
+            this.npcGridView.Size = new System.Drawing.Size(346, 262);
             this.npcGridView.TabIndex = 3;
             // 
             // checkedNpcColumn
@@ -818,10 +824,10 @@
             this.monsterTabpage.Controls.Add(this.monsterGridView);
             this.monsterTabpage.Controls.Add(this.shootMonstersCheckbox);
             this.monsterTabpage.Location = new System.Drawing.Point(4, 22);
-            this.monsterTabpage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.monsterTabpage.Margin = new System.Windows.Forms.Padding(2);
             this.monsterTabpage.Name = "monsterTabpage";
-            this.monsterTabpage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.monsterTabpage.Size = new System.Drawing.Size(353, 249);
+            this.monsterTabpage.Padding = new System.Windows.Forms.Padding(2);
+            this.monsterTabpage.Size = new System.Drawing.Size(353, 353);
             this.monsterTabpage.TabIndex = 1;
             this.monsterTabpage.Text = "Monsters";
             this.monsterTabpage.UseVisualStyleBackColor = true;
@@ -830,7 +836,7 @@
             // 
             this.prioritizeMonstersCheckbox.AutoSize = true;
             this.prioritizeMonstersCheckbox.Location = new System.Drawing.Point(101, 10);
-            this.prioritizeMonstersCheckbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.prioritizeMonstersCheckbox.Margin = new System.Windows.Forms.Padding(2);
             this.prioritizeMonstersCheckbox.Name = "prioritizeMonstersCheckbox";
             this.prioritizeMonstersCheckbox.Size = new System.Drawing.Size(111, 17);
             this.prioritizeMonstersCheckbox.TabIndex = 45;
@@ -841,8 +847,8 @@
             // 
             this.showAllMonstersButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.showAllMonstersButton.Location = new System.Drawing.Point(7, 230);
-            this.showAllMonstersButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.showAllMonstersButton.Location = new System.Drawing.Point(7, 334);
+            this.showAllMonstersButton.Margin = new System.Windows.Forms.Padding(2);
             this.showAllMonstersButton.Name = "showAllMonstersButton";
             this.showAllMonstersButton.Size = new System.Drawing.Size(342, 20);
             this.showAllMonstersButton.TabIndex = 44;
@@ -853,8 +859,8 @@
             // addMonsterButton
             // 
             this.addMonsterButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.addMonsterButton.Location = new System.Drawing.Point(310, 205);
-            this.addMonsterButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addMonsterButton.Location = new System.Drawing.Point(310, 309);
+            this.addMonsterButton.Margin = new System.Windows.Forms.Padding(2);
             this.addMonsterButton.Name = "addMonsterButton";
             this.addMonsterButton.Size = new System.Drawing.Size(38, 20);
             this.addMonsterButton.TabIndex = 43;
@@ -866,8 +872,8 @@
             // 
             this.addMonsterTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.addMonsterTextbox.Location = new System.Drawing.Point(78, 206);
-            this.addMonsterTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addMonsterTextbox.Location = new System.Drawing.Point(78, 310);
+            this.addMonsterTextbox.Margin = new System.Windows.Forms.Padding(2);
             this.addMonsterTextbox.Name = "addMonsterTextbox";
             this.addMonsterTextbox.Size = new System.Drawing.Size(229, 20);
             this.addMonsterTextbox.TabIndex = 42;
@@ -876,7 +882,7 @@
             // 
             this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(4, 209);
+            this.label15.Location = new System.Drawing.Point(4, 313);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(70, 13);
@@ -900,12 +906,12 @@
             this.monsterGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.monsterGridView.Enabled = false;
             this.monsterGridView.Location = new System.Drawing.Point(2, 29);
-            this.monsterGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.monsterGridView.Margin = new System.Windows.Forms.Padding(2);
             this.monsterGridView.Name = "monsterGridView";
             this.monsterGridView.RowHeadersVisible = false;
             this.monsterGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.monsterGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.monsterGridView.Size = new System.Drawing.Size(350, 173);
+            this.monsterGridView.Size = new System.Drawing.Size(350, 277);
             this.monsterGridView.TabIndex = 1;
             this.monsterGridView.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.monsterGridView_DataError);
             // 
@@ -940,7 +946,7 @@
             // 
             this.shootMonstersCheckbox.AutoSize = true;
             this.shootMonstersCheckbox.Location = new System.Drawing.Point(3, 10);
-            this.shootMonstersCheckbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.shootMonstersCheckbox.Margin = new System.Windows.Forms.Padding(2);
             this.shootMonstersCheckbox.Name = "shootMonstersCheckbox";
             this.shootMonstersCheckbox.Size = new System.Drawing.Size(100, 17);
             this.shootMonstersCheckbox.TabIndex = 0;
@@ -950,34 +956,34 @@
             // 
             // raidTabpage
             // 
-            this.raidTabpage.Controls.Add(this.groupBox1);
-            this.raidTabpage.Controls.Add(this.label3);
+            this.raidTabpage.Controls.Add(this.raid_settings_group_text);
+            this.raidTabpage.Controls.Add(this.raid_npc_ammo_text);
             this.raidTabpage.Controls.Add(this.shootBossCheckbox);
             this.raidTabpage.Controls.Add(this.leaveRaidButton);
             this.raidTabpage.Controls.Add(this.joinRaidButton);
             this.raidTabpage.Controls.Add(this.shootBossAmmoComboBox);
             this.raidTabpage.Controls.Add(this.raidNpcAmmoComboBox);
             this.raidTabpage.Location = new System.Drawing.Point(4, 22);
-            this.raidTabpage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.raidTabpage.Margin = new System.Windows.Forms.Padding(2);
             this.raidTabpage.Name = "raidTabpage";
-            this.raidTabpage.Size = new System.Drawing.Size(353, 249);
+            this.raidTabpage.Size = new System.Drawing.Size(353, 353);
             this.raidTabpage.TabIndex = 2;
             this.raidTabpage.Text = "Raid";
             this.raidTabpage.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // raid_settings_group_text
             // 
-            this.groupBox1.Controls.Add(this.raidRepAtNumeric);
-            this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.autoJoinRaidCheckbox);
-            this.groupBox1.Location = new System.Drawing.Point(4, 97);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(349, 93);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Raid Settings";
+            this.raid_settings_group_text.Controls.Add(this.raidRepAtNumeric);
+            this.raid_settings_group_text.Controls.Add(this.raid_repair_text);
+            this.raid_settings_group_text.Controls.Add(this.autoJoinRaidCheckbox);
+            this.raid_settings_group_text.Location = new System.Drawing.Point(4, 97);
+            this.raid_settings_group_text.Margin = new System.Windows.Forms.Padding(2);
+            this.raid_settings_group_text.Name = "raid_settings_group_text";
+            this.raid_settings_group_text.Padding = new System.Windows.Forms.Padding(2);
+            this.raid_settings_group_text.Size = new System.Drawing.Size(349, 93);
+            this.raid_settings_group_text.TabIndex = 6;
+            this.raid_settings_group_text.TabStop = false;
+            this.raid_settings_group_text.Text = "Raid Settings";
             // 
             // raidRepAtNumeric
             // 
@@ -1001,42 +1007,42 @@
             0,
             0});
             // 
-            // label13
+            // raid_repair_text
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(3, 44);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(53, 13);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "Repair at:";
+            this.raid_repair_text.AutoSize = true;
+            this.raid_repair_text.Location = new System.Drawing.Point(3, 44);
+            this.raid_repair_text.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.raid_repair_text.Name = "raid_repair_text";
+            this.raid_repair_text.Size = new System.Drawing.Size(53, 13);
+            this.raid_repair_text.TabIndex = 1;
+            this.raid_repair_text.Text = "Repair at:";
             // 
             // autoJoinRaidCheckbox
             // 
             this.autoJoinRaidCheckbox.AutoSize = true;
             this.autoJoinRaidCheckbox.Location = new System.Drawing.Point(3, 20);
-            this.autoJoinRaidCheckbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.autoJoinRaidCheckbox.Margin = new System.Windows.Forms.Padding(2);
             this.autoJoinRaidCheckbox.Name = "autoJoinRaidCheckbox";
             this.autoJoinRaidCheckbox.Size = new System.Drawing.Size(70, 17);
             this.autoJoinRaidCheckbox.TabIndex = 0;
             this.autoJoinRaidCheckbox.Text = "Auto Join";
             this.autoJoinRaidCheckbox.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // raid_npc_ammo_text
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(2, 27);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "NPC Ammo:";
+            this.raid_npc_ammo_text.AutoSize = true;
+            this.raid_npc_ammo_text.Location = new System.Drawing.Point(2, 27);
+            this.raid_npc_ammo_text.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.raid_npc_ammo_text.Name = "raid_npc_ammo_text";
+            this.raid_npc_ammo_text.Size = new System.Drawing.Size(64, 13);
+            this.raid_npc_ammo_text.TabIndex = 5;
+            this.raid_npc_ammo_text.Text = "NPC Ammo:";
             // 
             // shootBossCheckbox
             // 
             this.shootBossCheckbox.AutoSize = true;
             this.shootBossCheckbox.Location = new System.Drawing.Point(4, 60);
-            this.shootBossCheckbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.shootBossCheckbox.Margin = new System.Windows.Forms.Padding(2);
             this.shootBossCheckbox.Name = "shootBossCheckbox";
             this.shootBossCheckbox.Size = new System.Drawing.Size(118, 17);
             this.shootBossCheckbox.TabIndex = 4;
@@ -1047,7 +1053,7 @@
             // leaveRaidButton
             // 
             this.leaveRaidButton.Location = new System.Drawing.Point(86, 193);
-            this.leaveRaidButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.leaveRaidButton.Margin = new System.Windows.Forms.Padding(2);
             this.leaveRaidButton.Name = "leaveRaidButton";
             this.leaveRaidButton.Size = new System.Drawing.Size(72, 23);
             this.leaveRaidButton.TabIndex = 3;
@@ -1057,7 +1063,7 @@
             // joinRaidButton
             // 
             this.joinRaidButton.Location = new System.Drawing.Point(4, 193);
-            this.joinRaidButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.joinRaidButton.Margin = new System.Windows.Forms.Padding(2);
             this.joinRaidButton.Name = "joinRaidButton";
             this.joinRaidButton.Size = new System.Drawing.Size(72, 23);
             this.joinRaidButton.TabIndex = 2;
@@ -1093,7 +1099,7 @@
             "Souleater (60 + 60)",
             "Voodooblast (100)"});
             this.shootBossAmmoComboBox.Location = new System.Drawing.Point(123, 59);
-            this.shootBossAmmoComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.shootBossAmmoComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.shootBossAmmoComboBox.Name = "shootBossAmmoComboBox";
             this.shootBossAmmoComboBox.Size = new System.Drawing.Size(232, 21);
             this.shootBossAmmoComboBox.TabIndex = 1;
@@ -1130,7 +1136,7 @@
             "Souleater (60 + 60)",
             "Voodooblast (100)"});
             this.raidNpcAmmoComboBox.Location = new System.Drawing.Point(123, 25);
-            this.raidNpcAmmoComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.raidNpcAmmoComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.raidNpcAmmoComboBox.Name = "raidNpcAmmoComboBox";
             this.raidNpcAmmoComboBox.Size = new System.Drawing.Size(232, 21);
             this.raidNpcAmmoComboBox.TabIndex = 0;
@@ -1139,18 +1145,18 @@
             // 
             this.bonusmapTabpage.Controls.Add(this.leaveBonusmapButton);
             this.bonusmapTabpage.Controls.Add(this.joinBonusmapButton);
-            this.bonusmapTabpage.Controls.Add(this.label18);
+            this.bonusmapTabpage.Controls.Add(this.bonusmap_mapname_text);
             this.bonusmapTabpage.Controls.Add(this.bonusmapCombobox);
             this.bonusmapTabpage.Controls.Add(this.autoJoinBonusmapCheckbox);
             this.bonusmapTabpage.Controls.Add(this.repAtBonusmapNumeric);
-            this.bonusmapTabpage.Controls.Add(this.label17);
+            this.bonusmapTabpage.Controls.Add(this.bonusmap_repair_text);
             this.bonusmapTabpage.Controls.Add(this.bonusmapAmmoTextbox);
-            this.bonusmapTabpage.Controls.Add(this.label16);
+            this.bonusmapTabpage.Controls.Add(this.bonusmap_ammo_text);
             this.bonusmapTabpage.Location = new System.Drawing.Point(4, 22);
-            this.bonusmapTabpage.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.bonusmapTabpage.Margin = new System.Windows.Forms.Padding(1);
             this.bonusmapTabpage.Name = "bonusmapTabpage";
-            this.bonusmapTabpage.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.bonusmapTabpage.Size = new System.Drawing.Size(353, 249);
+            this.bonusmapTabpage.Padding = new System.Windows.Forms.Padding(1);
+            this.bonusmapTabpage.Size = new System.Drawing.Size(353, 353);
             this.bonusmapTabpage.TabIndex = 4;
             this.bonusmapTabpage.Text = "Bonusmap[BETA]";
             this.bonusmapTabpage.UseVisualStyleBackColor = true;
@@ -1158,7 +1164,7 @@
             // leaveBonusmapButton
             // 
             this.leaveBonusmapButton.Location = new System.Drawing.Point(99, 119);
-            this.leaveBonusmapButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.leaveBonusmapButton.Margin = new System.Windows.Forms.Padding(2);
             this.leaveBonusmapButton.Name = "leaveBonusmapButton";
             this.leaveBonusmapButton.Size = new System.Drawing.Size(97, 23);
             this.leaveBonusmapButton.TabIndex = 19;
@@ -1169,7 +1175,7 @@
             // joinBonusmapButton
             // 
             this.joinBonusmapButton.Location = new System.Drawing.Point(4, 119);
-            this.joinBonusmapButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.joinBonusmapButton.Margin = new System.Windows.Forms.Padding(2);
             this.joinBonusmapButton.Name = "joinBonusmapButton";
             this.joinBonusmapButton.Size = new System.Drawing.Size(90, 23);
             this.joinBonusmapButton.TabIndex = 18;
@@ -1177,21 +1183,21 @@
             this.joinBonusmapButton.UseVisualStyleBackColor = true;
             this.joinBonusmapButton.Click += new System.EventHandler(this.joinBonusmapButton_Click);
             // 
-            // label18
+            // bonusmap_mapname_text
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(2, 85);
-            this.label18.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(60, 13);
-            this.label18.TabIndex = 17;
-            this.label18.Text = "Bonusmap:";
+            this.bonusmap_mapname_text.AutoSize = true;
+            this.bonusmap_mapname_text.Location = new System.Drawing.Point(2, 85);
+            this.bonusmap_mapname_text.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.bonusmap_mapname_text.Name = "bonusmap_mapname_text";
+            this.bonusmap_mapname_text.Size = new System.Drawing.Size(60, 13);
+            this.bonusmap_mapname_text.TabIndex = 17;
+            this.bonusmap_mapname_text.Text = "Bonusmap:";
             // 
             // bonusmapCombobox
             // 
             this.bonusmapCombobox.FormattingEnabled = true;
             this.bonusmapCombobox.Location = new System.Drawing.Point(64, 83);
-            this.bonusmapCombobox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.bonusmapCombobox.Margin = new System.Windows.Forms.Padding(1);
             this.bonusmapCombobox.Name = "bonusmapCombobox";
             this.bonusmapCombobox.Size = new System.Drawing.Size(286, 21);
             this.bonusmapCombobox.TabIndex = 16;
@@ -1200,7 +1206,7 @@
             // 
             this.autoJoinBonusmapCheckbox.AutoSize = true;
             this.autoJoinBonusmapCheckbox.Location = new System.Drawing.Point(112, 50);
-            this.autoJoinBonusmapCheckbox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.autoJoinBonusmapCheckbox.Margin = new System.Windows.Forms.Padding(1);
             this.autoJoinBonusmapCheckbox.Name = "autoJoinBonusmapCheckbox";
             this.autoJoinBonusmapCheckbox.Size = new System.Drawing.Size(123, 17);
             this.autoJoinBonusmapCheckbox.TabIndex = 15;
@@ -1229,15 +1235,15 @@
             0,
             0});
             // 
-            // label17
+            // bonusmap_repair_text
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(2, 50);
-            this.label17.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(43, 13);
-            this.label17.TabIndex = 13;
-            this.label17.Text = "Rep At:";
+            this.bonusmap_repair_text.AutoSize = true;
+            this.bonusmap_repair_text.Location = new System.Drawing.Point(2, 50);
+            this.bonusmap_repair_text.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.bonusmap_repair_text.Name = "bonusmap_repair_text";
+            this.bonusmap_repair_text.Size = new System.Drawing.Size(43, 13);
+            this.bonusmap_repair_text.TabIndex = 13;
+            this.bonusmap_repair_text.Text = "Rep At:";
             // 
             // bonusmapAmmoTextbox
             // 
@@ -1271,26 +1277,26 @@
             "Souleater (60 + 60)",
             "Voodooblast (100)"});
             this.bonusmapAmmoTextbox.Location = new System.Drawing.Point(44, 19);
-            this.bonusmapAmmoTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bonusmapAmmoTextbox.Margin = new System.Windows.Forms.Padding(2);
             this.bonusmapAmmoTextbox.Name = "bonusmapAmmoTextbox";
             this.bonusmapAmmoTextbox.Size = new System.Drawing.Size(310, 21);
             this.bonusmapAmmoTextbox.TabIndex = 1;
             // 
-            // label16
+            // bonusmap_ammo_text
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(2, 20);
-            this.label16.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(39, 13);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Ammo:";
+            this.bonusmap_ammo_text.AutoSize = true;
+            this.bonusmap_ammo_text.Location = new System.Drawing.Point(2, 20);
+            this.bonusmap_ammo_text.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.bonusmap_ammo_text.Name = "bonusmap_ammo_text";
+            this.bonusmap_ammo_text.Size = new System.Drawing.Size(39, 13);
+            this.bonusmap_ammo_text.TabIndex = 0;
+            this.bonusmap_ammo_text.Text = "Ammo:";
             // 
             // saveSettingsButton
             // 
             this.saveSettingsButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.saveSettingsButton.Location = new System.Drawing.Point(3, 308);
-            this.saveSettingsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.saveSettingsButton.Location = new System.Drawing.Point(3, 425);
+            this.saveSettingsButton.Margin = new System.Windows.Forms.Padding(2);
             this.saveSettingsButton.Name = "saveSettingsButton";
             this.saveSettingsButton.Size = new System.Drawing.Size(373, 25);
             this.saveSettingsButton.TabIndex = 13;
@@ -1320,27 +1326,27 @@
             this.stopbutton.UseVisualStyleBackColor = true;
             this.stopbutton.Click += new System.EventHandler(this.stopbutton_Click);
             // 
-            // tabPage1
+            // map_tab
             // 
-            this.tabPage1.Controls.Add(this.webBrowser1);
-            this.tabPage1.Controls.Add(this.logBox);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage1.Size = new System.Drawing.Size(379, 336);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Map";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.map_tab.Controls.Add(this.webBrowser1);
+            this.map_tab.Controls.Add(this.logBox);
+            this.map_tab.Location = new System.Drawing.Point(4, 22);
+            this.map_tab.Name = "map_tab";
+            this.map_tab.Padding = new System.Windows.Forms.Padding(3);
+            this.map_tab.Size = new System.Drawing.Size(379, 440);
+            this.map_tab.TabIndex = 0;
+            this.map_tab.Text = "Map";
+            this.map_tab.UseVisualStyleBackColor = true;
             // 
             // webBrowser1
             // 
             this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.webBrowser1.Location = new System.Drawing.Point(3, 3);
-            this.webBrowser1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.webBrowser1.Margin = new System.Windows.Forms.Padding(2);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(10, 10);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.ScriptErrorsSuppressed = true;
-            this.webBrowser1.Size = new System.Drawing.Size(373, 223);
+            this.webBrowser1.Size = new System.Drawing.Size(373, 327);
             this.webBrowser1.TabIndex = 3;
             this.webBrowser1.Url = new System.Uri("about:blank", System.UriKind.Absolute);
             this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
@@ -1349,7 +1355,7 @@
             // logBox
             // 
             this.logBox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.logBox.Location = new System.Drawing.Point(3, 226);
+            this.logBox.Location = new System.Drawing.Point(3, 330);
             this.logBox.Name = "logBox";
             this.logBox.Size = new System.Drawing.Size(373, 107);
             this.logBox.TabIndex = 2;
@@ -1361,13 +1367,13 @@
             this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Location = new System.Drawing.Point(0, 17);
+            this.tabControl1.Controls.Add(this.map_tab);
+            this.tabControl1.Controls.Add(this.settings_tab);
+            this.tabControl1.Controls.Add(this.stats_tab);
+            this.tabControl1.Location = new System.Drawing.Point(0, 37);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(387, 362);
+            this.tabControl1.Size = new System.Drawing.Size(387, 479);
             this.tabControl1.TabIndex = 0;
             // 
             // bgTimer
@@ -1375,25 +1381,65 @@
             this.bgTimer.Enabled = true;
             this.bgTimer.Tick += new System.EventHandler(this.bgTimer_Tick);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.languagesToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(387, 24);
+            this.menuStrip1.TabIndex = 7;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // languagesToolStripMenuItem
+            // 
+            this.languagesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.englishToolStripMenuItem,
+            this.germanToolStripMenuItem,
+            this.hungarianToolStripMenuItem});
+            this.languagesToolStripMenuItem.Name = "languagesToolStripMenuItem";
+            this.languagesToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+            this.languagesToolStripMenuItem.Text = "Languages";
+            // 
+            // englishToolStripMenuItem
+            // 
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.englishToolStripMenuItem.Text = "English";
+            // 
+            // germanToolStripMenuItem
+            // 
+            this.germanToolStripMenuItem.Name = "germanToolStripMenuItem";
+            this.germanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.germanToolStripMenuItem.Text = "German";
+            // 
+            // hungarianToolStripMenuItem
+            // 
+            this.hungarianToolStripMenuItem.Name = "hungarianToolStripMenuItem";
+            this.hungarianToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.hungarianToolStripMenuItem.Text = "Hungarian";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(387, 307);
+            this.ClientSize = new System.Drawing.Size(387, 424);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.stopbutton);
             this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "SFCollector";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.stats_tab.ResumeLayout(false);
+            this.stats_tab.PerformLayout();
+            this.settings_tab.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
-            this.tabPage6.ResumeLayout(false);
+            this.login_tab.ResumeLayout(false);
+            this.login_tab.PerformLayout();
+            this.settings2_tab.ResumeLayout(false);
             this.innerSettingsTabControl.ResumeLayout(false);
             this.CollectorTabpage.ResumeLayout(false);
             this.CollectorTabpage.PerformLayout();
@@ -1406,21 +1452,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.monsterGridView)).EndInit();
             this.raidTabpage.ResumeLayout(false);
             this.raidTabpage.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.raid_settings_group_text.ResumeLayout(false);
+            this.raid_settings_group_text.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.raidRepAtNumeric)).EndInit();
             this.bonusmapTabpage.ResumeLayout(false);
             this.bonusmapTabpage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.repAtBonusmapNumeric)).EndInit();
-            this.tabPage1.ResumeLayout(false);
+            this.map_tab.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage stats_tab;
         private System.Windows.Forms.Label sessionxplabel;
         private System.Windows.Forms.Label sessiongoldlabel;
         private System.Windows.Forms.Label sessionmojoslabel;
@@ -1428,28 +1477,28 @@
         private System.Windows.Forms.Label sessionmonsterslabel;
         private System.Windows.Forms.Label sessionnpcslabel;
         private System.Windows.Forms.Label sessionboxeslabel;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Label stat_collectedxp_text;
+        private System.Windows.Forms.Label stat_collectedgolds_text;
+        private System.Windows.Forms.Label stat_collectedmojos_text;
+        private System.Windows.Forms.Label stat_collectedpearls_text;
+        private System.Windows.Forms.Label stat_monster_text;
+        private System.Windows.Forms.Label stat_npc_text;
+        private System.Windows.Forms.Label stat_glitter_text;
+        private System.Windows.Forms.TabPage settings_tab;
         private System.Windows.Forms.TabControl tabControl2;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.Button loginButton;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabPage login_tab;
+        private System.Windows.Forms.Button login_text;
+        private System.Windows.Forms.Label username_text;
         private System.Windows.Forms.TextBox passwordBox;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label password_text;
         private System.Windows.Forms.TextBox usernameBox;
-        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TabPage settings2_tab;
         private System.Windows.Forms.NumericUpDown repAtHpNmrcud;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label collector_rep_text;
         private System.Windows.Forms.CheckBox collectChestsCheckbox;
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Button stopbutton;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage map_tab;
         private System.Windows.Forms.RichTextBox logBox;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabControl innerSettingsTabControl;
@@ -1464,11 +1513,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MonsterColumn;
         private System.Windows.Forms.DataGridViewComboBoxColumn MonsterHarpoon;
         private System.Windows.Forms.TabPage raidTabpage;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox raid_settings_group_text;
         private System.Windows.Forms.NumericUpDown raidRepAtNumeric;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label raid_repair_text;
         private System.Windows.Forms.CheckBox autoJoinRaidCheckbox;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label raid_npc_ammo_text;
         private System.Windows.Forms.CheckBox shootBossCheckbox;
         private System.Windows.Forms.Button leaveRaidButton;
         private System.Windows.Forms.Button joinRaidButton;
@@ -1478,7 +1527,7 @@
         private System.Windows.Forms.Timer bgTimer;
         private System.Windows.Forms.CheckBox reInstallCertbox;
         private System.Windows.Forms.Label positionLabel;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label stat_currentposition_text;
         private System.Windows.Forms.CheckBox autoStartCheckbox;
         private System.Windows.Forms.CheckBox collectCargoCheckbox;
         private System.Windows.Forms.CheckBox collectLionChestsCheckbox;
@@ -1504,16 +1553,21 @@
         private System.Windows.Forms.TextBox addMonsterTextbox;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TabPage bonusmapTabpage;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label bonusmap_ammo_text;
         private System.Windows.Forms.ComboBox bonusmapAmmoTextbox;
         private System.Windows.Forms.Button leaveBonusmapButton;
         private System.Windows.Forms.Button joinBonusmapButton;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label bonusmap_mapname_text;
         private System.Windows.Forms.ComboBox bonusmapCombobox;
         private System.Windows.Forms.CheckBox autoJoinBonusmapCheckbox;
         private System.Windows.Forms.NumericUpDown repAtBonusmapNumeric;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label bonusmap_repair_text;
         private System.Windows.Forms.CheckBox prioritizeMonstersCheckbox;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem languagesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem germanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hungarianToolStripMenuItem;
     }
 }
 

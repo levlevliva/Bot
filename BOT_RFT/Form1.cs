@@ -15,6 +15,8 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Resources;
 
 namespace SFCollector
 {
@@ -31,6 +33,8 @@ namespace SFCollector
         private Thread localThread;
         private HelpTools help;
         public int loadNames = 0;
+        ResourceManager res_man;    // declare Resource manager for the lang section
+        CultureInfo cul;            //lang section
 
         public Form1()
         {
@@ -95,7 +99,7 @@ namespace SFCollector
             if (monsters)
             {
                 monsterGridView.Rows.Clear();
-                monsterGridView.Rows.Add(new object[] { false, "Moby Dick", "Bronze Harpoons (50)"});
+                monsterGridView.Rows.Add(new object[] { false, "Moby Dick", "Bronze Harpoons (50)" });
                 monsterGridView.Rows.Add(new object[] { false, "Trankus", "Bronze Harpoons (50)" });
                 monsterGridView.Rows.Add(new object[] { false, "Serena", "Bronze Harpoons (50)" });
                 monsterGridView.Rows.Add(new object[] { false, "Orca", "Bronze Harpoons (50)" });
@@ -158,7 +162,8 @@ namespace SFCollector
                     if (Account.onRaid)
                     {
                         Text = "SFCollector - " + (Account.raidMedallion == 38 ? "Sunmap" : "Behemoth");
-                    } else if (!Text.Contains(Account.username))
+                    }
+                    else if (!Text.Contains(Account.username))
                     {
                         Text = "SFCollector - " + Program.version + " - " + Account.username;
                     }
@@ -191,15 +196,15 @@ namespace SFCollector
 
         public void LoginMethod()
         {
-                try
-                {
-                    BotMethods.ClearCache();
-                    BotLogic.WriteLine("Cache cleaned.");
-                }
-                catch (Exception)
-                {
-                    BotLogic.WriteLine("There was an error while cleaning cache!");
-                }
+            try
+            {
+                BotMethods.ClearCache();
+                BotLogic.WriteLine("Cache cleaned.");
+            }
+            catch (Exception)
+            {
+                BotLogic.WriteLine("There was an error while cleaning cache!");
+            }
             try
             {
                 var _compileTime = BotMethods.GetCompileTime();
@@ -335,7 +340,8 @@ namespace SFCollector
                         BotLogic.entitys.Add(monsterGridView.Rows[i].Cells[1].Value.ToString() + "|" + monsterGridView.Rows[i].Cells[2].Value.ToString(), (bool)(monsterGridView.Rows[i].Cells[0].Value.ToString() == "1"));
                     }
                 }
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 writeLine("An unknown Error occured while saving Settings!\n" + ex);
             }
@@ -458,7 +464,7 @@ namespace SFCollector
                     for (int i = 0; i < Settings.Default.monsters.Count; i++)
                     {
                         string[] args = Settings.Default.monsters[i].Split('|');
-                        monsterGridView.Rows.Add(new object[] { false, args[1], args[2]});
+                        monsterGridView.Rows.Add(new object[] { false, args[1], args[2] });
                         foreach (DataGridViewRow row in monsterGridView.Rows)
                         {
                             if ((string)row.Cells[1].Value == (args[1]))
@@ -509,7 +515,7 @@ namespace SFCollector
                     return;
                 }
                 Client.entitys.Clear();
-                loginButton.Enabled = false;
+                login_text.Enabled = false;
                 try
                 {
                     if (BotLogic.running)
@@ -618,7 +624,7 @@ namespace SFCollector
                     }
                 }
                 BotLogic.WriteLine("Logging in user: " + usernameBox.Text);
-                loginButton.Enabled = true;
+                login_text.Enabled = true;
             }
             if (webBrowser1.DocumentText.Contains("href=\"index.es?action=internalMap\""))
             {
@@ -765,6 +771,30 @@ namespace SFCollector
         private void leaveBonusmapButton_Click(object sender, EventArgs e)
         {
 
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            hungarianToolStripMenuItem.Checked = false;    //default language is english
+            englishToolStripMenuItem.Checked = true;
+
+            res_man = new ResourceManager("SFCollector.Resources.Res", typeof(Form1).Assembly);
+            //
+            switch_language();
+        }
+        private void switch_language()
+        {
+            if (hungarianToolStripMenuItem.Checked == true)    //in hungarian
+            {
+                cul = CultureInfo.CreateSpecificCulture("hu");        //create culture for hungarian
+            }
+            else if (englishToolStripMenuItem.Checked == true)          //in english
+            {
+                cul = CultureInfo.CreateSpecificCulture("en");        //create culture for english
+            }
+            else
+            {
+                cul = CultureInfo.CreateSpecificCulture("de");        //create culture for deutsch
+            }
         }
     }
 }
