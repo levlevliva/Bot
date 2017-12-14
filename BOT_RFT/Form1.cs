@@ -535,7 +535,7 @@ namespace SFCollector
                 Client.loggedin = false;
                 username = usernameBox.Text;
                 password = passwordBox.Text;
-                this.Text = "BoxyBot - V." + Program.version + " " + username;
+                this.Text = "SFCollector - V." + Program.version + " " + username;
                 this.LoginMethod();
             }
             else

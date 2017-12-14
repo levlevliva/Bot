@@ -30,7 +30,7 @@ namespace SFCollector.Seafight.Proxy
                 FiddlerApplication.BeforeRequest += _bReq;
             } 
             InstallCert();
-            //FiddlerApplication.Startup(Server.FiddlerPort, FiddlerCoreStartupFlags.DecryptSSL);
+            FiddlerApplication.Startup(Server.FiddlerPort, FiddlerCoreStartupFlags.DecryptSSL);
         }
     
         private static void InstallCert()
