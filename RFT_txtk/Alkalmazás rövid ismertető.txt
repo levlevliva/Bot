@@ -1,0 +1,5 @@
+Alkalmazás rövid ismertetése
+
+-Automatizált játékmenetet tesz lehetővé a szoftver, így a felhasználóját előnyökhöz juttatja.
+-Az alkalmazás rendelkezik standard illetve prémium funkciókkal, ezutóbbi csak a licensz megvásárlása után használható, vagy ameddig a felhasználónak aktív a 
+shareware licensze (48 óra).

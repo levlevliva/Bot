@@ -1,0 +1,7 @@
+Tesztjegyzőköny
+
+A teljes globális tesztelést nem mi végeztük el, hanem a program jelenleg ingyenes (BETA) állapotban van, így bárki ingyen és szabadon használhatja
+valamint egy fórum segítségével bekérjük a felhasználók véleményét, kéréseit illetve visszajelzéseit a hibákról, így az esetleges hibákat javítani tudjuk,
+valamint ha módunkban áll akkor új funkciókkal gazdagítjuk a szoftvert.
+Kizárólag a licenszelésnél végeztünk teszteléseket, hogy az adott php fájl ne tartalmazzon sql injection-t, valamint ne lehessen fizetés nélkül elérni
+a prémium funkciókat, illetve megpróbáljuk az emulatoroktól, crackektől védeni a szoftvert rendszeres kommunikációs protokoll változtatásával.

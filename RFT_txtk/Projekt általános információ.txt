@@ -1,0 +1,14 @@
+Projekt név: SFCollector
+Projekt várható elkészülése: 2017.11.21
+Projektben szereplő fejlesztők:
+-Havas Márk
+-Kun Levente
+-Fecske Márk
+-Balázsy Levente
+
+Fejlesztői környezet: Visual Studio (C#).
+
+Követelmény specifikáció
+
+A program célja olyan Bot program létrehozása amely internetes játékban automatizált játékmenetet tesz lehetővé felhasználói beavatkozás nélkül.
+Az alkalmazás kivitelezése várhatóan 2 hónap.

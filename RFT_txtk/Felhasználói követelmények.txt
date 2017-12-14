@@ -1,0 +1,8 @@
+﻿Felhasználói követelmények
+
+(pl ha az alkalmazást letálcázzuk akkor az fusson a háttérben.)
+    - Az alkalmazás képes futni a héttérben.
+    - Az alkalmazást nem kell telepíteni, hanem egy portable .exe fájlt kap a felhasználó.
+    - Az alkalmazás felhasználó barát felülettel fog rendelkezni.(user-interface)
+	  A nyelvváltoztatás lehetősége adott, így a felhasználó akár saját anyanyelvén kezelheti a szoftvert.
+	  A bot automatikusan elindul amennyiben a "Bejelentkezés" fülnél kipipálja a megfelelő checkboxot a felhasználó.

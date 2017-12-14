@@ -1,0 +1,11 @@
+Árajánlat
+
+-A program rendelkezik saját licensz rendszerrel amely a számítógép hardwareeiből generál egy "HWID"-t ami minden számítógépnek egyedi, így nincs szükség felhasználói
+regisztrációra, illetve sokkal hatékonyabb módszer.
+-A szoftvert csak bérelni lehet, tényleges megvásárlására lehetőség nincs, pénzvisszatérítés nincs, illetve a szoftver sajátosságaiból adódóan a használó 
+megszegi a Bigpoint GmbH által megfogalmazott ÁÜSZ & ÁFSZ-t így az accountja esetleges zárolásáért felelősséget nem vállalunk.
+-A szoftver bérlésével a felhasználó beleegyezik abba, hogy adatokat továbbítsunk a szervereink felé, illetve ezeket meghatározatlan ideig tároljuk is (HWID, UserID, SessionID, Számítógép név, IP cím).
+-A megvásárolt licensz nem garantálja a program folyamatos működését (pl.: Amennyiben a játék algoritmusa megváltozik, így ellehetetlenítve a program működését, nem áll
+módunkban a licensz hátralévő időtartamát visszatéríteni).
+-A licensz ára 6,49€/1 hónap 14,99€/3 hónap.
+-A szoftver lebutított demo funkciókkal is rendelkezik így ingyenesen is elérhető.

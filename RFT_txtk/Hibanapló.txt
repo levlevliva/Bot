@@ -1,0 +1,23 @@
+Bugfixes
+
+2017.11.21
+Eazfuscator.NET hibájának javítása (Az obfuszkáció miatt külön program telepítése kellett a szoftver indításához,
+ez javítva lett, más obfuscator programot használunk helyette)
+
+2017.11.23
+Amikor a program teljes képernyőre hozása gombra kattintott a felhasználó, a programban található label-ek, check valamint 
+textboxok szétcsúsztak, teljesen megkavarva a felhasználói interfészt. Javítva.
+
+2017.11.30
+Biztonsági rés javítása történt egy webböngésző beépítésével, így az EventStream most már nem program által van generálva (
+így az úgynevezett fake EventStream lett a szerver felé továbbítva) hanem a tényleges játékkliens küldi azt.
+
+2017.12.02
+A program a reggel 5-órási restart után nem csatlakozott vissza a játékszerverre, így a restart utáni futása megállt.
+
+2017.12.04
+A program nem gyűjtögette a csillogó zsákmányokat, ugyanis egy teszt során ki lett kommentelve az adott metódus, és 
+így lett buildelve a release.
+
+2017.12.04/2
+A beállítások mentése gomb a fentebb nevezett okok miatt szintén nem látta el a feladatát, így ez is javítva lett.

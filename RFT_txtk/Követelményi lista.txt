@@ -1,0 +1,9 @@
+Követelményi lista
+
+-Automatikus javítás
+-Beállítható automatikus start opció bejelentkezés után.
+-Multilanguage opció.
+-Beállítások mentése opció (számítógépen tárolt global resource fájl, később cloud alapú mentés).
+-Kódolt átjáró a licensz szerver valamint a kliens között(Reverse engineering, crack elleni védelem, valamint biztonságos fizetési csatorna).
+-A program nem használható Virtuális Számítógépeken(licensz rendszer kijátszását tenné lehetővé).
+-Automatizált játékmenet.

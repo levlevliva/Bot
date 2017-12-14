@@ -1,0 +1,11 @@
+Funkcionális követelmények
+
+Automatizálja a felhasználói fiókot.Könnyítsen a felhasználó játék menetén. Összeomlás mentes szoftver műkődés.
+A játékban a automatikusan végigjátssza a bónusz térképeket ezzel sok előnyhöz juttatja a felhasználót.
+A normál térképeken automatikusan gyűjtögeti a zsákmányokat. A boss térképeken gyűjtöget.
+A játékban a különleges események automatizált játszására is lehetőséget ad (Külön addolhatók NPC-k illetve Szörnyek is,
+valamint az esemény ládákat és esemény zsákmányokat is összegyűjti).
+A napi bónuszt a felhasználó helyett elfogadja/felveszi.
+Az ellenséges játékosokat automatikusan támadja.
+Automatikusan javítja a hajót amennyiben az elsüllyed vagy megsérül.
+A lőszert amennyiben szükséges és van hozzá elég fizetőeszköz, újravásárolja.

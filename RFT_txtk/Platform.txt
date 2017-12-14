@@ -1,0 +1,7 @@
+Alkalmazás platform
+
+Az alkalmazás jelenleg kizárólag PC-n Windows operációs rendszer alatt érhető el.
+Az alkalmazás fejlesztése folyamatban van MacOSX valamint Linux rendszerekre is.
+
+A szoftverhez tartozik egy MySql adatbázis, valamint a későbbiekben a licenszrendszerhez egy weboldal, amely további
+kényelmi funkciókat fog tartalmazni ami lehetővé teszi majd a szoftver távoli vezérlését.
