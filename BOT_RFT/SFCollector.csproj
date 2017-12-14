@@ -83,16 +83,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resources\Res.en.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Res.en.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\Res.hu.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Res.hu.resx</DependentUpon>
-    </Compile>
+    <Compile Include="Resources\Res.en.Designer.cs" />
+    <Compile Include="Resources\Res.hu.Designer.cs" />
     <Compile Include="Seafight\Account.cs" />
     <Compile Include="Seafight\BotMethods.cs" />
     <Compile Include="Seafight\Client.cs" />
@@ -153,14 +145,9 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Resources\Res.de.resx" />
-    <EmbeddedResource Include="Resources\Res.en.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Res.en.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Res.hu.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Res.hu.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Res.en.resx" />
+    <EmbeddedResource Include="Resources\Res.hu.resx" />
+    <EmbeddedResource Include="Resources\Res.ro.resx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

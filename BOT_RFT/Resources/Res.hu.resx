@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ammoNpcColumn" xml:space="preserve">
+    <value>Lőszer</value>
+  </data>
+  <data name="autoJoinBonusmapCheckbox" xml:space="preserve">
+    <value>Automatikus Ugrás</value>
+  </data>
+  <data name="autoJoinRaidCheckbox" xml:space="preserve">
+    <value>Automatikus Ugrás</value>
+  </data>
+  <data name="autoStartCheckbox" xml:space="preserve">
+    <value>Automatikus Indítás</value>
+  </data>
+  <data name="boardNPCColumn" xml:space="preserve">
+    <value>Fosztás</value>
+  </data>
+  <data name="bonusmapTabpage" xml:space="preserve">
+    <value>Bónusztérkép</value>
+  </data>
+  <data name="bonusmap_ammo_text" xml:space="preserve">
+    <value>Lőszer:</value>
+  </data>
+  <data name="bonusmap_mapname_text" xml:space="preserve">
+    <value>Bónusztérkép:</value>
+  </data>
+  <data name="bonusmap_repair_text" xml:space="preserve">
+    <value>Javítás:</value>
+  </data>
+  <data name="collectCargoCheckbox" xml:space="preserve">
+    <value>Cargo gyűjtése</value>
+  </data>
+  <data name="collectChestsCheckbox" xml:space="preserve">
+    <value>Ládák gyűjtése</value>
+  </data>
+  <data name="collectEventChestsCheckbox" xml:space="preserve">
+    <value>Event-ládák gyűjtése</value>
+  </data>
+  <data name="collectGlittersCheckbox" xml:space="preserve">
+    <value>Csillik gyűjtése</value>
+  </data>
+  <data name="collectLionChestsCheckbox" xml:space="preserve">
+    <value>Oroszlánládák gyűjtése</value>
+  </data>
+  <data name="collectMeatCheckbox" xml:space="preserve">
+    <value>Hús gyűjtése</value>
+  </data>
+  <data name="CollectorTabpage" xml:space="preserve">
+    <value>Gyűjtögetés</value>
+  </data>
+  <data name="collector_rep_text" xml:space="preserve">
+    <value>Javítás HP&lt;</value>
+  </data>
+  <data name="collectWhileAttackCheckbox" xml:space="preserve">
+    <value>Gyűjtés támadás közben</value>
+  </data>
+  <data name="joinBonusmapButton" xml:space="preserve">
+    <value>Bónusztérkép ugrás</value>
+  </data>
+  <data name="joinRaidButton" xml:space="preserve">
+    <value>Rohamtérkép ugrás</value>
+  </data>
+  <data name="leaveBonusmapButton" xml:space="preserve">
+    <value>Elhagyás</value>
+  </data>
+  <data name="leaveRaidButton" xml:space="preserve">
+    <value>Roham elhagyás</value>
+  </data>
+  <data name="login_tab" xml:space="preserve">
+    <value>Belépés</value>
+  </data>
+  <data name="loginButton" xml:space="preserve">
+    <value>Belépés</value>
+  </data>
+  <data name="map_tab" xml:space="preserve">
+    <value>Térkép</value>
+  </data>
+  <data name="MonsterColumn" xml:space="preserve">
+    <value>Szörnyek</value>
+  </data>
+  <data name="MonsterHarpoon" xml:space="preserve">
+    <value>Szigony</value>
+  </data>
+  <data name="monsterTabpage" xml:space="preserve">
+    <value>Szörnyek</value>
+  </data>
+  <data name="npcTabpage" xml:space="preserve">
+    <value>NPC-k</value>
+  </data>
+  <data name="onlyFullHPNPCsCheckBox" xml:space="preserve">
+    <value>Csak full HP-s NPC</value>
+  </data>
+  <data name="password_text" xml:space="preserve">
+    <value>Jelszó:</value>
+  </data>
+  <data name="platesNpcColumn" xml:space="preserve">
+    <value>Páncél</value>
+  </data>
+  <data name="powderNpcColumn" xml:space="preserve">
+    <value>Puskapor</value>
+  </data>
+  <data name="prioNPCsCheckbox" xml:space="preserve">
+    <value>NPC prioritás</value>
+  </data>
+  <data name="prioritizeMonstersCheckbox" xml:space="preserve">
+    <value>Szörny prioritás</value>
+  </data>
+  <data name="raidTabpage" xml:space="preserve">
+    <value>Roham</value>
+  </data>
+  <data name="raid_npc_ammo_text" xml:space="preserve">
+    <value>NPC lőszer:</value>
+  </data>
+  <data name="raid_repair_text" xml:space="preserve">
+    <value>Javítás:</value>
+  </data>
+  <data name="raid_settings_group_text" xml:space="preserve">
+    <value>Roham beállítások</value>
+  </data>
+  <data name="reInstallCertbox" xml:space="preserve">
+    <value>Tanusítvány újratelep.</value>
+  </data>
+  <data name="settings2_tab" xml:space="preserve">
+    <value>Beállítások</value>
+  </data>
+  <data name="settings_tab" xml:space="preserve">
+    <value>Beállítások</value>
+  </data>
+  <data name="shootBossCheckbox" xml:space="preserve">
+    <value>Boss lövés, lőszer:</value>
+  </data>
+  <data name="shootMonstersCheckbox" xml:space="preserve">
+    <value>Szörnyek támadása:</value>
+  </data>
+  <data name="shootNpcsCheckbox" xml:space="preserve">
+    <value>NPC-k támadása:</value>
+  </data>
+  <data name="startButton" xml:space="preserve">
+    <value>Indít</value>
+  </data>
+  <data name="stats_tab" xml:space="preserve">
+    <value>Statisztika</value>
+  </data>
+  <data name="stat_collectedgolds_text" xml:space="preserve">
+    <value>+Arany:</value>
+  </data>
+  <data name="stat_collectedmojos_text" xml:space="preserve">
+    <value>+Mojó:</value>
+  </data>
+  <data name="stat_collectedpearls_text" xml:space="preserve">
+    <value>+Gyöngy:</value>
+  </data>
+  <data name="stat_collectedxp_text" xml:space="preserve">
+    <value>+TP:</value>
+  </data>
+  <data name="stat_currentposition_text" xml:space="preserve">
+    <value>Pozíció:</value>
+  </data>
+  <data name="stat_glitter_text" xml:space="preserve">
+    <value>Csillik:</value>
+  </data>
+  <data name="stat_monster_text" xml:space="preserve">
+    <value>Szörnyek:</value>
+  </data>
+  <data name="stat_npc_text" xml:space="preserve">
+    <value>NPC-k:</value>
+  </data>
+  <data name="stopbutton" xml:space="preserve">
+    <value>Állj!</value>
+  </data>
+  <data name="username_text" xml:space="preserve">
+    <value>Felhasználónév:</value>
+  </data>
+  <data name="addMonsterButton" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="addmonster_text" xml:space="preserve">
+    <value>Szörny neve:</value>
+  </data>
+  <data name="addNpcButton" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="addnpc_text" xml:space="preserve">
+    <value>NPC neve:</value>
+  </data>
+  <data name="saveSettingsButton" xml:space="preserve">
+    <value>Beállítások mentése</value>
+  </data>
+  <data name="showAllMonstersButton" xml:space="preserve">
+    <value>Mutasd az összes szörnyet</value>
+  </data>
+  <data name="showAllNPCsButton" xml:space="preserve">
+    <value>Mutasd az összes NPC-t</value>
+  </data>
+</root>

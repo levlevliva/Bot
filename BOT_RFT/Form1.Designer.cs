@@ -50,17 +50,19 @@
             this.stat_monster_text = new System.Windows.Forms.Label();
             this.stat_npc_text = new System.Windows.Forms.Label();
             this.stat_glitter_text = new System.Windows.Forms.Label();
-            this.settings_tab = new System.Windows.Forms.TabPage();
+            this.settings2_tab = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.login_tab = new System.Windows.Forms.TabPage();
+            this.languagebox = new System.Windows.Forms.ComboBox();
+            this.language_text = new System.Windows.Forms.Label();
             this.autoStartCheckbox = new System.Windows.Forms.CheckBox();
             this.reInstallCertbox = new System.Windows.Forms.CheckBox();
-            this.login_text = new System.Windows.Forms.Button();
+            this.loginButton = new System.Windows.Forms.Button();
             this.username_text = new System.Windows.Forms.Label();
             this.passwordBox = new System.Windows.Forms.TextBox();
             this.password_text = new System.Windows.Forms.Label();
             this.usernameBox = new System.Windows.Forms.TextBox();
-            this.settings2_tab = new System.Windows.Forms.TabPage();
+            this.settings_tab = new System.Windows.Forms.TabPage();
             this.innerSettingsTabControl = new System.Windows.Forms.TabControl();
             this.CollectorTabpage = new System.Windows.Forms.TabPage();
             this.collectCargoCheckbox = new System.Windows.Forms.CheckBox();
@@ -75,7 +77,7 @@
             this.showAllNPCsButton = new System.Windows.Forms.Button();
             this.addNpcButton = new System.Windows.Forms.Button();
             this.addNPCTextbox = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
+            this.addnpc_text = new System.Windows.Forms.Label();
             this.shootNpcsCheckbox = new System.Windows.Forms.CheckBox();
             this.collectWhileAttackCheckbox = new System.Windows.Forms.CheckBox();
             this.prioNPCsCheckbox = new System.Windows.Forms.CheckBox();
@@ -92,7 +94,7 @@
             this.showAllMonstersButton = new System.Windows.Forms.Button();
             this.addMonsterButton = new System.Windows.Forms.Button();
             this.addMonsterTextbox = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
+            this.addmonster_text = new System.Windows.Forms.Label();
             this.monsterGridView = new System.Windows.Forms.DataGridView();
             this.selectedColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.MonsterColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -127,16 +129,11 @@
             this.logBox = new System.Windows.Forms.RichTextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.bgTimer = new System.Windows.Forms.Timer(this.components);
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.languagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.germanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hungarianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stats_tab.SuspendLayout();
-            this.settings_tab.SuspendLayout();
+            this.settings2_tab.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.login_tab.SuspendLayout();
-            this.settings2_tab.SuspendLayout();
+            this.settings_tab.SuspendLayout();
             this.innerSettingsTabControl.SuspendLayout();
             this.CollectorTabpage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.repAtHpNmrcud)).BeginInit();
@@ -151,7 +148,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.repAtBonusmapNumeric)).BeginInit();
             this.map_tab.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // stats_tab
@@ -174,7 +170,7 @@
             this.stats_tab.Controls.Add(this.stat_glitter_text);
             this.stats_tab.Location = new System.Drawing.Point(4, 22);
             this.stats_tab.Name = "stats_tab";
-            this.stats_tab.Size = new System.Drawing.Size(379, 440);
+            this.stats_tab.Size = new System.Drawing.Size(379, 341);
             this.stats_tab.TabIndex = 3;
             this.stats_tab.Text = "Statistics";
             this.stats_tab.UseVisualStyleBackColor = true;
@@ -325,35 +321,37 @@
             this.stat_glitter_text.TabIndex = 0;
             this.stat_glitter_text.Text = "Glitters:";
             // 
-            // settings_tab
+            // settings2_tab
             // 
-            this.settings_tab.Controls.Add(this.tabControl2);
-            this.settings_tab.Controls.Add(this.saveSettingsButton);
-            this.settings_tab.Location = new System.Drawing.Point(4, 22);
-            this.settings_tab.Name = "settings_tab";
-            this.settings_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.settings_tab.Size = new System.Drawing.Size(379, 453);
-            this.settings_tab.TabIndex = 1;
-            this.settings_tab.Text = "Settings";
-            this.settings_tab.UseVisualStyleBackColor = true;
+            this.settings2_tab.Controls.Add(this.tabControl2);
+            this.settings2_tab.Controls.Add(this.saveSettingsButton);
+            this.settings2_tab.Location = new System.Drawing.Point(4, 22);
+            this.settings2_tab.Name = "settings2_tab";
+            this.settings2_tab.Padding = new System.Windows.Forms.Padding(3);
+            this.settings2_tab.Size = new System.Drawing.Size(379, 341);
+            this.settings2_tab.TabIndex = 1;
+            this.settings2_tab.Text = "Settings";
+            this.settings2_tab.UseVisualStyleBackColor = true;
             // 
             // tabControl2
             // 
             this.tabControl2.Controls.Add(this.login_tab);
-            this.tabControl2.Controls.Add(this.settings2_tab);
+            this.tabControl2.Controls.Add(this.settings_tab);
             this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl2.Location = new System.Drawing.Point(3, 3);
             this.tabControl2.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(373, 422);
+            this.tabControl2.Size = new System.Drawing.Size(373, 310);
             this.tabControl2.TabIndex = 12;
             // 
             // login_tab
             // 
+            this.login_tab.Controls.Add(this.languagebox);
+            this.login_tab.Controls.Add(this.language_text);
             this.login_tab.Controls.Add(this.autoStartCheckbox);
             this.login_tab.Controls.Add(this.reInstallCertbox);
-            this.login_tab.Controls.Add(this.login_text);
+            this.login_tab.Controls.Add(this.loginButton);
             this.login_tab.Controls.Add(this.username_text);
             this.login_tab.Controls.Add(this.passwordBox);
             this.login_tab.Controls.Add(this.password_text);
@@ -362,16 +360,42 @@
             this.login_tab.Margin = new System.Windows.Forms.Padding(2);
             this.login_tab.Name = "login_tab";
             this.login_tab.Padding = new System.Windows.Forms.Padding(2);
-            this.login_tab.Size = new System.Drawing.Size(365, 396);
+            this.login_tab.Size = new System.Drawing.Size(365, 284);
             this.login_tab.TabIndex = 0;
             this.login_tab.Text = "Login";
             this.login_tab.UseVisualStyleBackColor = true;
+            // 
+            // languagebox
+            // 
+            this.languagebox.AllowDrop = true;
+            this.languagebox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.languagebox.Items.AddRange(new object[] {
+            "English",
+            "Deutsch",
+            "Romanian",
+            "Hungarian"});
+            this.languagebox.Location = new System.Drawing.Point(137, 149);
+            this.languagebox.Name = "languagebox";
+            this.languagebox.Size = new System.Drawing.Size(195, 21);
+            this.languagebox.TabIndex = 9;
+            this.languagebox.Text = "English";
+            this.languagebox.SelectedIndexChanged += new System.EventHandler(this.languagebox_SelectedIndexChanged);
+            // 
+            // language_text
+            // 
+            this.language_text.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.language_text.AutoSize = true;
+            this.language_text.Location = new System.Drawing.Point(47, 152);
+            this.language_text.Name = "language_text";
+            this.language_text.Size = new System.Drawing.Size(73, 13);
+            this.language_text.TabIndex = 8;
+            this.language_text.Text = "Bot language:";
             // 
             // autoStartCheckbox
             // 
             this.autoStartCheckbox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.autoStartCheckbox.AutoSize = true;
-            this.autoStartCheckbox.Location = new System.Drawing.Point(48, 274);
+            this.autoStartCheckbox.Location = new System.Drawing.Point(48, 244);
             this.autoStartCheckbox.Margin = new System.Windows.Forms.Padding(2);
             this.autoStartCheckbox.Name = "autoStartCheckbox";
             this.autoStartCheckbox.Size = new System.Drawing.Size(73, 17);
@@ -383,7 +407,7 @@
             // 
             this.reInstallCertbox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.reInstallCertbox.AutoSize = true;
-            this.reInstallCertbox.Location = new System.Drawing.Point(48, 248);
+            this.reInstallCertbox.Location = new System.Drawing.Point(48, 218);
             this.reInstallCertbox.Margin = new System.Windows.Forms.Padding(2);
             this.reInstallCertbox.Name = "reInstallCertbox";
             this.reInstallCertbox.Size = new System.Drawing.Size(119, 17);
@@ -392,22 +416,22 @@
             this.reInstallCertbox.UseVisualStyleBackColor = true;
             this.reInstallCertbox.CheckedChanged += new System.EventHandler(this.reInstallCertbox_CheckedChanged);
             // 
-            // login_text
+            // loginButton
             // 
-            this.login_text.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.login_text.Location = new System.Drawing.Point(48, 209);
-            this.login_text.Name = "login_text";
-            this.login_text.Size = new System.Drawing.Size(254, 22);
-            this.login_text.TabIndex = 3;
-            this.login_text.Text = "Login";
-            this.login_text.UseVisualStyleBackColor = true;
-            this.login_text.Click += new System.EventHandler(this.loginButton_Click);
+            this.loginButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.loginButton.Location = new System.Drawing.Point(48, 179);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Size = new System.Drawing.Size(284, 22);
+            this.loginButton.TabIndex = 3;
+            this.loginButton.Text = "Login";
+            this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
             // username_text
             // 
             this.username_text.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.username_text.AutoSize = true;
-            this.username_text.Location = new System.Drawing.Point(46, 148);
+            this.username_text.Location = new System.Drawing.Point(47, 92);
             this.username_text.Name = "username_text";
             this.username_text.Size = new System.Drawing.Size(58, 13);
             this.username_text.TabIndex = 4;
@@ -416,7 +440,7 @@
             // passwordBox
             // 
             this.passwordBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.passwordBox.Location = new System.Drawing.Point(110, 177);
+            this.passwordBox.Location = new System.Drawing.Point(137, 119);
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.Size = new System.Drawing.Size(195, 20);
             this.passwordBox.TabIndex = 1;
@@ -426,7 +450,7 @@
             // 
             this.password_text.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.password_text.AutoSize = true;
-            this.password_text.Location = new System.Drawing.Point(47, 178);
+            this.password_text.Location = new System.Drawing.Point(47, 122);
             this.password_text.Name = "password_text";
             this.password_text.Size = new System.Drawing.Size(56, 13);
             this.password_text.TabIndex = 5;
@@ -435,22 +459,22 @@
             // usernameBox
             // 
             this.usernameBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.usernameBox.Location = new System.Drawing.Point(110, 146);
+            this.usernameBox.Location = new System.Drawing.Point(137, 89);
             this.usernameBox.Name = "usernameBox";
             this.usernameBox.Size = new System.Drawing.Size(195, 20);
             this.usernameBox.TabIndex = 0;
             // 
-            // settings2_tab
+            // settings_tab
             // 
-            this.settings2_tab.Controls.Add(this.innerSettingsTabControl);
-            this.settings2_tab.Location = new System.Drawing.Point(4, 22);
-            this.settings2_tab.Margin = new System.Windows.Forms.Padding(2);
-            this.settings2_tab.Name = "settings2_tab";
-            this.settings2_tab.Padding = new System.Windows.Forms.Padding(2);
-            this.settings2_tab.Size = new System.Drawing.Size(365, 396);
-            this.settings2_tab.TabIndex = 1;
-            this.settings2_tab.Text = "Settings";
-            this.settings2_tab.UseVisualStyleBackColor = true;
+            this.settings_tab.Controls.Add(this.innerSettingsTabControl);
+            this.settings_tab.Location = new System.Drawing.Point(4, 22);
+            this.settings_tab.Margin = new System.Windows.Forms.Padding(2);
+            this.settings_tab.Name = "settings_tab";
+            this.settings_tab.Padding = new System.Windows.Forms.Padding(2);
+            this.settings_tab.Size = new System.Drawing.Size(365, 284);
+            this.settings_tab.TabIndex = 1;
+            this.settings_tab.Text = "Settings";
+            this.settings_tab.UseVisualStyleBackColor = true;
             // 
             // innerSettingsTabControl
             // 
@@ -464,7 +488,7 @@
             this.innerSettingsTabControl.Margin = new System.Windows.Forms.Padding(2);
             this.innerSettingsTabControl.Name = "innerSettingsTabControl";
             this.innerSettingsTabControl.SelectedIndex = 0;
-            this.innerSettingsTabControl.Size = new System.Drawing.Size(361, 392);
+            this.innerSettingsTabControl.Size = new System.Drawing.Size(361, 280);
             this.innerSettingsTabControl.TabIndex = 12;
             // 
             // CollectorTabpage
@@ -481,9 +505,9 @@
             this.CollectorTabpage.Margin = new System.Windows.Forms.Padding(2);
             this.CollectorTabpage.Name = "CollectorTabpage";
             this.CollectorTabpage.Padding = new System.Windows.Forms.Padding(2);
-            this.CollectorTabpage.Size = new System.Drawing.Size(353, 366);
+            this.CollectorTabpage.Size = new System.Drawing.Size(353, 254);
             this.CollectorTabpage.TabIndex = 0;
-            this.CollectorTabpage.Text = " ";
+            this.CollectorTabpage.Text = "Collector";
             this.CollectorTabpage.UseVisualStyleBackColor = true;
             // 
             // collectCargoCheckbox
@@ -540,7 +564,7 @@
             // 
             // repAtHpNmrcud
             // 
-            this.repAtHpNmrcud.Location = new System.Drawing.Point(64, 189);
+            this.repAtHpNmrcud.Location = new System.Drawing.Point(62, 190);
             this.repAtHpNmrcud.Maximum = new decimal(new int[] {
             99,
             0,
@@ -584,7 +608,7 @@
             this.npcTabpage.Controls.Add(this.showAllNPCsButton);
             this.npcTabpage.Controls.Add(this.addNpcButton);
             this.npcTabpage.Controls.Add(this.addNPCTextbox);
-            this.npcTabpage.Controls.Add(this.label14);
+            this.npcTabpage.Controls.Add(this.addnpc_text);
             this.npcTabpage.Controls.Add(this.shootNpcsCheckbox);
             this.npcTabpage.Controls.Add(this.collectWhileAttackCheckbox);
             this.npcTabpage.Controls.Add(this.prioNPCsCheckbox);
@@ -594,7 +618,7 @@
             this.npcTabpage.Margin = new System.Windows.Forms.Padding(2);
             this.npcTabpage.Name = "npcTabpage";
             this.npcTabpage.Padding = new System.Windows.Forms.Padding(2);
-            this.npcTabpage.Size = new System.Drawing.Size(353, 353);
+            this.npcTabpage.Size = new System.Drawing.Size(353, 254);
             this.npcTabpage.TabIndex = 3;
             this.npcTabpage.Text = "NPCs";
             this.npcTabpage.UseVisualStyleBackColor = true;
@@ -603,7 +627,7 @@
             // 
             this.showAllNPCsButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.showAllNPCsButton.Location = new System.Drawing.Point(7, 331);
+            this.showAllNPCsButton.Location = new System.Drawing.Point(7, 232);
             this.showAllNPCsButton.Margin = new System.Windows.Forms.Padding(2);
             this.showAllNPCsButton.Name = "showAllNPCsButton";
             this.showAllNPCsButton.Size = new System.Drawing.Size(342, 19);
@@ -615,7 +639,7 @@
             // addNpcButton
             // 
             this.addNpcButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.addNpcButton.Location = new System.Drawing.Point(310, 306);
+            this.addNpcButton.Location = new System.Drawing.Point(310, 207);
             this.addNpcButton.Margin = new System.Windows.Forms.Padding(2);
             this.addNpcButton.Name = "addNpcButton";
             this.addNpcButton.Size = new System.Drawing.Size(38, 19);
@@ -628,22 +652,22 @@
             // 
             this.addNPCTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.addNPCTextbox.Location = new System.Drawing.Point(61, 306);
+            this.addNPCTextbox.Location = new System.Drawing.Point(61, 207);
             this.addNPCTextbox.Margin = new System.Windows.Forms.Padding(2);
             this.addNPCTextbox.Name = "addNPCTextbox";
             this.addNPCTextbox.Size = new System.Drawing.Size(246, 20);
             this.addNPCTextbox.TabIndex = 38;
             // 
-            // label14
+            // addnpc_text
             // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(4, 310);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(54, 13);
-            this.label14.TabIndex = 37;
-            this.label14.Text = "Add NPC:";
+            this.addnpc_text.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.addnpc_text.AutoSize = true;
+            this.addnpc_text.Location = new System.Drawing.Point(4, 211);
+            this.addnpc_text.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.addnpc_text.Name = "addnpc_text";
+            this.addnpc_text.Size = new System.Drawing.Size(54, 13);
+            this.addnpc_text.TabIndex = 37;
+            this.addnpc_text.Text = "Add NPC:";
             // 
             // shootNpcsCheckbox
             // 
@@ -713,7 +737,7 @@
             this.npcGridView.RowHeadersVisible = false;
             this.npcGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.npcGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.npcGridView.Size = new System.Drawing.Size(346, 262);
+            this.npcGridView.Size = new System.Drawing.Size(346, 163);
             this.npcGridView.TabIndex = 3;
             // 
             // checkedNpcColumn
@@ -820,14 +844,14 @@
             this.monsterTabpage.Controls.Add(this.showAllMonstersButton);
             this.monsterTabpage.Controls.Add(this.addMonsterButton);
             this.monsterTabpage.Controls.Add(this.addMonsterTextbox);
-            this.monsterTabpage.Controls.Add(this.label15);
+            this.monsterTabpage.Controls.Add(this.addmonster_text);
             this.monsterTabpage.Controls.Add(this.monsterGridView);
             this.monsterTabpage.Controls.Add(this.shootMonstersCheckbox);
             this.monsterTabpage.Location = new System.Drawing.Point(4, 22);
             this.monsterTabpage.Margin = new System.Windows.Forms.Padding(2);
             this.monsterTabpage.Name = "monsterTabpage";
             this.monsterTabpage.Padding = new System.Windows.Forms.Padding(2);
-            this.monsterTabpage.Size = new System.Drawing.Size(353, 353);
+            this.monsterTabpage.Size = new System.Drawing.Size(353, 254);
             this.monsterTabpage.TabIndex = 1;
             this.monsterTabpage.Text = "Monsters";
             this.monsterTabpage.UseVisualStyleBackColor = true;
@@ -847,7 +871,7 @@
             // 
             this.showAllMonstersButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.showAllMonstersButton.Location = new System.Drawing.Point(7, 334);
+            this.showAllMonstersButton.Location = new System.Drawing.Point(7, 235);
             this.showAllMonstersButton.Margin = new System.Windows.Forms.Padding(2);
             this.showAllMonstersButton.Name = "showAllMonstersButton";
             this.showAllMonstersButton.Size = new System.Drawing.Size(342, 20);
@@ -859,7 +883,7 @@
             // addMonsterButton
             // 
             this.addMonsterButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.addMonsterButton.Location = new System.Drawing.Point(310, 309);
+            this.addMonsterButton.Location = new System.Drawing.Point(310, 210);
             this.addMonsterButton.Margin = new System.Windows.Forms.Padding(2);
             this.addMonsterButton.Name = "addMonsterButton";
             this.addMonsterButton.Size = new System.Drawing.Size(38, 20);
@@ -872,22 +896,22 @@
             // 
             this.addMonsterTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.addMonsterTextbox.Location = new System.Drawing.Point(78, 310);
+            this.addMonsterTextbox.Location = new System.Drawing.Point(78, 211);
             this.addMonsterTextbox.Margin = new System.Windows.Forms.Padding(2);
             this.addMonsterTextbox.Name = "addMonsterTextbox";
             this.addMonsterTextbox.Size = new System.Drawing.Size(229, 20);
             this.addMonsterTextbox.TabIndex = 42;
             // 
-            // label15
+            // addmonster_text
             // 
-            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(4, 313);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(70, 13);
-            this.label15.TabIndex = 41;
-            this.label15.Text = "Add Monster:";
+            this.addmonster_text.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.addmonster_text.AutoSize = true;
+            this.addmonster_text.Location = new System.Drawing.Point(4, 214);
+            this.addmonster_text.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.addmonster_text.Name = "addmonster_text";
+            this.addmonster_text.Size = new System.Drawing.Size(70, 13);
+            this.addmonster_text.TabIndex = 41;
+            this.addmonster_text.Text = "Add Monster:";
             // 
             // monsterGridView
             // 
@@ -911,7 +935,7 @@
             this.monsterGridView.RowHeadersVisible = false;
             this.monsterGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.monsterGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.monsterGridView.Size = new System.Drawing.Size(350, 277);
+            this.monsterGridView.Size = new System.Drawing.Size(350, 178);
             this.monsterGridView.TabIndex = 1;
             this.monsterGridView.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.monsterGridView_DataError);
             // 
@@ -966,7 +990,7 @@
             this.raidTabpage.Location = new System.Drawing.Point(4, 22);
             this.raidTabpage.Margin = new System.Windows.Forms.Padding(2);
             this.raidTabpage.Name = "raidTabpage";
-            this.raidTabpage.Size = new System.Drawing.Size(353, 353);
+            this.raidTabpage.Size = new System.Drawing.Size(353, 254);
             this.raidTabpage.TabIndex = 2;
             this.raidTabpage.Text = "Raid";
             this.raidTabpage.UseVisualStyleBackColor = true;
@@ -1098,7 +1122,7 @@
             "Voodooballs (75 + 50)",
             "Souleater (60 + 60)",
             "Voodooblast (100)"});
-            this.shootBossAmmoComboBox.Location = new System.Drawing.Point(123, 59);
+            this.shootBossAmmoComboBox.Location = new System.Drawing.Point(128, 59);
             this.shootBossAmmoComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.shootBossAmmoComboBox.Name = "shootBossAmmoComboBox";
             this.shootBossAmmoComboBox.Size = new System.Drawing.Size(232, 21);
@@ -1135,7 +1159,7 @@
             "Voodooballs (75 + 50)",
             "Souleater (60 + 60)",
             "Voodooblast (100)"});
-            this.raidNpcAmmoComboBox.Location = new System.Drawing.Point(123, 25);
+            this.raidNpcAmmoComboBox.Location = new System.Drawing.Point(126, 25);
             this.raidNpcAmmoComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.raidNpcAmmoComboBox.Name = "raidNpcAmmoComboBox";
             this.raidNpcAmmoComboBox.Size = new System.Drawing.Size(232, 21);
@@ -1156,7 +1180,7 @@
             this.bonusmapTabpage.Margin = new System.Windows.Forms.Padding(1);
             this.bonusmapTabpage.Name = "bonusmapTabpage";
             this.bonusmapTabpage.Padding = new System.Windows.Forms.Padding(1);
-            this.bonusmapTabpage.Size = new System.Drawing.Size(353, 353);
+            this.bonusmapTabpage.Size = new System.Drawing.Size(353, 254);
             this.bonusmapTabpage.TabIndex = 4;
             this.bonusmapTabpage.Text = "Bonusmap[BETA]";
             this.bonusmapTabpage.UseVisualStyleBackColor = true;
@@ -1295,7 +1319,7 @@
             // saveSettingsButton
             // 
             this.saveSettingsButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.saveSettingsButton.Location = new System.Drawing.Point(3, 425);
+            this.saveSettingsButton.Location = new System.Drawing.Point(3, 313);
             this.saveSettingsButton.Margin = new System.Windows.Forms.Padding(2);
             this.saveSettingsButton.Name = "saveSettingsButton";
             this.saveSettingsButton.Size = new System.Drawing.Size(373, 25);
@@ -1333,7 +1357,7 @@
             this.map_tab.Location = new System.Drawing.Point(4, 22);
             this.map_tab.Name = "map_tab";
             this.map_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.map_tab.Size = new System.Drawing.Size(379, 440);
+            this.map_tab.Size = new System.Drawing.Size(379, 341);
             this.map_tab.TabIndex = 0;
             this.map_tab.Text = "Map";
             this.map_tab.UseVisualStyleBackColor = true;
@@ -1346,7 +1370,7 @@
             this.webBrowser1.MinimumSize = new System.Drawing.Size(10, 10);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.ScriptErrorsSuppressed = true;
-            this.webBrowser1.Size = new System.Drawing.Size(373, 327);
+            this.webBrowser1.Size = new System.Drawing.Size(373, 252);
             this.webBrowser1.TabIndex = 3;
             this.webBrowser1.Url = new System.Uri("about:blank", System.UriKind.Absolute);
             this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
@@ -1355,9 +1379,9 @@
             // logBox
             // 
             this.logBox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.logBox.Location = new System.Drawing.Point(3, 330);
+            this.logBox.Location = new System.Drawing.Point(3, 255);
             this.logBox.Name = "logBox";
-            this.logBox.Size = new System.Drawing.Size(373, 107);
+            this.logBox.Size = new System.Drawing.Size(373, 83);
             this.logBox.TabIndex = 2;
             this.logBox.Text = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" +
     "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
@@ -1368,12 +1392,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.map_tab);
-            this.tabControl1.Controls.Add(this.settings_tab);
+            this.tabControl1.Controls.Add(this.settings2_tab);
             this.tabControl1.Controls.Add(this.stats_tab);
             this.tabControl1.Location = new System.Drawing.Point(0, 37);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(387, 479);
+            this.tabControl1.Size = new System.Drawing.Size(387, 367);
             this.tabControl1.TabIndex = 0;
             // 
             // bgTimer
@@ -1381,53 +1405,14 @@
             this.bgTimer.Enabled = true;
             this.bgTimer.Tick += new System.EventHandler(this.bgTimer_Tick);
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.languagesToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(387, 24);
-            this.menuStrip1.TabIndex = 7;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // languagesToolStripMenuItem
-            // 
-            this.languagesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.englishToolStripMenuItem,
-            this.germanToolStripMenuItem,
-            this.hungarianToolStripMenuItem});
-            this.languagesToolStripMenuItem.Name = "languagesToolStripMenuItem";
-            this.languagesToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
-            this.languagesToolStripMenuItem.Text = "Languages";
-            // 
-            // englishToolStripMenuItem
-            // 
-            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.englishToolStripMenuItem.Text = "English";
-            // 
-            // germanToolStripMenuItem
-            // 
-            this.germanToolStripMenuItem.Name = "germanToolStripMenuItem";
-            this.germanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.germanToolStripMenuItem.Text = "German";
-            // 
-            // hungarianToolStripMenuItem
-            // 
-            this.hungarianToolStripMenuItem.Name = "hungarianToolStripMenuItem";
-            this.hungarianToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.hungarianToolStripMenuItem.Text = "Hungarian";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(387, 424);
+            this.ClientSize = new System.Drawing.Size(387, 406);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.stopbutton);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "SFCollector";
@@ -1435,11 +1420,11 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.stats_tab.ResumeLayout(false);
             this.stats_tab.PerformLayout();
-            this.settings_tab.ResumeLayout(false);
+            this.settings2_tab.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.login_tab.ResumeLayout(false);
             this.login_tab.PerformLayout();
-            this.settings2_tab.ResumeLayout(false);
+            this.settings_tab.ResumeLayout(false);
             this.innerSettingsTabControl.ResumeLayout(false);
             this.CollectorTabpage.ResumeLayout(false);
             this.CollectorTabpage.PerformLayout();
@@ -1460,10 +1445,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.repAtBonusmapNumeric)).EndInit();
             this.map_tab.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -1484,15 +1466,15 @@
         private System.Windows.Forms.Label stat_monster_text;
         private System.Windows.Forms.Label stat_npc_text;
         private System.Windows.Forms.Label stat_glitter_text;
-        private System.Windows.Forms.TabPage settings_tab;
+        private System.Windows.Forms.TabPage settings2_tab;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage login_tab;
-        private System.Windows.Forms.Button login_text;
+        private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.Label username_text;
         private System.Windows.Forms.TextBox passwordBox;
         private System.Windows.Forms.Label password_text;
         private System.Windows.Forms.TextBox usernameBox;
-        private System.Windows.Forms.TabPage settings2_tab;
+        private System.Windows.Forms.TabPage settings_tab;
         private System.Windows.Forms.NumericUpDown repAtHpNmrcud;
         private System.Windows.Forms.Label collector_rep_text;
         private System.Windows.Forms.CheckBox collectChestsCheckbox;
@@ -1547,11 +1529,11 @@
         private System.Windows.Forms.Button showAllNPCsButton;
         private System.Windows.Forms.Button addNpcButton;
         private System.Windows.Forms.TextBox addNPCTextbox;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label addnpc_text;
         private System.Windows.Forms.Button showAllMonstersButton;
         private System.Windows.Forms.Button addMonsterButton;
         private System.Windows.Forms.TextBox addMonsterTextbox;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label addmonster_text;
         private System.Windows.Forms.TabPage bonusmapTabpage;
         private System.Windows.Forms.Label bonusmap_ammo_text;
         private System.Windows.Forms.ComboBox bonusmapAmmoTextbox;
@@ -1563,11 +1545,8 @@
         private System.Windows.Forms.NumericUpDown repAtBonusmapNumeric;
         private System.Windows.Forms.Label bonusmap_repair_text;
         private System.Windows.Forms.CheckBox prioritizeMonstersCheckbox;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem languagesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem germanToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hungarianToolStripMenuItem;
+        private System.Windows.Forms.ComboBox languagebox;
+        private System.Windows.Forms.Label language_text;
     }
 }
 

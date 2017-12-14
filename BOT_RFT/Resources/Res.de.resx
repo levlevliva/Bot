@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ammoNpcColumn" xml:space="preserve">
+    <value>Ammo</value>
+  </data>
+  <data name="autoJoinBonusmapCheckbox" xml:space="preserve">
+    <value>Bonuskarte automatisch Beitreten</value>
+  </data>
+  <data name="autoJoinRaidCheckbox" xml:space="preserve">
+    <value>Automatisch Beitreten</value>
+  </data>
+  <data name="autoStartCheckbox" xml:space="preserve">
+    <value>Automatisch Starten</value>
+  </data>
+  <data name="boardNPCColumn" xml:space="preserve">
+    <value>Board</value>
+  </data>
+  <data name="bonusmapTabpage" xml:space="preserve">
+    <value>Bonusmap</value>
+  </data>
+  <data name="bonusmap_ammo_text" xml:space="preserve">
+    <value>Munition:</value>
+  </data>
+  <data name="bonusmap_mapname_text" xml:space="preserve">
+    <value>Bonuskarte:</value>
+  </data>
+  <data name="bonusmap_repair_text" xml:space="preserve">
+    <value>Hitpoint Limit:</value>
+  </data>
+  <data name="collectCargoCheckbox" xml:space="preserve">
+    <value>Fracht Einsammeln</value>
+  </data>
+  <data name="collectChestsCheckbox" xml:space="preserve">
+    <value>Kisten Einsammeln</value>
+  </data>
+  <data name="collectEventChestsCheckbox" xml:space="preserve">
+    <value>Event Kisten Einsammeln</value>
+  </data>
+  <data name="collectGlittersCheckbox" xml:space="preserve">
+    <value>Glitzis Einsammeln</value>
+  </data>
+  <data name="collectLionChestsCheckbox" xml:space="preserve">
+    <value>Löwen Kiste Einsammeln</value>
+  </data>
+  <data name="collectMeatCheckbox" xml:space="preserve">
+    <value>Kraken Fleisch Einsammeln</value>
+  </data>
+  <data name="CollectorTabpage" xml:space="preserve">
+    <value>Sammeln</value>
+  </data>
+  <data name="collector_rep_text" xml:space="preserve">
+    <value>Hitpoint Limit:</value>
+  </data>
+  <data name="collectWhileAttackCheckbox" xml:space="preserve">
+    <value>Glitzis sammeln, während des Angriffs</value>
+  </data>
+  <data name="joinBonusmapButton" xml:space="preserve">
+    <value>Bonuskarte beitreten</value>
+  </data>
+  <data name="joinRaidButton" xml:space="preserve">
+    <value>Raid beitreten</value>
+  </data>
+  <data name="leaveBonusmapButton" xml:space="preserve">
+    <value>Bonuskarte Verlassen</value>
+  </data>
+  <data name="leaveRaidButton" xml:space="preserve">
+    <value>Raid Verlassen</value>
+  </data>
+  <data name="login_tab" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="loginButton" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="map_tab" xml:space="preserve">
+    <value>Map</value>
+  </data>
+  <data name="MonsterColumn" xml:space="preserve">
+    <value>Monsters</value>
+  </data>
+  <data name="MonsterHarpoon" xml:space="preserve">
+    <value>Harpunen</value>
+  </data>
+  <data name="monsterTabpage" xml:space="preserve">
+    <value>Monsters</value>
+  </data>
+  <data name="npcTabpage" xml:space="preserve">
+    <value>NPCs</value>
+  </data>
+  <data name="onlyFullHPNPCsCheckBox" xml:space="preserve">
+    <value>Nur NPCs mit vollen HP</value>
+  </data>
+  <data name="password_text" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="platesNpcColumn" xml:space="preserve">
+    <value>Panzerplatten</value>
+  </data>
+  <data name="powderNpcColumn" xml:space="preserve">
+    <value>Schwarzpulver</value>
+  </data>
+  <data name="prioNPCsCheckbox" xml:space="preserve">
+    <value>NPCs priorisieren</value>
+  </data>
+  <data name="prioritizeMonstersCheckbox" xml:space="preserve">
+    <value>Monster priorisieren</value>
+  </data>
+  <data name="raidTabpage" xml:space="preserve">
+    <value>Raid</value>
+  </data>
+  <data name="raid_npc_ammo_text" xml:space="preserve">
+    <value>NPC Munition:</value>
+  </data>
+  <data name="raid_repair_text" xml:space="preserve">
+    <value>Hitpoint Limit:</value>
+  </data>
+  <data name="raid_settings_group_text" xml:space="preserve">
+    <value>Raid Einstellungen</value>
+  </data>
+  <data name="reInstallCertbox" xml:space="preserve">
+    <value>Re-Install Cert.</value>
+  </data>
+  <data name="settings2_tab" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="settings_tab" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="shootBossCheckbox" xml:space="preserve">
+    <value>Boss schießen, Munition:</value>
+  </data>
+  <data name="shootMonstersCheckbox" xml:space="preserve">
+    <value>Monster Angreifen</value>
+  </data>
+  <data name="shootNpcsCheckbox" xml:space="preserve">
+    <value>NPCs Angreifen</value>
+  </data>
+  <data name="startButton" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="stats_tab" xml:space="preserve">
+    <value>Statistiken</value>
+  </data>
+  <data name="stat_collectedgolds_text" xml:space="preserve">
+    <value>+Gold:</value>
+  </data>
+  <data name="stat_collectedmojos_text" xml:space="preserve">
+    <value>+Mojos:</value>
+  </data>
+  <data name="stat_collectedpearls_text" xml:space="preserve">
+    <value>+Perlen:</value>
+  </data>
+  <data name="stat_collectedxp_text" xml:space="preserve">
+    <value>+XP:</value>
+  </data>
+  <data name="stat_currentposition_text" xml:space="preserve">
+    <value>Position:</value>
+  </data>
+  <data name="stat_glitter_text" xml:space="preserve">
+    <value>Glitzis:</value>
+  </data>
+  <data name="stat_monster_text" xml:space="preserve">
+    <value>Monsters:</value>
+  </data>
+  <data name="stat_npc_text" xml:space="preserve">
+    <value>NPCs:</value>
+  </data>
+  <data name="stopbutton" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="username_text" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="addMonsterButton" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="addmonster_text" xml:space="preserve">
+    <value>addmonster_text</value>
+  </data>
+  <data name="addNpcButton" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="addnpc_text" xml:space="preserve">
+    <value>addnpc_text</value>
+  </data>
+  <data name="saveSettingsButton" xml:space="preserve">
+    <value>saveSettingsButton</value>
+  </data>
+  <data name="showAllMonstersButton" xml:space="preserve">
+    <value>showAllMonstersButton</value>
+  </data>
+  <data name="showAllNPCsButton" xml:space="preserve">
+    <value>showAllNPCsButton</value>
+  </data>
+</root>

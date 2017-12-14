@@ -33,9 +33,14 @@ namespace SFCollector
         private Thread localThread;
         private HelpTools help;
         public int loadNames = 0;
-        ResourceManager res_man;    // declare Resource manager for the lang section
-        CultureInfo cul;            //lang section
+        //language shit starts
+        ResourceManager res_man;    
+        CultureInfo cul;
+        //log language shit
+        int loginfirst = new int();
 
+        //language shit stops
+       
         public Form1()
         {
             CertMaker.createRootCert();
@@ -99,7 +104,7 @@ namespace SFCollector
             if (monsters)
             {
                 monsterGridView.Rows.Clear();
-                monsterGridView.Rows.Add(new object[] { false, "Moby Dick", "Bronze Harpoons (50)" });
+                monsterGridView.Rows.Add(new object[] { false, "Moby Dick", "Bronze Harpoons (50)"});
                 monsterGridView.Rows.Add(new object[] { false, "Trankus", "Bronze Harpoons (50)" });
                 monsterGridView.Rows.Add(new object[] { false, "Serena", "Bronze Harpoons (50)" });
                 monsterGridView.Rows.Add(new object[] { false, "Orca", "Bronze Harpoons (50)" });
@@ -162,8 +167,7 @@ namespace SFCollector
                     if (Account.onRaid)
                     {
                         Text = "SFCollector - " + (Account.raidMedallion == 38 ? "Sunmap" : "Behemoth");
-                    }
-                    else if (!Text.Contains(Account.username))
+                    } else if (!Text.Contains(Account.username))
                     {
                         Text = "SFCollector - " + Program.version + " - " + Account.username;
                     }
@@ -196,15 +200,15 @@ namespace SFCollector
 
         public void LoginMethod()
         {
-            try
-            {
-                BotMethods.ClearCache();
-                BotLogic.WriteLine("Cache cleaned.");
-            }
-            catch (Exception)
-            {
-                BotLogic.WriteLine("There was an error while cleaning cache!");
-            }
+                try
+                {
+                    BotMethods.ClearCache();
+                    BotLogic.WriteLine("Cache cleaned.");
+                }
+                catch (Exception)
+                {
+                    BotLogic.WriteLine("There was an error while cleaning cache!");
+                }
             try
             {
                 var _compileTime = BotMethods.GetCompileTime();
@@ -340,8 +344,7 @@ namespace SFCollector
                         BotLogic.entitys.Add(monsterGridView.Rows[i].Cells[1].Value.ToString() + "|" + monsterGridView.Rows[i].Cells[2].Value.ToString(), (bool)(monsterGridView.Rows[i].Cells[0].Value.ToString() == "1"));
                     }
                 }
-            }
-            catch (Exception ex)
+            } catch (Exception ex)
             {
                 writeLine("An unknown Error occured while saving Settings!\n" + ex);
             }
@@ -464,7 +467,7 @@ namespace SFCollector
                     for (int i = 0; i < Settings.Default.monsters.Count; i++)
                     {
                         string[] args = Settings.Default.monsters[i].Split('|');
-                        monsterGridView.Rows.Add(new object[] { false, args[1], args[2] });
+                        monsterGridView.Rows.Add(new object[] { false, args[1], args[2]});
                         foreach (DataGridViewRow row in monsterGridView.Rows)
                         {
                             if ((string)row.Cells[1].Value == (args[1]))
@@ -515,7 +518,7 @@ namespace SFCollector
                     return;
                 }
                 Client.entitys.Clear();
-                login_text.Enabled = false;
+                loginButton.Enabled = false;
                 try
                 {
                     if (BotLogic.running)
@@ -624,7 +627,7 @@ namespace SFCollector
                     }
                 }
                 BotLogic.WriteLine("Logging in user: " + usernameBox.Text);
-                login_text.Enabled = true;
+                loginButton.Enabled = true;
             }
             if (webBrowser1.DocumentText.Contains("href=\"index.es?action=internalMap\""))
             {
@@ -772,29 +775,104 @@ namespace SFCollector
         {
 
         }
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            hungarianToolStripMenuItem.Checked = false;    //default language is english
-            englishToolStripMenuItem.Checked = true;
-
             res_man = new ResourceManager("SFCollector.Resources.Res", typeof(Form1).Assembly);
-            //
-            switch_language();
+            switch_language();  //default is english
         }
+
         private void switch_language()
         {
-            if (hungarianToolStripMenuItem.Checked == true)    //in hungarian
+            if (languagebox.Text == "Hungarian")    
             {
-                cul = CultureInfo.CreateSpecificCulture("hu");        //create culture for hungarian
+                cul = CultureInfo.CreateSpecificCulture("hu");        
             }
-            else if (englishToolStripMenuItem.Checked == true)          //in english
+            else if (languagebox.Text == "English")          
             {
-                cul = CultureInfo.CreateSpecificCulture("en");        //create culture for english
+                cul = CultureInfo.CreateSpecificCulture("en");        
+            }
+            else if (languagebox.Text == "Romanian")
+            {
+                cul = CultureInfo.CreateSpecificCulture("ro");
+               
             }
             else
             {
-                cul = CultureInfo.CreateSpecificCulture("de");        //create culture for deutsch
+                cul = CultureInfo.CreateSpecificCulture("de");        
             }
+
+            stopbutton.Text = res_man.GetString("stopbutton", cul);
+            npcGridView.Columns["ammoNpcColumn"].HeaderText = res_man.GetString("ammoNpcColumn", cul);
+            autoJoinBonusmapCheckbox.Text = res_man.GetString("autoJoinBonusmapCheckbox", cul);
+            autoJoinRaidCheckbox.Text = res_man.GetString("autoJoinRaidCheckbox", cul);
+            autoStartCheckbox.Text = res_man.GetString("autoStartCheckbox", cul);
+            npcGridView.Columns["boardNPCColumn"].HeaderText = res_man.GetString("boardNPCColumn", cul);
+            bonusmap_ammo_text.Text = res_man.GetString("bonusmap_ammo_text", cul);
+            bonusmap_mapname_text.Text = res_man.GetString("bonusmap_mapname_text", cul);
+            bonusmap_repair_text.Text = res_man.GetString("bonusmap_repair_text", cul);
+            bonusmapTabpage.Text = res_man.GetString("bonusmapTabpage", cul);
+            collectCargoCheckbox.Text = res_man.GetString("collectCargoCheckbox", cul);
+            collectChestsCheckbox.Text = res_man.GetString("collectChestsCheckbox", cul);
+            collectEventChestsCheckbox.Text = res_man.GetString("collectEventChestsCheckbox", cul);
+            collectGlittersCheckbox.Text = res_man.GetString("collectGlittersCheckbox", cul);
+            collectLionChestsCheckbox.Text = res_man.GetString("collectLionChestsCheckbox", cul);
+            collectMeatCheckbox.Text = res_man.GetString("collectMeatCheckbox", cul);
+            collector_rep_text.Text = res_man.GetString("collector_rep_text", cul);
+            CollectorTabpage.Text = res_man.GetString("CollectorTabpage", cul);
+            collectWhileAttackCheckbox.Text = res_man.GetString("collectWhileAttackCheckbox", cul);
+            joinBonusmapButton.Text = res_man.GetString("joinBonusmapButton", cul);
+            joinRaidButton.Text = res_man.GetString("joinRaidButton", cul);
+            leaveBonusmapButton.Text = res_man.GetString("leaveBonusmapButton", cul);
+            leaveRaidButton.Text = res_man.GetString("leaveRaidButton", cul);
+            login_tab.Text = res_man.GetString("login_tab", cul);
+            loginButton.Text = res_man.GetString("loginButton", cul);
+            map_tab.Text = res_man.GetString("map_tab", cul);
+            monsterGridView.Columns["MonsterColumn"].HeaderText = res_man.GetString("MonsterColumn", cul);
+            monsterGridView.Columns["MonsterHarpoon"].HeaderText = res_man.GetString("MonsterHarpoon", cul);
+            monsterTabpage.Text = res_man.GetString("monsterTabpage", cul);
+            npcTabpage.Text = res_man.GetString("npcTabpage", cul);
+            onlyFullHPNPCsCheckBox.Text = res_man.GetString("onlyFullHPNPCsCheckBox", cul);
+            password_text.Text = res_man.GetString("password_text", cul);
+            npcGridView.Columns["platesNpcColumn"].HeaderText = res_man.GetString("platesNpcColumn", cul);
+            npcGridView.Columns["powderNpcColumn"].HeaderText = res_man.GetString("powderNpcColumn", cul);
+            prioNPCsCheckbox.Text = res_man.GetString("prioNPCsCheckbox", cul);
+            prioritizeMonstersCheckbox.Text = res_man.GetString("prioritizeMonstersCheckbox", cul);
+            raid_npc_ammo_text.Text = res_man.GetString("raid_npc_ammo_text", cul);
+            raid_repair_text.Text = res_man.GetString("raid_repair_text", cul);
+            raid_settings_group_text.Text = res_man.GetString("raid_settings_group_text", cul);
+            raidTabpage.Text = res_man.GetString("raidTabpage", cul);
+            reInstallCertbox.Text = res_man.GetString("reInstallCertbox", cul);
+            settings_tab.Text = res_man.GetString("settings_tab", cul);
+            settings2_tab.Text = res_man.GetString("settings2_tab", cul);
+            shootBossCheckbox.Text = res_man.GetString("shootBossCheckbox", cul);
+            shootMonstersCheckbox.Text = res_man.GetString("shootMonstersCheckbox", cul);
+            shootNpcsCheckbox.Text = res_man.GetString("shootNpcsCheckbox", cul);
+            startButton.Text = res_man.GetString("startButton", cul);
+            stat_collectedgolds_text.Text = res_man.GetString("stat_collectedgolds_text", cul);
+            stat_collectedmojos_text.Text = res_man.GetString("stat_collectedmojos_text", cul);
+            stat_collectedpearls_text.Text = res_man.GetString("stat_collectedpearls_text", cul);
+            stat_collectedxp_text.Text = res_man.GetString("stat_collectedxp_text", cul);
+            stat_currentposition_text.Text = res_man.GetString("stat_currentposition_text", cul);
+            stat_glitter_text.Text = res_man.GetString("stat_glitter_text", cul);
+            stat_monster_text.Text = res_man.GetString("stat_monster_text", cul);
+            stat_npc_text.Text = res_man.GetString("stat_npc_text", cul);
+            stats_tab.Text = res_man.GetString("stats_tab", cul);
+            stopbutton.Text = res_man.GetString("stopbutton", cul);
+            username_text.Text = res_man.GetString("username_text", cul);
+            saveSettingsButton.Text = res_man.GetString("saveSettingsButton", cul);
+            addnpc_text.Text = res_man.GetString("addnpc_text", cul);
+            addNpcButton.Text = res_man.GetString("addNpcButton", cul);
+            showAllNPCsButton.Text = res_man.GetString("showAllNPCsButton", cul);
+            addmonster_text.Text = res_man.GetString("addmonster_text", cul);
+            addMonsterButton.Text = res_man.GetString("addMonsterButton", cul);
+            showAllMonstersButton.Text = res_man.GetString("showAllMonstersButton", cul);
+
+        }
+
+        private void languagebox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch_language();
         }
     }
 }

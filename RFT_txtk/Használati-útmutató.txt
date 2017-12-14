@@ -1,0 +1,8 @@
+Használati útmutató:
+
+A felhasználó az .exe fájl megnyitása után a programban a "Beállítások" fülre majd azon belül a "Bejelentkezés" fülre kattintva tudja
+megadni a játékban található felhasználó fiókjának felhasználói nevét valamint jelszavát és a "Belépés" gombra kattintva tudja elindítani
+a bejelentkezést, amennyiben a felhasználó bepipálja az "Automatikus indítás" jelölőnégyzetét akkor a "Belépés" gombbal az alapbeállításokban
+szereplő értékekkel elindul a program.
+A felhasználó a "Beállítások" fül alatt be tudja állítani a számára legkedvezőbb működést, meg tudja adni hogy a program mit csináljon a hajójával.
+Mivel a nyelvválasztás adott lehetőség, így nem szükséges a további leírás ugyanis a beállításokban magyar nyelven is elérhetőek az opciók.
