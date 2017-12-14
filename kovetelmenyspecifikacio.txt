@@ -7,5 +7,4 @@ A program célja olyan Bot program létrehozása amely internetes játékban aut
 Az alkalmazás kivitelezésére 2 azaz kettő hónap áll rendelkezésre.
 - A program a böngészős Seafight online MMORPG játékához készüljön!
 - Tegye lehetővé a játékban található javak automatikus begyűjtését.
-
-
+- A program UI-ját a fejlesztőkre bízzuk, legyen felhasználóbarát.
