@@ -1,59 +1,11 @@
-Projekt név: SFCollector
-Projekt várható elkészülése: 2017.11.21
+﻿Projekt név: SFCollector
+Projekt leadási határideje: 2017.11.21
 
-Követelmény specifikáció
+Követelmény specifikáció:
 
 A program célja olyan Bot program létrehozása amely internetes játékban automatizált játékmenetet tesz lehetővé felhasználói beavatkozás nélkül.
-Az alkalmazás kivitelezése várhatóan 2 hónap.
-
-Bot alkalmazás fejlesztés
-
-I.	Választott platform:	PC(Web)
-
-II.	Bot alkalmazás rövid leírása:
--Automatizált játékmenetet tesz lehetővé a szoftver, így a felhasználóját előnyökhöz juttatja.
--Az alkalmazás rendelkezik standard illetve prémium funkciókkal, ezutóbbi csak a licensz megvásárlása után használható, vagy ameddig a felhasználónak aktív a 
-shareware licensze (48 óra).
+Az alkalmazás kivitelezésére 2 azaz kettő hónap áll rendelkezésre.
+- A program a böngészős Seafight online MMORPG játékához készüljön!
+- Tegye lehetővé a játékban található javak automatikus begyűjtését.
 
 
-III.	Funkcionális követelmények:
-Automatizálja a felhasználói fiókot.Könnyítsen a felhasználó játék menetén.Összeomlás mentes szoftver műkődés.
-A játékban a autómatikusan végigjátssza a bónusz térképeket ezzel sok előnyhöz juttatja a felhasználót.
-Anormál térképeken automatikusan gyűjtögeti a zsákmányokat. A boss térképeken gyűjtöget.
-  
-
-IV.	Felhasználói követelmények:
-(pl ha az alkalmazást letálcázzuk akkor az fusson a háttérben.)
-    - Az alkalmazás képes futni a héttérben.
-    - Az alkalmazás felhasználó barát felülettel fog rendelkezni.(user-interface)
-    IV.I  Biztonság
-    - A felhasználók által támasztott minimális biztonsági követelmény, a felhasználók egyértelmű azonosíthatósága, a felhasználók fiókjának a relatív biztonsága.
-      Visszaélések esetén, a gyors reagáláson túl, a viszaélés során keletkezett illegális állapotok viszaállítása a legális állapotokba.
-      Ezen minimális elvárásokat felhasználónév + jelszó, illetve loggolás megoldásokkal valósítja meg a projekt.
-
-V. 	Rendszer követelmények:
-    - Működő internetkapcsolat
-    - Windows operációs rendszer WinXp/WinVista/win7/Win8-8.1/Win10
-    - Minimum 512 Mb-RAM
-    - Minimum Pentium 4
-
-VI.	Követelményi lista:
--Automatikus javítás
--Beállítható automatikus start opció bejelentkezés után.
--Multilanguage opció.
--Beállítások mentése opció (számítógépen tárolt global resource fájl, később cloud alapú mentés).
--Kódolt átjáró a licensz szerver valamint a kliens között(Reverse engineering, crack elleni védelem, valamint biztonságos fizetési csatorna).
--A program nem használható Virtuális Számítógépeken(licensz rendszer kijátszását tenné lehetővé).
-
-
-VII. Árajánlat
-
--A program rendelkezik saját licensz rendszerrel amely a számítógép hardwareeiből generál egy "HWID"-t ami minden számítógépnek egyedi, így nincs szükség felhasználói
-regisztrációra, illetve sokkal hatékonyabb módszer.
--A szoftvert csak bérelni lehet, tényleges megvásárlására lehetőség nincs, pénzvisszatérítés nincs, illetve a szoftver sajátosságaiból adódóan a használó 
-megszegi a Bigpoint GmbH által megfogalmazott ÁÜSZ & ÁFSZ-t így az accountja esetleges zárolásáért felelősséget nem vállalunk.
--A szoftver bérlésével a felhasználó beleegyezik abba, hogy adatokat továbbítsunk a szervereink felé, illetve ezeket meghatározatlan ideig tároljuk is (HWID, UserID, SessionID, Számítógép név, IP cím).
--A megvásárolt licensz nem garantálja a program folyamatos működését (pl.: Amennyiben a játék algoritmusa megváltozik, így ellehetetlenítve a program működését, nem áll
-módunkban a licensz hátralévő időtartamát visszatéríteni).
--A licensz ára 6,49€/1 hónap 14,99€/3 hónap.
--A szoftver lebutított demo funkciókkal is rendelkezik így ingyenesen is elérhető.
