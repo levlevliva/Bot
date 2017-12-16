@@ -9,3 +9,10 @@ A napi bónuszt a felhasználó helyett elfogadja/felveszi.
 Az ellenséges játékosokat automatikusan támadja.
 Automatikusan javítja a hajót amennyiben az elsüllyed vagy megsérül.
 A lőszert amennyiben szükséges és van hozzá elég fizetőeszköz, újravásárolja.
+
+-----------------------------------
+Rendszer Célja
+
+A rendszer célja , hogy a Seafight nevű internetes mmorpg játékot úgyis játszhassuk , hogy nem vagyunk számítógép közelben.
+  Tehát automatikusan futtatja a játékot miközben megtámad játékosokat , fosztogat , a térképen lévő tárgyakat felveszi , 
+  újra tölti a löszert , az életerőt újratölti ha megsérült az adott hajónk.
