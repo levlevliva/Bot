@@ -1,0 +1,29 @@
+---------------------------------------------------------------------------
+Felelős: -Havas Márk
+		 -Balázsy Levente
+		 -Kun Levente
+		 -Fecske Márk
+---------------------------------------------------------------------------
+
+	A helyi programtervező iroda megrendelést ad egy olyan Bot programra a Seafight 
+nevű internetes(webböngészös) játékhoz amely valós idöben gyűjti a tapasztalatot , az 
+aranyat,  a gyöngyöket , vodoo pontokat , elit pontokat , akció tárgyakat, hajodesignok
+(skin)-at, csata pontokat és az épp megjelenő új események(event) tárgyait.
+Mindezt ugy kell megoldani ,hogy a lebukás esélye minimális legyen illetve az előbb
+felsorolt dolgokat automatikusan gyűjtse. A hajó ha megsérül akkor javítsa meg magat.
+Ha kifogy a lőszerből vegyen újjat. A program futtatható legyen windows operációs
+rendszer alatt. Nyelvválasztási opció legyen benne. Egy "Settings"(beállítások) fülbe
+lehessen kiválasztani , hogy milyen plussz dolgokat szeretnénk ha csinálna a hajó.
+---------------------------------------------------------------------------
+
+Ajánlatkérő bemutatása:
+		
+		Cégneve:
+		Székhelye:
+		E-mail címe:
+		Telefon:
+		Adószáma:
+		Egyéb elérhetősége:
+---------------------------------------------------------------------------
+Határidő: 2017.12.22
+---------------------------------------------------------------------------
