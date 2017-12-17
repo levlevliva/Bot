@@ -1,4 +1,9 @@
+---------------------------------------------------------------------------
 Használati útmutató:
+---------------------------------------------------------------------------
+
+Alap információk / Beállítások:
+---------------------------------------------------------------------------
 
 A felhasználó az .exe fájl megnyitása után a programban a "Beállítások" fülre majd azon belül a "Bejelentkezés" fülre kattintva tudja
 megadni a játékban található felhasználó fiókjának felhasználói nevét valamint jelszavát és a "Belépés" gombra kattintva tudja elindítani
@@ -6,3 +11,28 @@ a bejelentkezést, amennyiben a felhasználó bepipálja az "Automatikus indít�
 szereplő értékekkel elindul a program.
 A felhasználó a "Beállítások" fül alatt be tudja állítani a számára legkedvezőbb működést, meg tudja adni hogy a program mit csináljon a hajójával.
 Mivel a nyelvválasztás adott lehetőség, így nem szükséges a további leírás ugyanis a beállításokban magyar nyelven is elérhetőek az opciók.
+Egyszerre csak egy felhasználói fiókot képes futtatni.
+A programot elinditani illetve megállítani is lehet.
+
+Müködéshez elengedhetetlen dolgok:
+---------------------------------------------------------------------------
+
+Szükséges hozzá működő internetkapcsolat , mivel ez egy internetes böngészön alapuló játék.
+Szüksége van egy létező felhasználóra is.
+(Amit nem tiltottak még el)
+Jelenleg a program csak Windows operációs rendszer alatt fut, ezért windows alapú operációs rendszer kell hozzá.
+
+Egyéb információk:
+---------------------------------------------------------------------------
+
+Amennyiben valami hibát találna a .exe futtatása közben vagy a játék közben azt a hiba bejelentést a weboldalon tudja leírni
+és közölni.
+Ennek pontos módja!
+
+    Felhasználó neve:
+    Mikor történt(pontos idő):
+    Mi a hiba oka:
+    Milyen operációs rendszer alatt futtatta a programot:
+    Amikor a hiba történt meg volt e nyitva még más program is:   ( Igen  ,  Nem )
+    Ha igen akkor a program neve:
+    
