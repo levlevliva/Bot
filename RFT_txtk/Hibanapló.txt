@@ -1,5 +1,9 @@
 Bugfixes
 
+2017.11.10
+Bejelentkezéskor nem kapcsolódott a szerverre mivel a program verziója frissült.
+Ezt a hibát javitottuk.
+
 2017.11.21
 Eazfuscator.NET hibájának javítása (Az obfuszkáció miatt külön program telepítése kellett a szoftver indításához,
 ez javítva lett, más obfuscator programot használunk helyette)
