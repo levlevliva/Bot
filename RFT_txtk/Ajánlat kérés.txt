@@ -18,12 +18,12 @@ lehessen kiválasztani , hogy milyen plussz dolgokat szeretnénk ha csinálna a 
 
 Ajánlatkérő bemutatása:
 		
-		Cégneve:
-		Székhelye:
-		E-mail címe:
-		Telefon:
-		Adószáma:
-		Egyéb elérhetősége:
+		Cégneve: asd Kft
+		Székhelye: Siófok
+		E-mail címe: asd@gmail.com
+		Telefon: 36 25/ 125 4578
+		Adószáma: 48-5-487687
+		Egyéb elérhetősége: asd2@gmail.com
 ---------------------------------------------------------------------------
 Határidő: 2017.12.22
 ---------------------------------------------------------------------------
