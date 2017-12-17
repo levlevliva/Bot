@@ -1,5 +1,6 @@
+---------------------------------------------------------------------------
 Követelményi lista
-
+---------------------------------------------------------------------------
 -Automatikus javítás
 -Beállítható automatikus start opció bejelentkezés után.
 -Multilanguage opció.
@@ -7,3 +8,5 @@ Követelményi lista
 -Kódolt átjáró a licensz szerver valamint a kliens között(Reverse engineering, crack elleni védelem, valamint biztonságos fizetési csatorna).
 -A program nem használható Virtuális Számítógépeken(licensz rendszer kijátszását tenné lehetővé).
 -Automatizált játékmenet.
+-Map(Térkép)
+-Térkép alatt konzol (Ahova az adott dolgokat irja ki)
