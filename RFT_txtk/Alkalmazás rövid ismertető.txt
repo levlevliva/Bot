@@ -1,5 +1,26 @@
+---------------------------------------------------------------------------
 Alkalmazás rövid ismertetése
+---------------------------------------------------------------------------
 
--Automatizált játékmenetet tesz lehetővé a szoftver, így a felhasználóját előnyökhöz juttatja.
--Az alkalmazás rendelkezik standard illetve prémium funkciókkal, ezutóbbi csak a licensz megvásárlása után használható, vagy ameddig a felhasználónak aktív a 
+Automatizált játékmenetet tesz lehetővé a szoftver, így a felhasználóját előnyökhöz juttatja.
+Az alkalmazás rendelkezik standard illetve prémium funkciókkal, ezutóbbi csak a licensz megvásárlása után használható, vagy ameddig a felhasználónak aktív a 
 shareware licensze (48 óra).
+---------------------------------------------------------------------------
+A programban sok beállíthatási lehetőség van.
+
+  -Ezek befolyásolják a játékmenetet.
+  -Lehetőségünk van nyelvválasztásra is.
+        Az alapértelmezett nyelv az angol de lehet választani a német a magyar és a román nyelv közül is.
+  -Úgy szabjuk meg ezeket a választásokat ahogyan csak szeretnénk.
+---------------------------------------------------------------------------  
+Statisztika
+---------------------------------------------------------------------------
+  Itt azt a statisztikát jeleníti meg , amikor ebbe a programba belépett a felhasználóval
+  és el is inditotta azt.
+  Itt jelennek meg például az hogy mennyi tapasztalatot gyűjtött össze , a pénz , megölt szörnyek és gyöngyök.
+---------------------------------------------------------------------------  
+Map
+---------------------------------------------------------------------------
+  Itt az adott térkép jelenik meg amit a beállításokban állított be.
+  A térkép alatt egy konzolba ki írja , hogy például mennyi sebzést kapott a hajó vagy mennyi pénzt szerzett.
+    
