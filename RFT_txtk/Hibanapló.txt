@@ -2,15 +2,15 @@ Bugfixes
 
 2017.11.10
 Bejelentkezéskor nem kapcsolódott a szerverre mivel a program verziója frissült.
-Ezt a hibát javitottuk.
+Ezt a hibát javitottuk. -Fecske Márk
 
 2017.11.21
 Eazfuscator.NET hibájának javítása (Az obfuszkáció miatt külön program telepítése kellett a szoftver indításához,
-ez javítva lett, más obfuscator programot használunk helyette)
+ez javítva lett, más obfuscator programot használunk helyette) -Balázsy Levente
 
 2017.11.23
 Amikor a program teljes képernyőre hozása gombra kattintott a felhasználó, a programban található label-ek, check valamint 
-textboxok szétcsúsztak, teljesen megkavarva a felhasználói interfészt. Javítva.
+textboxok szétcsúsztak, teljesen megkavarva a felhasználói interfészt. Javítva. -Balázsy Levente
 
 2017.11.30
 Biztonsági rés javítása történt egy webböngésző beépítésével, így az EventStream most már nem program által van generálva (
@@ -21,7 +21,7 @@ A program a reggel 5-órási restart után nem csatlakozott vissza a játékszer
 
 2017.12.04
 A program nem gyűjtögette a csillogó zsákmányokat, ugyanis egy teszt során ki lett kommentelve az adott metódus, és 
-így lett buildelve a release.
+így lett buildelve a release. -Fecske Márk
 
 2017.12.04/2
 A beállítások mentése gomb a fentebb nevezett okok miatt szintén nem látta el a feladatát, így ez is javítva lett.
