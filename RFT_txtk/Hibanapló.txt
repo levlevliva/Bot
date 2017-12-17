@@ -25,3 +25,7 @@ A program nem gyűjtögette a csillogó zsákmányokat, ugyanis egy teszt során
 
 2017.12.04/2
 A beállítások mentése gomb a fentebb nevezett okok miatt szintén nem látta el a feladatát, így ez is javítva lett.
+
+2017.12.05
+A bejelntkezésnél a login gomb nem müködött mivel annak a nevét ideiglenesen átírtuk és nem lett visszaírva. 
+Javítva lett. -Fecske Márk
