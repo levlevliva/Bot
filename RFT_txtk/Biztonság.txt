@@ -1,4 +1,6 @@
+---------------------------------------------------------------------------
 Biztonság
+---------------------------------------------------------------------------
 
 A felhasználók által támasztott minimális biztonsági követelmény, a felhasználók anonimitása,
 ezzel elérve a felhasználók fiókjának a relatív biztonságát.
@@ -8,5 +10,5 @@ A felhasználók accountjához tartozó felhasználói név illetve jelszó nem 
 A program random generált pozíciókra valamint térképekre vezérli/irányítja a hajót, így csökkenti a játékban a bannolás veszélyét,
 így ugyanis egy esetleges script nem vagy csak nehezen tudja szűrni.
 A fizetési biztonságot a PayPal biztosítja számunkra, ugyanis történik egy átirányítás mikor a felhasználó licenszet szeretne vásárolni
-és a PayPal API-t használjuk a 256 bites SSL titkosítás eléréséhez, majd a vásárlás sikeres lezárultakor az adatbázisban felíródik a vásárolt
-licensz időtartama.
+és a PayPal API-t használjuk a 256 bites SSL titkosítás eléréséhez, majd a vásárlás sikeres lezárultakor az adatbázisban felíródik 
+a vásárolt licensz időtartama.
