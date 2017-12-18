@@ -1,7 +1,9 @@
+ ---------------------------------------------------------------------------
  Rendszer követelmények
-	
+---------------------------------------------------------------------------	
     - Működő internetkapcsolat
     - Windows operációs rendszer WinXp/WinVista/win7/Win8-8.1/Win10
     - Minimum 512 Mb-RAM
     - Minimum Pentium 4
-	
+    - Internet kapcsolat(élő)
+   
