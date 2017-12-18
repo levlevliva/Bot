@@ -1,15 +1,43 @@
- ---------------------------------------------------------------------------
+---------------------------------------------------------------------------
  Rendszer követelmények
 ---------------------------------------------------------------------------	
+
     - Működő internetkapcsolat
     - Windows operációs rendszer WinXp/WinVista/win7/Win8-8.1/Win10
     - Minimum 512 Mb-RAM
     - Minimum Pentium 4
     - Internet kapcsolat(élő)
----------------------------------------------------------------------------	
+
+---------------------------------------------------------------------------
+Rendszer Célja
+---------------------------------------------------------------------------
+
+A rendszer célja , hogy a Seafight nevű internetes mmorpg játékot úgyis játszhassuk , hogy nem vagyunk számítógép közelben.
+  Tehát automatikusan futtatja a játékot miközben megtámad játékosokat , fosztogat , a térképen lévő tárgyakat felveszi , 
+  újra tölti a löszert , az életerőt újratölti ha megsérült az adott hajónk.
+  
+---------------------------------------------------------------------------
+Támogatott böngészők
+---------------------------------------------------------------------------
+
+- Google Chrome 63
+- Mozilla Firefox 57
+- Opera 49
+- Safari 5.34.54.16
 
 ---------------------------------------------------------------------------	
-FIZIKAI KÖRNYEZET
+Hibakezelés
+---------------------------------------------------------------------------	
+
+A Program felületen előfordulható hibák csoportjai:
+
+1. nem támogatott böngésző hibája
+	- A felhasználó értesül róla, az üzenet felsorolja a hivatalosan támogatott böngészőket.
+2. Új frissítés jön ki a seafight-hoz
+	- A fejlesztőknek frissíteni kell a programot.
+
+---------------------------------------------------------------------------	
+Fizikai Környezet
 ---------------------------------------------------------------------------	
 
 Az alkalmazás operációs rendszer függő.
@@ -18,14 +46,14 @@ Csak windows alapú operációs rendszeren fut.
 A rendszernek nem célja a mobil eszközökön való futás.
 
 ---------------------------------------------------------------------------	
-TELEPÍTÉSI TERV
+Telepítési Terv
 ---------------------------------------------------------------------------	
 
 Az alkalmazást külön telepíteni nem kell.
 Egy portable.exe-t kell elindítani és már megy is a program.
 
 ---------------------------------------------------------------------------	
-KARBANTARTÁSI TERV
+Karbantartási Terv
 ---------------------------------------------------------------------------	
 
 Az alkalmazás minimális karbantartást igényel, amely a következőkre bontható:
