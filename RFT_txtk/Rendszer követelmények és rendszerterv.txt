@@ -1,0 +1,35 @@
+ ---------------------------------------------------------------------------
+ Rendszer követelmények
+---------------------------------------------------------------------------	
+    - Működő internetkapcsolat
+    - Windows operációs rendszer WinXp/WinVista/win7/Win8-8.1/Win10
+    - Minimum 512 Mb-RAM
+    - Minimum Pentium 4
+    - Internet kapcsolat(élő)
+---------------------------------------------------------------------------	
+
+---------------------------------------------------------------------------	
+FIZIKAI KÖRNYEZET
+---------------------------------------------------------------------------	
+
+Az alkalmazás operációs rendszer függő.
+Csak windows alapú operációs rendszeren fut.
+(Ezen dolgozunk ,hogy az elkövetkezökben linux alapú operációs rendszereken is futtatható legyen.)
+A rendszernek nem célja a mobil eszközökön való futás.
+
+---------------------------------------------------------------------------	
+TELEPÍTÉSI TERV
+---------------------------------------------------------------------------	
+
+Az alkalmazást külön telepíteni nem kell.
+Egy portable.exe-t kell elindítani és már megy is a program.
+
+---------------------------------------------------------------------------	
+KARBANTARTÁSI TERV
+---------------------------------------------------------------------------	
+
+Az alkalmazás minimális karbantartást igényel, amely a következőkre bontható:
+- Ellenőrizni, hogy a jövőben kiadott böngésző verziókban hogyan fut az alkalmazás, ha probléma lép fel, 
+    akkor azt ki kell javítani.
+- Meggyőződés arról, hogy a kiszolgáló szerver éppen fut, ha nem, akkor újraindítani
+   
