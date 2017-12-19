@@ -5,3 +5,17 @@ valamint egy fórum segítségével bekérjük a felhasználók véleményét, k
 valamint ha módunkban áll akkor új funkciókkal gazdagítjuk a szoftvert.
 Kizárólag a licenszelésnél végeztünk teszteléseket, hogy az adott php fájl ne tartalmazzon sql injection-t, valamint ne lehessen fizetés nélkül elérni
 a prémium funkciókat, illetve megpróbáljuk az emulatoroktól, crackektől védeni a szoftvert rendszeres kommunikációs protokoll változtatásával.
+
+A programon végzett résztesztek:
+//Bejelentkeztetési teszt:
+  - A bejelentkeztetési teszt során ellenőriztük a megfelelő kapcsolódást valamint kapcsolattartást, illetve a https
+  (SSL tanusítvány jelenléte) előtag miatt a szükséges referencia hozzáadása (FiddlerCore) megtörtént, így a tesztelés
+  sikeresen lezárult.
+  
+//Egyes funkciók tesztelése (Gyűjtögetés, NPC/Szörny lövés, napi bón. felvétel stb...)
+  - Ezeket a funkciókat rövid tesztnek vetettük alá még a fejlesztés fázisaiban, majd a program elkészültekor egy 4
+  éjszakás tesztet futtattunk, az előfordult hibákat a hibanaplóban mellékeltük.
+  
+További teszteket nem áll módunkban futtatni, ugyanis a felhasználók visszajelzésére hagyatkozva reprodukáljuk a hibát,
+majd javítjuk azt. A jelenlegi BETA fázisban körülbelül 400 felhasználó vesz részt (Forum download counter-t figyelembe véve,
+hozzávetőleges statisztikai adat).
