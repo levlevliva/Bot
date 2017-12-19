@@ -1,7 +1,6 @@
 ---------------------------------------------------------------------------
 Használati útmutató:
 ---------------------------------------------------------------------------
-
 Alap információk / Beállítások:
 ---------------------------------------------------------------------------
 
@@ -21,18 +20,25 @@ Szükséges hozzá működő internetkapcsolat , mivel ez egy internetes böngé
 Szüksége van egy létező felhasználóra is.
 (Amit nem tiltottak még el)
 Jelenleg a program csak Windows operációs rendszer alatt fut, ezért windows alapú operációs rendszer kell hozzá.
+A program nem fut Virtuális Számítógépen (VMWare, VirtualBox) ugyanis ez a licenszrendszer egyszerű kicselezését tenné
+lehetővé.
 
 Egyéb információk:
 ---------------------------------------------------------------------------
 
-Amennyiben valami hibát találna a .exe futtatása közben vagy a játék közben azt a hiba bejelentést a weboldalon tudja leírni
-és közölni.
-Ennek pontos módja!
+Amennyiben valami hibát találna a .exe futtatása vagy a futás közben, akkor a hibája pontos leírását, valamint annak okát
+esetleg a hiba pontos reprodukálásának a menetét (sokat segít nekünk egy bugfix során) az elitepvpers.com/forum/seafight
+megfelelő topicjában jelezheti felénk.
 
-    Felhasználó neve:
-    Mikor történt(pontos idő):
+Ennek pontos módja:
+
+    Licenszkulcs(HWID):
+    Mikor történt(melyik programverzió futtatása alatt):
     Mi a hiba oka:
-    Milyen operációs rendszer alatt futtatta a programot:
-    Amikor a hiba történt meg volt e nyitva még más program is:   ( Igen  ,  Nem )
-    Ha igen akkor a program neve:
+    Reprodukciós lépések (ha tudja):
+    Számítógép konfigurációs rövid leírása:
+    Amikor a hiba történt meg volt e nyitva még más program is ami befolyásolhatná a program működését (Fiddler, Wireshark,
+    Antivirus program):   ( Igen  ,  Nem )
+    Ha igen akkor a program(ok) neve(i):
+    
     
