@@ -2,6 +2,11 @@
 Követelményi lista
 ---------------------------------------------------------------------------
 -Automatikus javítás
+-Automatikus visszatérés
+-Automatikus indulás
+-Intelligens lőszer valamint szigonyválasztó.
+-AntiBann system
+-Emberi mozgás szimuláció.
 -Beállítható automatikus start opció bejelentkezés után.
 -Multilanguage opció.
 -Beállítások mentése opció (számítógépen tárolt global resource fájl, később cloud alapú mentés).
@@ -9,4 +14,8 @@ Követelményi lista
 -A program nem használható Virtuális Számítógépeken(licensz rendszer kijátszását tenné lehetővé).
 -Automatizált játékmenet.
 -Map(Térkép)
--Térkép alatt konzol (Ahova az adott dolgokat irja ki)
+-Térkép alatt logbox (Ahova az adott interakciókat, kapott javakat íratjuk ki.)
+-NPC valamint Szörny lista, illetve külön hozzáadási lehetőség (Case sensitive).
+-Alacsony erőforráshasználat
+-Háttérben futás
+
