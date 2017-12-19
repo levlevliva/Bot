@@ -14,6 +14,7 @@ felsorolt dolgokat automatikusan gyűjtse. A hajó ha megsérül akkor javítsa 
 Ha kifogy a lőszerből vegyen újjat. A program futtatható legyen windows operációs
 rendszer alatt. Nyelvválasztási opció legyen benne. Egy "Settings"(beállítások) fülbe
 lehessen kiválasztani , hogy milyen plussz dolgokat szeretnénk ha csinálna a hajó.
+
 ---------------------------------------------------------------------------
 
 Ajánlatkérő bemutatása:
