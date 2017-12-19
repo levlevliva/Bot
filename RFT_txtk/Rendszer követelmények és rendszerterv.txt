@@ -28,22 +28,41 @@ Funkcionális Terv
  Az alkalmazás főbb részei:
  ---------------------------------------------------------------------------
 	1. BotLogic.cs
-		-
+		- A program logikai függvényeiért felel.
+		- Itt történik a legtöbb interakció a felhasználói fiókkal
 	---------------------------------------------------------------------------
 	2. Account.cs
-		-
+		- Az account adatainak bekéréséért felelő függvény, valamint
+		kiíratásért felelős deklarált stringek találhatóak benne.
 	---------------------------------------------------------------------------
 	3.Form1.cs
-		-
+		- A program fő része található itt, itt zajlik a függvények meghívása
+		valamint néhány kiíratás is innen történik.
+		- A későbbiekben a licensz ellenőrzés is itt lesz beágyazva.
 	---------------------------------------------------------------------------
 	4.Client.cs
-		-
+		- A Seafight böngészős kliensét készíti elő, így rá csak a térkép
+		betöltéséig és a kapcsolat tartásáig van szükség, innen is történik
+		néhány logba történő kiíratás.
 	---------------------------------------------------------------------------
 	5.BotMethods.cs
-		-
+		- Ez felel tulajdonképpen a funkciók megfelelő működéséért, itt 
+		indulnak el a lényeges függvények, valamint a kiíratások nagy része
+		is innen megy végbe.
 	---------------------------------------------------------------------------
 	6.Server.cs
-		-
+		- A játékkliensel való kapcsolatteremtésben játszik kulcsfontosságú
+		szerepet.
+	---------------------------------------------------------------------------
+	7.SeafightMethods.cs
+		- Ez az osztály felel azért, hogy a megfelelő akciókat hajtsa végre
+		a hajó. Ez az osztály küld a szerver felé packetmessage-eket abban
+		az esetben, ha a program az éppen aktuális kliensverzión fut.
+	---------------------------------------------------------------------------
+	8.BotCalculators.cs
+		- Itt történik a random mozgások, "emberi muzgásszimuláció"-hoz 
+		szükséges számítások, az itt kapott adatokat felhasználja a 
+		BotMethods valamint a BotLogic osztály is.
 	---------------------------------------------------------------------------
 	
 ---------------------------------------------------------------------------
@@ -52,10 +71,9 @@ Funkcionális Terv
 Támogatott böngészők
 ---------------------------------------------------------------------------
 
-- Google Chrome 63
-- Mozilla Firefox 57
-- Opera 49
-- Safari 5.34.54.16
+- Internet Explorer;
+Mivel a programunk a C# beépített webböngészőjét használja, így fontos, hogy
+a felhasználó gépén jelen legyen az Explorer vagy az Edge.
 
 ---------------------------------------------------------------------------	
 Hibakezelés
@@ -63,10 +81,11 @@ Hibakezelés
 
 A Program felületen előfordulható hibák csoportjai:
 
-1. nem támogatott böngésző hibája
-	- A felhasználó értesül róla, az üzenet felsorolja a hivatalosan támogatott böngészőket.
+1. Nincs, vagy elavult Flash Player
+	- A felhasználó értesül róla, a program a Flash Player nélkül működésképtelen.
 2. Új frissítés jön ki a seafight-hoz
-	- A fejlesztőknek frissíteni kell a programot.
+	- A fejlesztőknek frissíteni kell a Message classokban szereplő értékeket
+	valamint a Reader és Writer funkciókat (amennyiben azok is frissülnek).
 
 ---------------------------------------------------------------------------	
 Fizikai Környezet
@@ -75,23 +94,31 @@ Fizikai Környezet
 Az alkalmazás operációs rendszer függő.
 Csak windows alapú operációs rendszeren fut.
 (Ezen dolgozunk ,hogy az elkövetkezökben linux alapú operációs rendszereken is futtatható legyen.)
-A rendszernek nem célja a mobil eszközökön való futás.
+A rendszernek nem célja a mobil eszközökön való futás,
+mobil applikáció maximum a távoli vezérlés érdekében készülhet.
 
 ---------------------------------------------------------------------------	
 Telepítési Terv
 ---------------------------------------------------------------------------	
 
 Az alkalmazást külön telepíteni nem kell.
-Egy portable.exe-t kell elindítani és már megy is a program.
+A tömörített fájlt a letöltés után kicsomagolva elhelyezzük azt egy mappában
+ahová kicsomagoljuk magát a futtatható fájlt (SFCollector.exe) valamint a
+multilanguage opció működéséhez szükséges language forrásokat (mappák amik
+egy .dll fájlt tartalmaznak).
 
 ---------------------------------------------------------------------------	
 Karbantartási Terv
 ---------------------------------------------------------------------------	
 
 Az alkalmazás minimális karbantartást igényel, amely a következőkre bontható:
-- Ellenőrizni, hogy a jövőben kiadott böngésző verziókban hogyan fut az alkalmazás, ha probléma lép fel, 
-    akkor azt ki kell javítani.
-- Meggyőződés arról, hogy a kiszolgáló szerver éppen fut, ha nem, akkor újraindítani
+- Ellenőrizni minden belépésnél a játékkliens verzióját (compiletime), amennyiben
+ez a verzió nem egyezik a programban szereplő verzióval akkor fejlesztői beavatkozás
+szükséges (Message class frissítés, compiletime szinkronizáció) a program további 
+használatához.
+- Meggyőződés arról, hogy a licenszszerver online, ugyanis enélkül a program
+nem képes elindulni (hibaüzenettel tér vissza, egészen addig, amíg nem sikerül
+lekérnie a licensz státuszt valamint időtartamot).
 ---------------------------------------------------------------------------
 
 
