@@ -15,4 +15,6 @@
 	  A javítási % limit a felhasználó által deklarálható.
 	  Az alkalmazás rendelkezik a fejlesztőktől teljesíthető maximális AntiBann védelemmel.
 	  A bot nem tárol semmiféle adatot a felhasználó fiókjáról, a felhasználó engedélye vagy értesítése nélkül.
-	  
+	  Standard valamint Prémium funkciók.
+	  Erőforrástakarékosság.
+	  Minimális rendszerkövetelmény.
