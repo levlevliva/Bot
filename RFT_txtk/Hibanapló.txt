@@ -1,8 +1,8 @@
 Bugfixes
 
 2017.11.10
-Bejelentkezéskor nem kapcsolódott a szerverre mivel a program verziója frissült.
-Ezt a hibát javitottuk. -Fecske Márk
+Bejelentkezéskor nem kapcsolódott a szerverre mivel a program nem kezelte az SSL tanusítványokat.
+Ezt a hibát javitottuk a FiddlerCore hozzáadásával. -Fecske Márk
 
 2017.11.21
 Eazfuscator.NET hibájának javítása (Az obfuszkáció miatt külön program telepítése kellett a szoftver indításához,
@@ -27,5 +27,12 @@ A program nem gyűjtögette a csillogó zsákmányokat, ugyanis egy teszt során
 A beállítások mentése gomb a fentebb nevezett okok miatt szintén nem látta el a feladatát, így ez is javítva lett.
 
 2017.12.05
-A bejelntkezésnél a login gomb nem müködött mivel annak a nevét ideiglenesen átírtuk és nem lett visszaírva. 
+A bejelntkezésnél a login gomb nem volt elérhető, ugyanis egy előzetes UI változtatás után figyelmen kívül lett hagyva. 
 Javítva lett. -Fecske Márk
+
+2017.12.11
+A hajó csak Angol nyelvbeállításnál csatlakozott vissza a bónusztérképre automatikusan, így egy végtelen "ugrás" ciklusba keveredve
+folyamatos hibaüzenettel visszatérve stackelt a térképen.
+Javítva, a Reader funkcióknál is addolva lett a korrekt nyelvhivatkozás. -Balázsy Levente
+
+
