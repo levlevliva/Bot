@@ -12,3 +12,10 @@ Követelmény specifikáció
 
 A program célja olyan Bot program létrehozása amely internetes játékban automatizált játékmenetet tesz lehetővé felhasználói beavatkozás nélkül.
 Az alkalmazás kivitelezése várhatóan 2 hónap.
+
+A fejlesztéshez szükséges egyébb követlemények (szoftverek, szolgáltatások):
+- Adobe Photoshop (ikon létrehozásához)
+- Visual Studio 2015+ (Team fundation megléte elengedhetetlen a fejlesztéshez)
+- MySql adatbázis
+- Új egyedi webcím, webtárhellyel
+- Külső forrásból származó API (Paypal API)
