@@ -119,6 +119,8 @@ használatához.
 - Meggyőződés arról, hogy a licenszszerver online, ugyanis enélkül a program
 nem képes elindulni (hibaüzenettel tér vissza, egészen addig, amíg nem sikerül
 lekérnie a licensz státuszt valamint időtartamot).
+- Az egyéb felmerülő hibákat, amennyiben a felhasználók jelzik, hibakeresés
+valamint javítás (amennyiben lehetséges).
 ---------------------------------------------------------------------------
 
 
