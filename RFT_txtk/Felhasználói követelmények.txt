@@ -6,3 +6,13 @@
     - Az alkalmazás felhasználó barát felülettel fog rendelkezni.(user-interface)
 	  A nyelvváltoztatás lehetősége adott, így a felhasználó akár saját anyanyelvén kezelheti a szoftvert.
 	  A bot automatikusan elindul amennyiben a "Bejelentkezés" fülnél kipipálja a megfelelő checkboxot a felhasználó.
+	  A program intelligens lőszer illetve szigonyválasztóval van ellátva.
+	  Statisztikákat mutat a felhasználónak az adott munkamenet állapotáról, illetve a gyűjtött javak mennyiségéről.
+	  A klánszigetet amennyiben szükséges elkerüli.
+	  Ha támadás éri egy másik felhasználótól fenn áll a lehetőség az interakció választására (Visszalövés, Menekülés vagy
+	  Figyelmen kívül hagyás.
+	  Képes fosztani az NPC hajókat, így a Közösségi Rohamtérkép akadályait is sikeresen veszi.
+	  A javítási % limit a felhasználó által deklarálható.
+	  Az alkalmazás rendelkezik a fejlesztőktől teljesíthető maximális AntiBann védelemmel.
+	  A bot nem tárol semmiféle adatot a felhasználó fiókjáról, a felhasználó engedélye vagy értesítése nélkül.
+	  
