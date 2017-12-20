@@ -2,7 +2,7 @@
 Biztonság
 ---------------------------------------------------------------------------
 
-A felhasználók által támasztott minimális biztonsági követelmény, a felhasználók anonimitása,
+A felhasználóknak biztosított minimális biztonsági követelmény, a felhasználók anonimitása,
 ezzel elérve a felhasználók fiókjának a relatív biztonságát.
 Visszaélések esetén, a gyors reagáláson túl, a viszaélés során keletkezett illegális állapotok
 viszaállítása (például egy adatbázis dumpolás után) a legális állapotokba.
