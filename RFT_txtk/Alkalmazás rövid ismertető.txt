@@ -6,7 +6,7 @@ Automatizált játékmenetet tesz lehetővé a szoftver, így a felhasználójá
 Az alkalmazás rendelkezik standard illetve prémium funkciókkal, ezutóbbi csak a licensz megvásárlása után használható, vagy ameddig a felhasználónak aktív a 
 shareware licensze (48 óra).
 ---------------------------------------------------------------------------
-A programban sok beállíthatási lehetőség van.
+A programban beállítási lehetőségei:
 
   -Ezek befolyásolják a játékmenetet.
   -Lehetőségünk van nyelvválasztásra is.
@@ -15,8 +15,7 @@ A programban sok beállíthatási lehetőség van.
 ---------------------------------------------------------------------------  
 Statisztika
 ---------------------------------------------------------------------------
-  Itt azt a statisztikát jeleníti meg , amikor ebbe a programba belépett a felhasználóval
-  és el is inditotta azt.
+  A programba való belépéstől számítva listázza, hogy a program mennyire volt hatékony.
   Itt jelennek meg például az hogy mennyi tapasztalatot gyűjtött össze , a pénz , megölt szörnyek és gyöngyök.
 ---------------------------------------------------------------------------  
 Map
