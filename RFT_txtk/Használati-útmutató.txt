@@ -2,7 +2,7 @@
 Használati útmutató:
 ---------------------------------------------------------------------------
 Alap információk / Beállítások:
----------------------------------------------------------------------------
+
 
 A felhasználó az .exe fájl megnyitása után a programban a "Beállítások" fülre majd azon belül a "Bejelentkezés" fülre kattintva tudja
 megadni a játékban található felhasználó fiókjának felhasználói nevét valamint jelszavát és a "Belépés" gombra kattintva tudja elindítani
@@ -13,20 +13,21 @@ Mivel a nyelvválasztás adott lehetőség, így nem szükséges a további leí
 Egyszerre csak egy felhasználói fiókot képes futtatni.
 A programot elinditani illetve megállítani is lehet.
 
-Müködéshez elengedhetetlen dolgok:
----------------------------------------------------------------------------
 
-Szükséges hozzá működő internetkapcsolat , mivel ez egy internetes böngészön alapuló játék.
-Szüksége van egy létező felhasználóra is.
-(Amit nem tiltottak még el)
+---------------------------------------------------------------------------
+Müködéshez elengedhetetlen dolgok:
+
+Szükséges hozzá internetkapcsolat.
+egy SeaFight felhasználóra.
+(Amit nem tiltottak még el).
 Jelenleg a program csak Windows operációs rendszer alatt fut, ezért windows alapú operációs rendszer kell hozzá.
 A program nem fut Virtuális Számítógépen (VMWare, VirtualBox) ugyanis ez a licenszrendszer egyszerű kicselezését tenné
 lehetővé.
 
-Egyéb információk:
 ---------------------------------------------------------------------------
+Egyéb információk:
 
-Amennyiben valami hibát találna a .exe futtatása vagy a futás közben, akkor a hibája pontos leírását, valamint annak okát
+Amennyiben valami hibát találna az exe futtatása vagy a futás közben, akkor a hibája pontos leírását, valamint annak okát
 esetleg a hiba pontos reprodukálásának a menetét (sokat segít nekünk egy bugfix során) az elitepvpers.com/forum/seafight
 megfelelő topicjában jelezheti felénk.
 
