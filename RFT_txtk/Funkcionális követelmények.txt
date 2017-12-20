@@ -16,6 +16,6 @@ A lőszert amennyiben szükséges és van hozzá elég fizetőeszköz, újravás
 ---------------------------------------------------------------------------
 Rendszer Célja
 ---------------------------------------------------------------------------
-A rendszer célja , hogy a Seafight nevű internetes mmorpg játékot úgyis játszhassuk , hogy nem vagyunk számítógép közelben.
+A rendszer célja , hogy a Seafight nevű internetes mmorpg játékot úgyis fusson a háttérben , hogy nem vagyunk számítógép közelben.
   Tehát automatikusan futtatja a játékot miközben megtámad játékosokat , fosztogat , a térképen lévő tárgyakat felveszi , 
   újra tölti a löszert , az életerőt újratölti ha megsérült az adott hajónk.
