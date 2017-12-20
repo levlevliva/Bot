@@ -1,11 +1,77 @@
 Árajánlat
+-----------------------------------------------------
+Modulok:
+1,Map
+2,Setting
+3,Statistics
+-----------------------------------------------------
+1,Map
+A modul az alábbi elemeket tartalmazza:
 
--A program rendelkezik saját licensz rendszerrel amely a számítógép hardwareeiből generál egy "HWID"-t ami minden számítógépnek egyedi, így nincs szükség felhasználói
-regisztrációra, illetve sokkal hatékonyabb módszer.
--A szoftvert csak bérelni lehet, tényleges megvásárlására lehetőség nincs, pénzvisszatérítés nincs, illetve a szoftver sajátosságaiból adódóan a használó 
-megszegi a Bigpoint GmbH által megfogalmazott ÁÜSZ & ÁFSZ-t így az accountja esetleges zárolásáért felelősséget nem vállalunk.
--A szoftver bérlésével a felhasználó beleegyezik abba, hogy adatokat továbbítsunk a szervereink felé, illetve ezeket meghatározatlan ideig tároljuk is (HWID, UserID, SessionID, Számítógép név, IP cím).
--A megvásárolt licensz nem garantálja a program folyamatos működését (pl.: Amennyiben a játék algoritmusa megváltozik, így ellehetetlenítve a program működését, nem áll
-módunkban a licensz hátralévő időtartamát visszatéríteni).
--A licensz ára 6,49€/1 hónap 14,99€/3 hónap.
--A szoftver lebutított demo funkciókkal is rendelkezik így ingyenesen is elérhető.
+A felhasználó hajójának pozícióját megjelenítő modul.
+a hajó helyzete lehet automatikus de akár manuálisan is lehet koordinátákat adni ahova a felhasználó szeretne eljutni.
+
+2,Setting
+A modul az alábbi elemeket tartalmazza:
+A,Login:
+A felhasználó megadja a felhasználói(username)-et és a hozzá tartozó jelszót(Password)-öt, beállítja
+a programban használni kívánt nyelvet és a program elindulásának módját(pl:Auto start, Auto login).
+
+B,Settings:
+A felhasználó beállítási lehetőségeket kap különböző funkciókhoz:
+-Gyüjteni kívánt tárgyak.
+-Megölni kívánt NPC-k.
+-Megölni kívánt szörnyek.
+-Raid en való részvétel
+      -Raid en használni kívánt lőszer
+-Felfedezni kívánt Bonusmap.
+
+
+3,Statistics
+A modul az alábbi elemeket tartalmazza:
+
+A program egy felmérést készít arról hogy a bejelenkezési idő óta mit és mennyit gyűjtött a felhasználónak.
+Statisztikában eltárolt elemek:
+-Glitters
+-NPSs
+-Monsters
+-Pearls
+-Mojos
+-Golds
+-XP
+
+---------------------------------------------------
+ Support, garancia
+ Az elkészített rendszerre 2 éves hibajavítási garanciát vállalunk a hibajegy@leogroup.hu címre beérkezett hibákra.
+ Emellett telefonon munkaidőben:
+ hétköznap09:00-17:00
+ ingyenes supportot nyújtunk. 
+ 
+ 
+ 
+ 
+ Árak, Határidők 
+ Készletnyilvántartás, ügyfélkezelés, számlázás-1.700.000HUF
+ Ügynök-510.000HUF
+ Projekt management-630.000HUF
+ Labor jegyzőkönyv-65.000HUF 
+ 
+Telefonos support munkaidőben (H-P: 09:00-17:00):0HUF
+Telefonos support munkaidőn kívül:3000HUF/megkezdett óra 
+Egyéb fejlesztés: 4000 HUF/óra 
+ 
+A fejlesztés időtartama, tesztelésre átadott rendszer: a szerződéskötéstől számított 52 munkanap. 
+ 
+Fizetési ütemezés: Előleg: szerződéskötéstől számított 8 napon belül: 30%
+Tesztelésre átadott rendszer: 8 napon belül:40%
+Élesített, telepített rendszer: 8 napon belül 30% 
+
+
+
+Tisztelettel:
+
+HaKuBaFe Estate Kft.
+3793 Sajóecseg Nagy Lajos 66,
+www.hakubafe.hu
+info@hakubafe.hu
+ 
