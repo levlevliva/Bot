@@ -10,23 +10,43 @@ A modul az alábbi elemeket tartalmazza:
 
 A felhasználó hajójának pozícióját megjelenítő modul.
 a hajó helyzete lehet automatikus de akár manuálisan is lehet koordinátákat adni ahova a felhasználó szeretne eljutni.
+Itt egy beépített webböngésző található ami teljes mértékben azt tölti be és mutatja a felhasználónak amit egy sima
+böngészővel való bejelentkezés után is kap.
 
 2,Setting
 A modul az alábbi elemeket tartalmazza:
 A,Login:
 A felhasználó megadja a felhasználói(username)-et és a hozzá tartozó jelszót(Password)-öt, beállítja
 a programban használni kívánt nyelvet (bot language) és a program elindulásának módját(pl:Auto start, Auto login).
+A felhasználó a SaveSettings gombbal tudja eltárolni az opcióit így a bejelentkezési adatait és a bot nyelvét is eltároljuk
+a számítógépén egy resource fájlban (semmiféle a felhasználói fiókokkal kapcsolatos adatot nem tárolunk az adatbázisunkban).
 Amennyiben a felhasználó megváltoztatja a program nyelvét akkor nem csak a program menürendszere,
 hanem a program naplózása is az adott nyelven fog történni.
 
 B,Settings:
 A felhasználó beállítási lehetőségeket kap különböző funkciókhoz:
 -Gyüjteni kívánt tárgyak.
+	-Csillogó zsákmány
+	-Ládák
+	-Event ládák
+	-Oroszlán ládák
+	-Rakományok
+	-Poliphús
 -Megölni kívánt NPC-k.
+	-Alap lista
+	-Teljes lista
+	-Custom lista
 -Megölni kívánt szörnyek.
--Raid en való részvétel
-      -Raid en használni kívánt lőszer
--Felfedezni kívánt Bonusmap.
+	-Alap lista
+	-Teljes lista
+	-Custom lista
+-Raid-en(Rohamtérkép) való részvétel
+      	-Raid-en használni kívánt lőszer
+      	-Választható boss lövés és lőszer
+	-Megadható csatlakozási limit
+-Teljesíteni kívánt Bonusmap.
+	-BM-en használni kívánt lőszer.
+	-Újracsatlakozási opció
 
 
 3,Statistics
@@ -42,9 +62,13 @@ Statisztikában eltárolt elemek:
 -Golds
 -XP
 
+valamint a statisztikák az eventek alkalmával kapnak egy eventgroupboxot, ahol az eventen gyűjthető
+tárgyak, lőszerek statisztikai adatai megjelennek, valamint később órákra lebontva lehet majd
+elérni a statisztikai adatokat a felhasználóknak.
+
 ---------------------------------------------------
  Support, garancia
- Az elkészített rendszerre 2 éves hibajavítási garanciát vállalunk a hibajegy@leogroup.hu címre beérkezett hibákra.
+ Az elkészített rendszerre 2 éves* hibajavítási garanciát vállalunk a hibajegy@leogroup.hu címre beérkezett hibákra.
  Emellett telefonon munkaidőben:
  hétköznap09:00-17:00
  ingyenes supportot nyújtunk. 
@@ -57,6 +81,7 @@ Statisztikában eltárolt elemek:
  Ügynök-510.000HUF
  Projekt management-630.000HUF
  Labor jegyzőkönyv-65.000HUF 
+ Uniós pénz-1.678.143.546HUF  
  
 Telefonos support munkaidőben (H-P: 09:00-17:00):0HUF
 Telefonos support munkaidőn kívül:3000HUF/megkezdett óra 
@@ -67,6 +92,10 @@ A fejlesztés időtartama, tesztelésre átadott rendszer: a szerződéskötést
 Fizetési ütemezés: Előleg: szerződéskötéstől számított 8 napon belül: 30%
 Tesztelésre átadott rendszer: 8 napon belül:40%
 Élesített, telepített rendszer: 8 napon belül 30% 
+Valamint a licenszekből származó bevétel 25%, illetve ha a *2 éves garancia időtartama lejár, továbbiakban a fentebb megjelölt
+ellenértékek kifizetése esetén bármikor javítjuk, karban tartjuk a programot, de ha a 2 év lejárta után a licenszekből
+származó bevétel 50%-át átutalják, abban az esetben a garanciát egészen addig fenntartjuk ameddig önök hajlandóak tartani
+az 50%-os aftersales-t.
 
 
 
