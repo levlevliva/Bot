@@ -32,6 +32,9 @@ Melléklet:
 - megjelenő új események(eventek)-en való részvétel és event tárgy gyűjtés
 - felszerelés (mint pl.: lőszer, legénység, étel, ital, stb.) lehetésges pótlása
 - nyelvválasztási opció (Magyar, Angol, Román, Német)
+- NPC hajók és szörnyek lövése
+- Teljeskörű statisztikai adatok
+
 
 ---------------------------------------------------------------------------
 Ajánlatkérő cég adatai:
