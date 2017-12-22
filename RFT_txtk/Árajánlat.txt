@@ -15,7 +15,9 @@ a hajó helyzete lehet automatikus de akár manuálisan is lehet koordinátákat
 A modul az alábbi elemeket tartalmazza:
 A,Login:
 A felhasználó megadja a felhasználói(username)-et és a hozzá tartozó jelszót(Password)-öt, beállítja
-a programban használni kívánt nyelvet és a program elindulásának módját(pl:Auto start, Auto login).
+a programban használni kívánt nyelvet (bot language) és a program elindulásának módját(pl:Auto start, Auto login).
+Amennyiben a felhasználó megváltoztatja a program nyelvét akkor nem csak a program menürendszere,
+hanem a program naplózása is az adott nyelven fog történni.
 
 B,Settings:
 A felhasználó beállítási lehetőségeket kap különböző funkciókhoz:
