@@ -66,7 +66,7 @@ Funkcionális Terv
 		BotMethods valamint a BotLogic osztály is.
 	---------------------------------------------------------------------------
 	9.Language.cs
-		-Ebben az oztályban történik meg a nyelvkiválasztás:
+		-Ebben az oztályban történik meg a nyelvválasztás:
 			-angol
 			-magyar
 			-német
@@ -74,11 +74,35 @@ Funkcionális Terv
 			-portugál
 		-Ezt az 5 nyelvet képes kezelni.
 		-Az alap nyelv az angol.
+		-A felhasználó beállítja a nyelvválasztó comboboxból a számára
+		megfelelő nyelvet, majd a "SaveSettings" gombbal válthat nyelvet
+		ami azonnal el is mentődik így a következő indulásnál a program
+		már automatikusan a legutóbb kiválasztott nyelven fog betöltődni.
 ---------------------------------------------------------------------------
 	10. BotSession.cs
 		-Ebben az osztályban a statisztikákhoz szükséges string
 		deklarálások történnek meg, amik a Form1.cs-ben kapnak
 		megjeleníthető értékeket a BotMethods.cs-ből.
+---------------------------------------------------------------------------
+	11. StringChiper.cs
+		-Ebben az osztályban a felhasználói adatok átkonvertálása történik,
+		erre azért van szükség mert a felhasználók használhatnak különleges
+		karaktereket a jelszavaikban és ezt a html kódolás nem tudja megfelelően
+		elküldeni a szerver felé, így a bejelentkezés meghiúsulhat.
+
+---------------------------------------------------------------------------
+	12. HelpTools.cs
+		-Itt rengeteg kulcsfontosságú függvény dolgozik azért, hogy a
+		program zökkenőmentes futását biztosítsa. Itt helyet kapott a RAM
+		management, amire azért van szükségünk ugyanis a flash container 
+		képes a számítógép RAM erőforrását a csillagos egekig felemészteni,
+		tehát itt majdnem minden lefutott függvény után ürítjük a programhoz
+		tartozó felesleges memóriahivatkozásokat, így szinten tartva a memóriaigényt.
+		Valamint rengeteg konvertáció is lezajlik itt, .dll deklarációk, helyettesítő
+		függvények, listázó függvények, a felhasználói fiókból beolvasott értékek (sebesség, 
+		pozíció) értelmezése, háttérben lezajló internetkapcsolati interakció (pl.: compiletime)
+		valamint maga a compiletime tényleges aktuális letöltése is itt megy végbe illetve
+		a packetmessage-ek helyettesítése, kiegészítése és beolvasásának egy része is itt zajlik.
 ---------------------------------------------------------------------------
 
 
@@ -108,7 +132,8 @@ Fizikai Környezet
 
 Az alkalmazás operációs rendszer függő.
 Csak windows alapú operációs rendszeren fut.
-(Ezen dolgozunk ,hogy az elkövetkezökben linux alapú operációs rendszereken is futtatható legyen.)
+(Ezen dolgozunk ,hogy az elkövetkezökben linux alapú 
+valamint MacOSX operációs rendszereken is futtatható legyen.)
 A rendszernek nem célja a mobil eszközökön való futás,
 mobil applikáció maximum a távoli vezérlés érdekében készülhet.
 
