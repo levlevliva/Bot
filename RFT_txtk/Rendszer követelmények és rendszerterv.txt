@@ -64,10 +64,18 @@ Funkcionális Terv
 		szükséges számítások, az itt kapott adatokat felhasználja a 
 		BotMethods valamint a BotLogic osztály is.
 	---------------------------------------------------------------------------
-	
+	9.language.cs
+		-Ebben az oztályban történik meg a nyelvkiválasztás:
+			-angol
+			-magyar
+			-német
+			-román
+		-Ezt a 4 nyelvet képes kezelni.
+		-Az alap nyelv az angol.
 ---------------------------------------------------------------------------
 
 
+---------------------------------------------------------------------------
 Támogatott böngészők
 ---------------------------------------------------------------------------
 
