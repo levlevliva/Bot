@@ -54,13 +54,63 @@ A modul az alábbi elemeket tartalmazza:
 
 A program egy felmérést készít arról hogy a bejelenkezési idő óta mit és mennyit gyűjtött a felhasználónak.
 Statisztikában eltárolt elemek:
--Glitters
--NPSs
--Monsters
--Pearls
--Mojos
--Golds
--XP
+	-Tárgyak:
+		-Agwe amulett
+		-Triton áldása
+		-Tortuga fénye
+		-Villámkő
+		-Vigyázó szem
+		-Elmo tüze
+		-Füstbomba
+		-Kém titka
+		-Királyi zsákmányzsák
+		-Ládakulcs
+		
+	-Boosterek, buffok:
+		-Elitpont gyorsító
+		-Tapasztalatpont gyorsító
+		-Hajósinas
+		-Vudusámán 4. szint
+		-Altiszt 5. szint
+		-Prémium
+		-Aggresszivitás tréner 3. szint
+		-Kitartás tréner 3. szint
+		-Engedelmességi tréner 3. szint
+		-Gyorsasági tréner 3. szint
+		
+	-Fizetőeszközök:
+		-Arany
+		-Gyöngy
+		-Mojó
+		-Tapasztalatpont
+		-Korona
+		
+	-Lőszerek:
+		-Páncéltörő lőszer
+		-Erősített robbanó lőszer
+		-Fejlesztett robbanó lőszer
+		-Kartács lőszer
+		-Foszfor lőszer
+		-Jégtűz lőszer
+		-Vudu lőszer
+		
+	-Számlálók:
+		-Csillogó zsákmányok
+		-NPC-k
+		-Szörnyek
+		-Pozíció
+		
+	-Bónusztérkép jutalmak:
+		-Virgo törzs
+		-Capricornus törzs
+		-Sagitarius törzs
+		-Cancer törzs
+		-Merész ágyúsebzés (5%)
+		-Kolosszális ágyúsebzés (7%)
+		-Kristályeső
+		-Vérszomj
+		-Teleport
+
 
 valamint a statisztikák az eventek alkalmával kapnak egy eventgroupboxot, ahol az eventen gyűjthető
 tárgyak, lőszerek statisztikai adatai megjelennek, valamint később órákra lebontva lehet majd
