@@ -49,6 +49,7 @@ Funkcionális Terv
 		- Ez felel tulajdonképpen a funkciók megfelelő működéséért, itt 
 		indulnak el a lényeges függvények, valamint a kiíratások nagy része
 		is innen megy végbe.
+		-Itt olvassuk ki a statisztikákhoz szükséges javak értékeit és neveit.
 	---------------------------------------------------------------------------
 	6.Server.cs
 		- A játékkliensel való kapcsolatteremtésben játszik kulcsfontosságú
@@ -73,6 +74,11 @@ Funkcionális Terv
 			-portugál
 		-Ezt az 5 nyelvet képes kezelni.
 		-Az alap nyelv az angol.
+---------------------------------------------------------------------------
+	10. BotSession.cs
+		-Ebben az osztályban a statisztikákhoz szükséges string
+		deklarálások történnek meg, amik a Form1.cs-ben kapnak
+		megjeleníthető értékeket a BotMethods.cs-ből.
 ---------------------------------------------------------------------------
 
 
